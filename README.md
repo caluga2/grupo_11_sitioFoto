@@ -19,3 +19,10 @@ Es una alegría estar compartiendo este curso con uds. a ponerle toda la energí
 
 Mi nombre es Cesar David Pulido, soy Colombiano, ingeniero mecatrónico actualmente soy Director de servicios.
 Me interesa la programación y quiero retomarla, reforzar conocimientos  y lograr crecer mas profesionalmente y poder hacer crecer mi emprendimiento.  
+
+Inspiraciones del mercado:
+1 - https://www.samsung.com/ar/ (estética)
+2 - https://stock.adobe.com/br (estética, público y producto)
+3 - https://www.artsy.net/ (estética, producto)
+4 - https://www.fotografiaecommerce.com/ (producto y público)
+5 - https://affiche.thunder-stores.com/ (estética, público y producto)
