@@ -1,70 +1,117 @@
-* {
-  margin: 0px;
-  padding: 0px;
-}
-
-.Inicio {
+.Inicio{
   display: flex;
   justify-content: space-between;
-  /*border: solid 3px black;*/
-  box-shadow: 1px 1px 10px #888888;
-  box-shadow: black;
+  border: solid 3px black;
   align-items: center;
   background-color: whitesmoke;
-  padding: 10px;
+  border-radius: 6px;
+  
 }
 .logo {
   width: 30%;
 }
 .Inicio a {
   text-decoration: none;
-  color: #222222;
+  color: #222222;  
   display: inline-block;
   padding: 0px 0;
   font-size: 17px;
   position: relative;
   right: 30px;
-}
-.Inicio li {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
-.buscador {
-  position: absolute;
-  right: 72px;
-}
-.carrito {
-  position: absolute;
-  right: 40px;
-}
-
-.Inicio a {
-  display: none;
-}
-
-.perfil {
-  display: none;
-}
-
-@media (min-width: 300px) {
-  .logo {
-    width: 40%;
+  
   }
-}
-
-@media (min-width: 761px) {
-  .logo {
-    width: 20%;
+  .Inicio li {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+     
   }
-  .Inicio a {
-    display: block;
-  }
+  .buscador{
+    position:absolute;
+    right: 72px;}
+    .carrito{
+      position:absolute;
+      right: 40px;}
+      
+      .Inicio a {
+        display: none;
+    }
+    
+      .perfil{
+        display: none;
+      }
 
+      @media  (min-width: 300px) 
+      {.logo {
+        width: 40%;}
+      
+      }
+
+    @media  (min-width: 761px) 
+    {
+      .logo {
+        width: 20%;}
+      .Inicio a {
+        display: block;
+    }
+   
   .menu-hamburguesa {
     display: none;
-  }
-  .perfil {
-    display: block;
-  }
 }
+.perfil{
+  display: block;
+}
+  
+    }
+    /*Login*/
+    /*Modifico centrado de bloques dentro del formulario */
+    
+  
+    .LoginFormulario p{
+      text-align: left;
+      margin-left: 2.5vw;
+      display: block;
+    }
+
+    .LoginFormulario p label{
+      display: block;
+    }
+    .LoginFormulario a {
+      font-size: small;
+}
+
+    .LoginFormulario p .ButtonLogin{
+      text-align: center;
+      display: block;
+      justify-content: center;
+      justify-items: center;
+      width: auto;
+      margin-left: 4vw;
+    }
+
+    .LoginParrafoDeButton{
+      
+      text-align: center;
+      justify-content: center;
+      display: block;
+      width: 2vw;
+      margin-left: 4vw;
+    }
+
+    .LoginMain{
+      display: block;
+      text-align: center;
+      margin-top: 50px;
+      background-color: grey;
+      width:25vw;
+      margin: auto;
+      margin-top: 50px;
+      align-items: center;
+      height: 30vw;
+      justify-content: center;
+    }
+
+   .LoginMain img{
+    width: 20vw;
+    margin-top: 40px;
+   }
