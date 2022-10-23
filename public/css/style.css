@@ -41,22 +41,6 @@
         display: none;
       }
 
-      .MainLogin{
-        display: block;
-        text-align: center;
-        margin-top: 50px;
-        background-color: grey;
-        width:25vw;
-        margin: auto;
-        margin-top: 50px;
-        height: 35vw;
-      }
-     .MainLogin img{
-      width: 20vw;
-      margin: 40px;
-     }
-
-    
       @media  (min-width: 300px) 
       {.logo {
         width: 40%;}
@@ -79,7 +63,55 @@
 }
   
     }
-
-
     /*Login*/
+    /*Modifico centrado de bloques dentro del formulario */
     
+  
+    .LoginFormulario p{
+      text-align: left;
+      margin-left: 2.5vw;
+      display: block;
+    }
+
+    .LoginFormulario p label{
+      display: block;
+    }
+    .LoginFormulario a {
+      font-size: small;
+}
+
+    .LoginFormulario p .ButtonLogin{
+      text-align: center;
+      display: block;
+      justify-content: center;
+      justify-items: center;
+      width: auto;
+      margin-left: 4vw;
+    }
+
+    .LoginParrafoDeButton{
+      
+      text-align: center;
+      justify-content: center;
+      display: block;
+      width: 2vw;
+      margin-left: 4vw;
+    }
+
+    .LoginMain{
+      display: block;
+      text-align: center;
+      margin-top: 50px;
+      background-color: grey;
+      width:25vw;
+      margin: auto;
+      margin-top: 50px;
+      align-items: center;
+      height: 50vw;
+      justify-content: center;
+    }
+
+   .LoginMain img{
+    width: 20vw;
+    margin-top: 40px;
+   }
