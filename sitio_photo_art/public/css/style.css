@@ -1,0 +1,70 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+.Inicio {
+  display: flex;
+  justify-content: space-between;
+  /*border: solid 3px black;*/
+  box-shadow: 1px 1px 10px #888888;
+  box-shadow: black;
+  align-items: center;
+  background-color: whitesmoke;
+  padding: 10px;
+}
+.logo {
+  width: 30%;
+}
+.Inicio a {
+  text-decoration: none;
+  color: #222222;
+  display: inline-block;
+  padding: 0px 0;
+  font-size: 17px;
+  position: relative;
+  right: 30px;
+}
+.Inicio li {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.buscador {
+  position: absolute;
+  right: 72px;
+}
+.carrito {
+  position: absolute;
+  right: 40px;
+}
+
+.Inicio a {
+  display: none;
+}
+
+.perfil {
+  display: none;
+}
+
+@media (min-width: 300px) {
+  .logo {
+    width: 40%;
+  }
+}
+
+@media (min-width: 761px) {
+  .logo {
+    width: 20%;
+  }
+  .Inicio a {
+    display: block;
+  }
+
+  .menu-hamburguesa {
+    display: none;
+  }
+  .perfil {
+    display: block;
+  }
+}
