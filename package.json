@@ -1,0 +1,20 @@
+{
+  "name": "grupo_11_sitiofoto",
+  "version": "1.0.0",
+  "description": "Proyecto fotografía: Creación de un sitio web para venta de productos de origen fotográfico, tales como prints fine art, fotos enmarcadas y libros de fotografía.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/caluga2/grupo_11_sitioFoto.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/caluga2/grupo_11_sitioFoto/issues"
+  },
+  "homepage": "https://github.com/caluga2/grupo_11_sitioFoto#readme"
+}
