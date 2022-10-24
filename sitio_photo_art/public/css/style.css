@@ -1,6 +1,8 @@
 * {
   margin: 0px;
   padding: 0px;
+  font-family: Rubik, sans-serif;
+  box-sizing: border-box;
 }
 
 .Inicio {
@@ -13,6 +15,7 @@
   background-color: whitesmoke;
   padding: 10px;
 }
+
 .logo {
   width: 30%;
 }
@@ -47,11 +50,52 @@
   display: none;
 }
 
+/* Cambios Carolina 23.10 -  */
+/* El hove que todavia no funciona .RegisterLogin{
+display: none;
+}
+
+.Inicio:hover + */.RegisterLogin{
+  width: 60%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  position: relative;
+  left: 35%;
+  color: #222222;
+}
+
+.RegisterLogin a:visited{
+  color: #888888;
+}
+
+/* Cambios Carolina 23.10 - Home Carousel - in progress */
+
+.Carousel img{
+  width: 100%;
+}
+
+/* Tablet*/
+
 @media (min-width: 300px) {
   .logo {
     width: 40%;
   }
+  /* El hover que todavia no funciona
+  .Inicio:hover + */.RegisterLogin{
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    position: relative;
+    left: 50%;
+    color: #222222;
+  }
 }
+
+/*Desktop*/
 
 @media (min-width: 761px) {
   .logo {
@@ -66,5 +110,17 @@
   }
   .perfil {
     display: block;
+  }
+  /* El hover que todavia no funciona
+  
+  .Inicio:hover + */.RegisterLogin{
+    width: 20%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    position: relative;
+    left: 80%;
+    color: #222222;
   }
 }
