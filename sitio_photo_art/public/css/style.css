@@ -93,6 +93,51 @@ display: none;
     left: 50%;
     color: #222222;
   }
+  /* Cesar Detalles de Producto */
+ .NombrePoducto{
+  display: flex;
+  justify-content: space-evenly;
+  padding-bottom: 4%;
+  padding-top: 4%;
+  
+ }
+ .NombrePoducto i{
+  margin-left: 10%;
+  
+ }
+ .NombrePoducto h2 {
+  font-size: 80%;
+  
+ }
+ .DetallesProducto{
+  display: flex;
+  justify-content: space-evenly;
+  padding-bottom: 4%;
+ }
+.ImagenPrincipal{
+ 
+  position: relative;
+}
+.MasFotos{
+  display: flex;
+  justify-content: space-evenly;
+  
+}
+.Imagen{
+  width: 70px;
+  height: 70px;
+  padding: 0%;
+  margin: 0%;
+}
+.opcionesProducto{
+  display: flex;
+  justify-content: space-evenly;
+  font-size: 10px;
+  padding-top: 4px;
+}
+.BotonCompras{
+ position: center;
+}
 }
 
 /*Desktop*/
