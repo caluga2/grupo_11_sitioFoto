@@ -168,4 +168,41 @@ display: none;
     left: 80%;
     color: #222222;
   }
+   /* codigo Cesar Producto*/
+  .NombrePoducto{
+    display: inline-block;
+    position: relative;
+    left:  80%;
+    align-content: center;
+   } 
+   .NombrePoducto h2 {
+    font-size: 20px;
+
+   } 
+   .DetallesProducto{
+    display: block;
+    position: relative;
+    left:  80%;
+    align-content: center;
+   } 
+   .imagenPrincipal{
+    display: inline-block;
+    position: absolute;
+  top: 25%;
+  right: 30%;
+    
+    width: 40%;
+     
+    
+  }
+  .MasFotos{
+    display: table;
+  }
+  .Imagen{
+    width: 60%;
+    padding-bottom: 10%;
+    display: table-cell;
+	vertical-align: middle;
+  }
+
 }
