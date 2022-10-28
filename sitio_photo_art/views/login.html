@@ -30,13 +30,13 @@ rel="stylesheet" />
 
     <header class="main header">
         <div class="Inicio">
-            <img class = "logo" src="/images/logo photoartstudio sitioFoto.png" alt="Logo PhotoArtStudio"/>
-            
+           <a class="logo" href="/Producto"><img class="logo" src="/images/logo photoartstudio sitioFoto.png"></a>
                
-                    <li><a href="/Prints">Prints</a></li>
-                    <li><a href="/Enmarcados">Enmarcados</a></li>
-                    <li><a href="/ServicioFotografico">Servicio Fotografico</a></li>
-                    <li><a href="/Soporte">Soporte</a></li>
+                    <li><a class="botonInicio" href="/Prints">Prints</a></li>
+                    <li><a class="botonInicio" href="/Enmarcados">Enmarcados</a></li>
+                    <li><a class="botonInicio" href="/Producto">Servicio Fotografico</a></li>
+                    <li><a class="botonInicio" href="/Soporte">Soporte</a></li>
+                
                 
              <nav class="buscador">
                     
@@ -54,13 +54,21 @@ rel="stylesheet" />
                     
                     <button type="submit"><i class="fas fa-bars "></i></button>
                 </nav>
+                
+                
                
+       
         </div>
-
+    
+        
+              
+           
+        
+       
     </header>
 
     <main>
-        <div class="CajaLoginMain">
+        <div class="LoginCajaMain">
         <div class="LoginMain">
             <!-- Cambios Carolina 23.10 (Titulo y requerir contraseña)-->
             <img class = "logo" src="/images/logo photoartstudio sitioFoto.png" alt="Logo PhotoArtStudio"/>
@@ -68,19 +76,21 @@ rel="stylesheet" />
             <div><form action="/" class="LoginFormulario">
             <p>
                 <label>Correo electrónico:</label>
-              
+            
+            
                 <input type="text" name="usuario" required>
             </p>
             <p>
                 <label>Contraseña:</label>
-               
-                <input type="password" name="contrasena" required/>
+              
+                <input type="password" name="contraseña" required>
             </p>
+         
             
-            <a href=""><p>¿Olvidaste tu Contraseña?</p></a>
+            <a href="">¿Olvidaste tu Contraseña?</a>
            
                 
-            <button type="submit" class="ButtonLogin">Ingresar</button>
+            <button type="submit" class="LoginButton">Ingresar</button>
        
         </form>
     </div>

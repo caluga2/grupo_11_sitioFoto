@@ -55,7 +55,7 @@
 display: none;
 }
 /*-----------------------------------INICIA LOGIN-------------------------------------*/
-.CajaLoginMain {
+.LoginCajaMain {
   display: flex;
   justify-content: center;
   }
@@ -65,24 +65,25 @@ display: none;
   flex-wrap: wrap;
   width: 80%;
   text-align: center;
-  background-color: green;
+  background-color:#888888;
   border-style: dotted red;
   margin-top: 10%;
-  
   border-style: solid;
-  border-color: black;
+  border-color:black;
 }
 
 
-.LoginMain .tituloFormLogin{
+/*.LoginMain .tituloFormLogin{
   display: block;
 }
+*/
 .LoginMain img{
   width: 100%;
   padding: 5%;
   padding-top: 15%;
   margin-bottom: 10%;
 }
+
 .LoginFormulario p{
   display: flex;
   justify-content: left;
@@ -91,11 +92,28 @@ display: none;
   margin-right: 5%;
   margin-bottom: 10%;
 }
-.LoginFormulario p input{
+.LoginFormulario p label{
+  text-align: left;
   width: 100%;
+}
+.LoginFormulario a {
+  display: block;
+  width: auto;
+  margin-bottom: 10%;
+  text-align: center;
+}
+.LoginFormulario p input {
   height: 25px;
 }
-
+.LoginButton{
+  margin-bottom: 25%;
+  width: 90%;
+  height: 25px;
+  background-color: #2049EB;
+  color: white;
+  border-style: none;
+  
+}
 
 
 
@@ -131,7 +149,7 @@ display: none;
 
 /* Tablet*/
 
-@media (min-width: 300px) {
+@media (min-width: 361px) {
   .logo {
     width: 60%;
   }
