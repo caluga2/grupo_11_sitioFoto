@@ -203,7 +203,13 @@ display: none;
   width: 100%;
 }
 
+.img1Home{
+  display: none;
+}
 
+.img1HomeMobile{
+  display: flex;
+}
 
 /* Tablet*/
 
@@ -222,6 +228,19 @@ display: none;
     left: 50%;
     color: #222222;
   }
+
+  .Carousel img{
+    width: 100%;
+  }
+
+  .img1HomeMobile{
+    display: flex;
+  }
+
+  .img1Home{
+    display: none;
+  }
+
   /* Cesar Detalles de Producto */
  .NombrePoducto{
   display: flex;
@@ -297,6 +316,19 @@ display: none;
     left: 80%;
     color: #222222;
   }
+
+  .Carousel img{
+    width: 100%;
+  }
+
+  .img1HomeMobile{
+    display: none;
+  }
+
+  .img1Home{
+    display: flex;
+  }
+
    /* codigo Cesar Producto*/
   .NombrePoducto{
     display: inline-block;
