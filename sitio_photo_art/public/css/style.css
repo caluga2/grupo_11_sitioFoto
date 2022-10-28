@@ -54,8 +54,39 @@
 /* El hove que todavia no funciona .RegisterLogin{
 display: none;
 }
+/*-----------------------------------LOGIN-------------------------------------*/
+.CajaLoginMain {
+  display: flex;
+  justify-content: center;
+  }
+.LoginMain{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 60%;
+  text-align: center;
+  background-color: green;
+  border-style: dotted red;
+  margin-top: 10%;
+}
 
-.Inicio:hover + */.RegisterLogin{
+
+.LoginMain .tituloFormLogin{
+  display: block;
+}
+.LoginMain img{
+  width: 100%;
+  padding: 5%;
+  padding-top: 15%;
+  margin-bottom: 10%;
+}
+
+/*----------------------------------TERMINA LOGIN---------------------------------*/
+
+
+
+
+.Inicio:hover {
   width: 60%;
   display: flex;
   justify-content: space-between;
@@ -75,6 +106,8 @@ display: none;
 .Carousel img{
   width: 100%;
 }
+
+
 
 /* Tablet*/
 
