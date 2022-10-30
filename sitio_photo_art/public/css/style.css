@@ -96,6 +96,7 @@ display: none;
   text-align: left;
   width: 100%;
 }
+
 .LoginFormulario a {
   display: block;
   width: auto;
@@ -127,11 +128,11 @@ display: none;
 .RegisterCajaMain {
   display: flex;
   justify-content: center;
-  flex-wrap: wrap;
+  
   }
 .RegisterMain{
   display: flex;
-  justify-content: start;
+  justify-content: left;
   flex-wrap: wrap;
   width: 80%;
   text-align: center;
@@ -161,6 +162,7 @@ display: none;
   margin-left: 5%;
   margin-right: 5%;
   margin-bottom: 3%;
+  
 }
 .RegisterFormulario p label{
   text-align: left;
@@ -168,9 +170,11 @@ display: none;
 }
 .RegisterFormulario p input {
   height: 25px;
+  width: 96%;
 }
 .RegisterButton{
-  margin-bottom: 25%;
+  margin-bottom: 10%;
+  margin-top: 15%;
   width: 60%;
   height: 30px;
   background-color: #2049EB;
