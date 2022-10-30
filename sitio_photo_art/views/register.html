@@ -16,11 +16,11 @@ rel="stylesheet" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-     
+
      <!-- Cambios Carolina 23.10 (Fuente)-->
-     <link rel="preconnect" href="https://fonts.googleapis.com">
-     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-     <link href="https://fonts.googleapis.com/css2?family=Rubik&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik&display=swap" rel="stylesheet">
     
     <!-- Nuestros Estilos personalizados-->
     <link href="/css/style.css" rel = 'stylesheet'>
@@ -30,13 +30,13 @@ rel="stylesheet" />
 
     <header class="main header">
         <div class="Inicio">
-            <img class = "logo" src="/images/logo photoartstudio sitioFoto.png" alt="Logo PhotoArtStudio"/>
-            
+           <a class="logo" href="/Producto"><img class="logo" src="/images/logo photoartstudio sitioFoto.png"></a>
                
-                    <li><a href="/Prints">Prints</a></li>
-                    <li><a href="/Enmarcados">Enmarcados</a></li>
-                    <li><a href="/ServicioFotografico">Servicio Fotografico</a></li>
-                    <li><a href="/Soporte">Soporte</a></li>
+                    <li><a class="botonInicio" href="/Prints">Prints</a></li>
+                    <li><a class="botonInicio" href="/Enmarcados">Enmarcados</a></li>
+                    <li><a class="botonInicio" href="/Producto">Servicio Fotografico</a></li>
+                    <li><a class="botonInicio" href="/Soporte">Soporte</a></li>
+                
                 
              <nav class="buscador">
                     
@@ -54,76 +54,56 @@ rel="stylesheet" />
                     
                     <button type="submit"><i class="fas fa-bars "></i></button>
                 </nav>
+                
+                
                
+       
         </div>
+     
+        <div class="RegisterLogin">
+            <div class="ButtonLogin"><a href="/login">Login</a></div>
 
+            <div class="ButtonRegister"><a href="/register">Registro</a></div>
+       </div>
+        
+              
+           
+        
+       
     </header>
 
     <main>
-        <form action="/">
+        <div class="RegisterCajaMain">
+            <div class="RegisterMain">
+              
+                <img class = "logo" src="/images/logo photoartstudio sitioFoto.png" alt="Logo PhotoArtStudio"/>
+               <h2>Crear cuenta</h2>
+        <form class="RegisterFormulario" action="/">
         <p>
-            <label>Nombre y Apellido:</label>
-            <input type="text" name="nombre" placeholder="Ingresá tu nombre y apellido">
+            <label>Tu nombre</label>
+            <input type="text" name="nombre" placeholder="Nombre y Apellido">
+        </p>
+      
+        <p>
+            <label>Correo electrónico</label>
+            <input type="email" name="email">
+        </p>
+        
+        <p>
+            <label>Contraseña</label>
+            <input type="password" name="contrasena" placeholder="Como mínimo 6 caracteres"/>
         </p>
         <p>
-            <label>Nombre de usuario:</label>
-            <input type="text" name="usuario" placeholder="Ingresá tu id de usuario">
-        </p>
-        <p>
-            <label>E-mail:</label>
-            <input type="email" name="email" placeholder="Ingresá tu E-mail">
-        </p>
-        <p>
-            <label>Fecha de nacimiento:</label>
-            <input type="date" name="fecha">
-        </p>
-        <p>
-            <label>Domicilio:</label>
-            <input type="text" name="domicilio" placeholder="Ingresá tu domicilio">
-        </p>
-        <p>
-            <label type="text">Perfil del usuario:</label>
-        </p> 
-        <p>
-            <label><input type="radio" name="perfil" value="Comprador">Comprador</label>
-            <label><input type="radio" name="perfil" value="Vendedor">Vendedor</label>
-        </p>
-        <p>
-        <label type="text">Intereses:</label>
-        </p>
-        <p>
-            <label><input type="checkbox" name="intereses" value="Electro">Electro</label>
-        </p>
-         <p>
-            <label><input type="checkbox" name="intereses" value="Moda">Moda</label>
-        </p>
-        <p>
-            <label><input type="checkbox" name="intereses" value="Hogar">Hogar</label>
-        </p>
-        <p>
-            <label><input type="checkbox" name="intereses" value="Jugueteria">Jugueteria</label>
-        </p>
-        <p>
-            <label><input type="checkbox" name="intereses" value="Vida sana">Vida sana</label>
-        </p>
-        <p>
-            <label>Foto de usuario:</label>
-            <input type="file" name="foto" accept=".jpg" multiple/>
-        </p>
-        <p>
-            <label>Contraseña:</label>
+            <label>Vuelve a introducir la contraseña</label>
             <input type="password" name="contrasena"/>
         </p>
         <p>
-            <label>Repetir contraseña:</label>
-            <input type="password" name="contrasena"/>
+            <button class="RegisterButton" type="submit">Continuar</button>
         </p>
-        <p>
-            <button type="submit">Enviar</button>
-        </p>
-        <p>
-            <button type="reset">Cancelar</button>
-        </p>
+        <p>Al crear una cuenta, aceptas las<a href="">Condiciones de Uso</a>  y el <a href="">Aviso de Privacidad</a>  de xxxxx.com.</p>
+        <p>¿Ya tienes una cuenta?        <a href="">Iniciar sesión</a></p>
+        
+      
         </form>
 
     </main>

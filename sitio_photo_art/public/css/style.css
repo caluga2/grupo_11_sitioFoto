@@ -101,6 +101,8 @@ display: none;
   width: auto;
   margin-bottom: 10%;
   text-align: center;
+  color: #2049EB;
+  text-decoration: none;
 }
 .LoginFormulario p input {
   height: 25px;
@@ -108,7 +110,7 @@ display: none;
 .LoginButton{
   margin-bottom: 25%;
   width: 90%;
-  height: 25px;
+  height: 30px;
   background-color: #2049EB;
   color: white;
   border-style: none;
@@ -121,8 +123,64 @@ display: none;
 
 /*----------------------------------TERMINA LOGIN---------------------------------*/
 
+/*----------------------------------INICIA REGISTER---------------------------------*/
+.RegisterCajaMain {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  }
+.RegisterMain{
+  display: flex;
+  justify-content: start;
+  flex-wrap: wrap;
+  width: 80%;
+  text-align: center;
+  background-color:#888888;
+  border-style: dotted red;
+  margin-top: 10%;
+  border-style: solid;
+  border-color:black;
+}
+.RegisterMain img{
+  width: 100%;
+  padding: 5%;
+  padding-top: 15%;
+}
+.RegisterMain h2{
+  margin-left: 5%;
+}
+.RegisterFormulario a {
+  text-align: center;
+  color: #2049EB;
+  text-decoration: none;
+}
+.RegisterFormulario p{
+  display: flex;
+  justify-content: left;
+  flex-wrap: wrap;
+  margin-left: 5%;
+  margin-right: 5%;
+  margin-bottom: 3%;
+}
+.RegisterFormulario p label{
+  text-align: left;
+  width: 100%;
+}
+.RegisterFormulario p input {
+  height: 25px;
+}
+.RegisterButton{
+  margin-bottom: 25%;
+  width: 60%;
+  height: 30px;
+  background-color: #2049EB;
+  color: white;
+  border-style: none;
+  justify-self: center;
+  
+}
 
-
+/*----------------------------------TERMINA REGISTER---------------------------------*/
 
 .Inicio:hover {
   width: 60%;
