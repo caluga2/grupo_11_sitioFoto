@@ -28,3 +28,7 @@ Mi nombre es Cesar David Pulido, soy Colombiano, ingeniero mecatrónico actualme
 Me interesa la programación y quiero retomarla, reforzar conocimientos  y lograr crecer mas profesionalmente y poder hacer crecer mi emprendimiento.  
 
 Link wireframes Miro: https://miro.com/app/board/uXjVPRJHr_E=/?share_link_id=568299118301
+
+
+tablero de trabajo
+https://trello.com/b/mDz4bKmd/proyecto-integrador
