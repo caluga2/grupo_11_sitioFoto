@@ -340,6 +340,60 @@
 .BotonCompras{
  position: center;
 }
+/*----------------------------------INICIA LOGIN MEDIA QUERY TABLET---------------------------------*/
+ 
+.LoginMain{
+  flex-basis: 300px;
+  margin-top: 5px;
+  margin-bottom: 20px;
+}
+
+.LoginFormulario {
+  font-size:medium;
+}
+
+.LoginFormulario p input {
+  height: 30px;
+}
+.LoginButton{
+  height: 30px;
+  font-size: medium;
+}
+.LoginFormulario p{
+  margin-bottom: 10px;
+}
+
+/*----------------------------------TERMINA LOGIN MEDIA QUERY TABLET---------------------------------*/
+
+/*----------------------------------INICIA REGISTER MEDIA QUERY TABLET---------------------------------*/
+.RegisterCajaMain{
+  flex-basis: 25px;
+}
+.RegisterMain{
+  margin-top: 0;
+  flex-wrap: wrap;
+  width: 300px;
+}
+
+.RegisterFormulario {
+  font-size:medium;
+}
+
+
+.RegisterFormulario p input {
+  height: 30px;
+  width: 100%;
+}
+.RegisterButton{
+  height: 30px;
+  width: 90%;
+  font-size: medium;
+  margin-top: 3%;
+}
+
+
+/*----------------------------------TERMINA REGISTER MEDIA QUERY TABLET---------------------------------*/
+
 
 
 }
@@ -429,63 +483,5 @@
     display: table-cell;
 	vertical-align: middle;
   }
-  /*----------------------------------INICIA LOGIN MEDIA QUERY---------------------------------*/
  
-  .LoginMain{
-    flex-basis: 600px;
-    margin-top: 20px;
-    margin-bottom: 30px;
-  }
-  
-  .LoginFormulario {
-    font-size:x-large;
-  }
-  
-  .LoginFormulario p input {
-    height: 40px;
-  }
-  .LoginButton{
-    height: 40px;
-    font-size: x-large;
-  }
-  .LoginFormulario p{
-    margin-bottom: 10px;
-  }
-
-/*----------------------------------TERMINA LOGIN MEDIA QUERY---------------------------------*/
-
-/*----------------------------------INICIA REGISTER MEDIA QUERY---------------------------------*/
-
-.RegisterCajaMain{
-  flex-basis: 25px;
-}
-.RegisterMain{
-  margin-top: 3vw;
-  flex-wrap: wrap;
-  width: 600px;
-}
-
-.RegisterFormulario {
-  font-size:large;
-}
-
-.RegisterFormulario p input {
-  height: 40px;
-  width: 100%;
-}
-.RegisterButton{
-  height: 40px;
-  width: 90%;
-  font-size: large;
-  margin-top: 3%;
-}
-
-
-
-
-
-
-
-/*----------------------------------TERMINA REGISTER MEDIA QUERY---------------------------------*/
-
 }
