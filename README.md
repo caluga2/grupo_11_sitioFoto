@@ -31,4 +31,4 @@ Link wireframes Miro: https://miro.com/app/board/uXjVPRJHr_E=/?share_link_id=568
 
 
 tablero de trabajo
-https://trello.com/b/mDz4bKmd/proyecto-integrador
+https://trello.com/invite/b/Btw1IPDC/ATTIe7f0bdd8c64a20e12f9623f483a0d463E0E57505/grupo11

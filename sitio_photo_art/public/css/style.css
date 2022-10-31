@@ -5,6 +5,8 @@
   box-sizing: border-box;
 }
 
+/*-----------------------------------INICIA MENU-------------------------------------*/
+
 .Inicio {
   display: flex;
   justify-content: space-between;
@@ -16,8 +18,38 @@
   padding: 10px;
 }
 
+.link-logo{
+  width: 50%;
+  display: flex;
+  justify-content: center;
+}
+
+.link-logo a{
+  width: auto;
+}
+
+.menu-izquierda{
+  display: flex;
+  justify-content: space-between;
+  width: 90%;
+  align-items: center;
+}
+
+.menu-derecha{
+  width: 15%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.paginas-menu{
+  display: flex;
+  width: 80%;
+  justify-content: space-between;
+}
+
 .logo {
-  width: 30%;
+  width: 100%;
 }
 .botonInicio {
   text-decoration: none;
@@ -50,10 +82,19 @@
   display: none;
 }
 
-/* Cambios Carolina 23.10 -  */
-/* El hove que todavia no funciona .RegisterLogin{
-display: none;
-}
+/*-----------------------------------TERMINA MENU-------------------------------------*/
+
+.RegisterLogin{
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    position: relative;
+    left: 50%;
+    color: #222222;
+  }
+
 /*-----------------------------------INICIA LOGIN-------------------------------------*/
 .LoginCajaMain {
   display: flex;
@@ -193,7 +234,7 @@ display: none;
 
 /*----------------------------------TERMINA REGISTER---------------------------------*/
 
-.Inicio:hover {
+/*.Inicio:hover {
   width: 60%;
   display: flex;
   justify-content: space-between;
@@ -203,10 +244,13 @@ display: none;
   left: 35%;
   color: #222222;
 }
+*/
 
 .RegisterLogin a:visited{
   color: #888888;
 }
+
+/*----------------------------------INICIA HOME---------------------------------*/
 
 /* Cambios Carolina 23.10 - Home Carousel - in progress */
 
@@ -214,25 +258,43 @@ display: none;
   width: 100%;
 }
 
+.img1Home{
+  display: none;
+}
+
+.img1HomeMobile{
+  display: flex;
+}
+
+/*----------------------------------TERMINA HOME---------------------------------*/
 
 
 /* Tablet*/
 
 @media (min-width: 361px) {
   .logo {
-    width: 60%;
+    width: 100%;
   }
-  /* El hover que todavia no funciona
-  .Inicio:hover + */.RegisterLogin{
-    width: 50%;
+
+  .menu-izquierda{
     display: flex;
     justify-content: space-between;
+    width: 70%;
     align-items: center;
-    padding: 10px;
-    position: relative;
-    left: 50%;
-    color: #222222;
   }
+
+  .Carousel img{
+    width: 100%;
+  }
+
+  .img1HomeMobile{
+    display: flex;
+  }
+
+  .img1Home{
+    display: none;
+  }
+
   /* Cesar Detalles de Producto */
  .NombrePoducto{
   display: flex;
@@ -286,8 +348,16 @@ display: none;
 
 @media (min-width: 761px) {
   .logo {
-    width: 40%;
+    width: 80%;
   }
+
+  .menu-izquierda{
+    display: flex;
+    justify-content: space-between;
+    width: 70%;
+    align-items: center;
+  }
+
   .botonInicio {
     display: block;
   }
@@ -310,6 +380,19 @@ display: none;
     left: 80%;
     color: #222222;
   }
+
+  .Carousel img{
+    width: 100%;
+  }
+
+  .img1HomeMobile{
+    display: none;
+  }
+
+  .img1Home{
+    display: flex;
+  }
+
    /* codigo Cesar Producto*/
   .NombrePoducto{
     display: inline-block;

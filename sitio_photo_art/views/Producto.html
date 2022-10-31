@@ -28,35 +28,38 @@ rel="stylesheet" />
 
 <body>
 
-    <header class="main header">
-        <div class="Inicio">
-            <img class = "logo" src="/images/logo photoartstudio sitioFoto.png" alt="Logo PhotoArtStudio"/>
-            
-               
-                    <li><a href="/Prints">Prints</a></li>
-                    <li><a href="/Enmarcados">Enmarcados</a></li>
-                    <li><a href="/ServicioFotografico">Servicio Fotografico</a></li>
-                    <li><a href="/Soporte">Soporte</a></li>
+    <header class="main-header">
+        <nav>
+            <div class="Inicio">
+                <div class="menu-izquierda">
+                    <div class="link-logo"><a href="/"><img class="logo" src="/images/logo photoartstudio sitioFoto.png"></a></div>
+                    <div class="paginas-menu">
+                        <li><a class="botonInicio" href="/Prints">Prints</a></li>
+                        <li><a class="botonInicio" href="/Enmarcados">Enmarcados</a></li>
+                        <li><a class="botonInicio" href="/Producto">Servicios Fotográficos</a></li>
+                    </div>
+                </div>
+                    
+                <div class="menu-derecha">
+                    <li><a class="botonInicio" href="/Soporte">Soporte</a></li>
                 
-             <nav class="buscador">
+                    <button class="buscador" type="submit"><i class="fa fa-search"></i></button>
                     
-                    <button type="submit"><i class="fa fa-search"></i></button>
-                </nav>
-                <nav class="carrito">
-                    
-                    <button type="submit"><i class="fas fa-shopping-cart"></i></button>
-                </nav>
-                <nav class="perfil">
-                    
-                    <button type="submit"><i class="far fa-user-circle"></i></button>
-                </nav>
-                <nav class="menu-hamburguesa">
-                    
-                    <button type="submit"><i class="fas fa-bars "></i></button>
-                </nav>
-               
-        </div>
+                    <button class="carrito" type="submit"><i class="fas fa-shopping-cart"></i></button>
+              
+                    <button class="perfil"><i class="far fa-user-circle"></i></button>
+    
+                    <button class="menu-hamburguesa" type="submit"><i class="fas fa-bars "></i></button>
+                </div>
+            </div>
+        </nav>
+     
+        <div class="RegisterLogin">
+            <div class="ButtonLogin"><a href="/login">Login</a></div>
 
+            <div class="ButtonRegister"><a href="/register">Registro</a></div>
+       </div>
+        
     </header>
 
     <main>
