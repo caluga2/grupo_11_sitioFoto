@@ -81,21 +81,21 @@ rel="stylesheet" />
         <form class="RegisterFormulario" action="/">
         <p>
             <label>Tu nombre</label>
-            <input type="text" name="nombre" placeholder="Nombre y Apellido">
+            <input type="text" name="nombre" placeholder="Nombre y Apellido" required>
         </p>
       
         <p>
             <label>Correo electrónico</label>
-            <input type="email" name="email">
+            <input type="email" name="email" required>
         </p>
         
         <p>
             <label>Contraseña</label>
-            <input type="password" name="contrasena" placeholder="Como mínimo 6 caracteres"/>
+            <input type="password" name="contrasena" placeholder="Como mínimo 6 caracteres" required/>
         </p>
         <p>
             <label>Vuelve a introducir la contraseña</label>
-            <input type="password" name="contrasena"/>
+            <input type="password" name="contrasena" required/>
         </p>
        
             <button class="RegisterButton" type="submit">Continuar</button>
