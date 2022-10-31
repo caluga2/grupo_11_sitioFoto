@@ -83,6 +83,9 @@ display: none;
   padding-top: 15%;
   margin-bottom: 10%;
 }
+.LoginFormulario {
+  width: 100%;
+}
 
 .LoginFormulario p{
   display: flex;
@@ -106,12 +109,13 @@ display: none;
   text-decoration: none;
 }
 .LoginFormulario p input {
-  height: 25px;
+  height: 5vw;
+  width: 96%;
 }
 .LoginButton{
   margin-bottom: 25%;
   width: 90%;
-  height: 30px;
+  height: 5vw;
   background-color: #2049EB;
   color: white;
   border-style: none;
@@ -147,8 +151,11 @@ display: none;
   padding: 5%;
   padding-top: 15%;
 }
+
 .RegisterMain h2{
   margin-left: 5%;
+  width: 100%;
+  text-align: left;
 }
 .RegisterFormulario a {
   text-align: center;
@@ -170,7 +177,7 @@ display: none;
 }
 .RegisterFormulario p input {
   height: 25px;
-  width: 96%;
+  width: 100%;
 }
 .RegisterButton{
   margin-bottom: 10%;
@@ -271,6 +278,8 @@ display: none;
 .BotonCompras{
  position: center;
 }
+
+
 }
 
 /*Desktop*/
@@ -337,5 +346,63 @@ display: none;
     display: table-cell;
 	vertical-align: middle;
   }
+  /*----------------------------------INICIA LOGIN MEDIA QUERY---------------------------------*/
+ 
+  .LoginMain{
+    flex-basis: 600px;
+    margin-top: 20px;
+    margin-bottom: 30px;
+  }
+  
+  .LoginFormulario {
+    font-size:x-large;
+  }
+  
+  .LoginFormulario p input {
+    height: 40px;
+  }
+  .LoginButton{
+    height: 40px;
+    font-size: x-large;
+  }
+  .LoginFormulario p{
+    margin-bottom: 10px;
+  }
+
+/*----------------------------------TERMINA LOGIN MEDIA QUERY---------------------------------*/
+
+/*----------------------------------INICIA REGISTER MEDIA QUERY---------------------------------*/
+
+.RegisterCajaMain{
+  flex-basis: 25px;
+}
+.RegisterMain{
+  margin-top: 3vw;
+  flex-wrap: wrap;
+  width: 600px;
+}
+
+.RegisterFormulario {
+  font-size:large;
+}
+
+.RegisterFormulario p input {
+  height: 40px;
+  width: 100%;
+}
+.RegisterButton{
+  height: 40px;
+  width: 90%;
+  font-size: large;
+  margin-top: 3%;
+}
+
+
+
+
+
+
+
+/*----------------------------------TERMINA REGISTER MEDIA QUERY---------------------------------*/
 
 }
