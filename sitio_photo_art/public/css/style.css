@@ -19,7 +19,7 @@
 }
 
 .link-logo{
-  width: 50%;
+  width: 80%;
   display: flex;
   justify-content: center;
 }
@@ -30,7 +30,7 @@
 
 .menu-izquierda{
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   width: 90%;
   align-items: center;
 }
@@ -51,6 +51,7 @@
 .logo {
   width: 100%;
 }
+
 .botonInicio {
   text-decoration: none;
   color: #222222;
@@ -167,13 +168,10 @@
   
 }
 
-
-
-
-
 /*----------------------------------TERMINA LOGIN---------------------------------*/
 
 /*----------------------------------INICIA REGISTER---------------------------------*/
+
 .RegisterCajaMain {
   display: flex;
   justify-content: center;
@@ -272,6 +270,132 @@
 }
 
 /*----------------------------------TERMINA HOME---------------------------------*/
+
+/*----------------------------------INICIA CARRITO---------------------------------*/
+
+.back-carrito{
+  position: relative;
+  top: 10px;
+  left: 15px;
+  color: #888888;
+}
+
+.fa-chevron-left{
+  padding-right: 10px;
+}
+
+.producto-carrito{
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  top: 1rem;
+  margin: 10px 15px 25px 15px;
+  border-bottom: solid #888888;
+}
+
+.description-foto-carrito{
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+
+.descripcion-carrito{
+  position: relative;
+  width: 60%;
+  padding-bottom: 1rem;
+}
+
+.descripcion-carrito h4{
+  font-size: 1.3rem;
+  padding-bottom: 0.5rem;
+}
+
+.descripcion-carrito p{
+  font-size: 1rem;
+  padding-bottom: 0.5rem;
+}
+
+.foto-producto-carrito{
+  width: 60%;
+  padding-left: 5rem;
+  padding-bottom: 1rem;
+}
+
+.foto-producto-carrito img{
+  width: 100%;
+  max-width: 12rem;
+}
+
+.precio-cantidad-carrito{
+  display: flex;
+  position: relative;
+  flex-direction: row;
+  top: 1rem;
+  padding-bottom: 2rem;
+  width: 100%;
+}
+
+.cantidad-carrito{
+  display: flex;
+  flex-direction: row;
+  width: 80%;
+}
+
+.cantidad-carrito p{
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.cantidad-carrito div{
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+  border: solid #222222;
+}
+
+.precio-carrito{
+  font-size: 1.1rem;
+  font-weight: 800;
+}
+
+.entrega-carrito{
+  position: relative;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  top: 1rem;
+  margin: 50px 15px 25px 15px;
+  border-bottom: solid #888888;
+}
+
+.entrega-carrito h4{
+  font-size: 1.2rem;
+  padding-bottom: 0.5rem;
+}
+
+.envio-carrito{
+  display: flex;
+  flex-direction: row;
+  padding-bottom: 1rem;
+}
+
+.envio-carrito p {
+  display: flex;
+  width: 75%;
+  align-items: center;
+}
+
+.envio-carrito div {
+  display: flex;
+  width: 25%;
+  padding: 1rem;
+  border: solid 3px #222222;
+  border-radius: 10px;
+  align-items: center;
+  justify-content: center;
+}
+
+/*----------------------------------TERMINA CARRITO---------------------------------*/
+
 /*----------------------------------COMIENZA PRODUCTO---------------------------------*/
 .mainProducto{
   background-color:#888888;
@@ -280,6 +404,7 @@
 /* Tablet*/
 
 @media (min-width: 361px) {
+
   .logo {
     width: 100%;
   }
@@ -417,6 +542,11 @@ padding-bottom: 6%;
 /*Desktop*/
 
 @media (min-width: 761px) {
+
+  .link-logo{
+    width: 50%;
+  }
+
   .logo {
     width: 80%;
   }
