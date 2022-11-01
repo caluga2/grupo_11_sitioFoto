@@ -398,8 +398,32 @@
 
 /*----------------------------------COMIENZA PRODUCTO---------------------------------*/
 .mainProducto{
-  background-color:#888888;
+  background-color:#ece6e6;
   
+}
+.opcionesProducto1{
+  text-decoration: none;
+  color: #222222;
+  display: inline-block;
+  list-style: none;
+}
+.seguir{
+  background-color: #2049EB;
+  color: white;
+  border-radius: 3px;
+  border-style: none;
+}
+.Comprar{
+  background-color: #2049EB;
+  color: white;
+  border-radius: 3px;
+  border-style: none;
+}
+.Comprar2{
+  background-color: black;
+  color: white;
+  border-radius: 3px;
+  border-style: none;
 }
 /* Tablet*/
 
@@ -442,7 +466,7 @@
   
  }
  .NombrePoducto h2 {
-  font-size: 80%;
+  font-size: 96%;
   
  }
  .DetallesProducto{
@@ -471,16 +495,19 @@ padding-bottom: 6%;
   display: flex;
   justify-content: space-evenly;
   font-size: 10px;
-  padding-top: 4px;
+  padding-top: 14px;
 }
 .BotonCompras{
   text-align: center;
+  padding-top: 14px;
   padding-bottom: 5%;
 }
 .BotonCompras h5 {
   
   padding-bottom: 5%;
+  
 }
+
 /*----------------------------------INICIA LOGIN MEDIA QUERY TABLET---------------------------------*/
  
 .LoginMain{
@@ -594,5 +621,9 @@ padding-bottom: 6%;
   }
 
    /* codigo Cesar Producto*/
-  
+
+  .imagenPrincipal{
+    width: 60%;
+
+  }
 }
