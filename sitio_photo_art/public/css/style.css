@@ -106,11 +106,11 @@
   flex-wrap: wrap;
   width: 80%;
   text-align: center;
-  background-color:#888888;
-  border-style: dotted red;
+  background-color:#f7f7f7;
   margin-top: 10%;
   border-style: solid;
-  border-color:black;
+  border-color:#f7f7f7;
+  border-radius: 10px;
 }
 
 
@@ -150,16 +150,17 @@
   text-decoration: none;
 }
 .LoginFormulario p input {
-  height: 5vw;
+  height: 30px;
   width: 96%;
 }
 .LoginButton{
   margin-bottom: 25%;
   width: 90%;
-  height: 5vw;
+  height: 40px;
   background-color: #2049EB;
   color: white;
   border-style: none;
+  border-radius: 50px;
   
 }
 
@@ -181,11 +182,11 @@
   flex-wrap: wrap;
   width: 80%;
   text-align: center;
-  background-color:#888888;
-  border-style: dotted red;
+  background-color:#f7f7f7;
   margin-top: 10%;
   border-style: solid;
-  border-color:black;
+  border-color:#f7f7f7;
+  border-radius: 10px;
 }
 .RegisterMain img{
   width: 100%;
@@ -217,7 +218,7 @@
   width: 100%;
 }
 .RegisterFormulario p input {
-  height: 25px;
+  height: 30px;
   width: 100%;
 }
 .RegisterButton{
@@ -229,6 +230,7 @@
   color: white;
   border-style: none;
   justify-self: center;
+  border-radius: 50px;
   
 }
 
@@ -356,7 +358,7 @@
   height: 30px;
 }
 .LoginButton{
-  height: 30px;
+  height: 40px;
   font-size: medium;
 }
 .LoginFormulario p{
@@ -385,7 +387,7 @@
   width: 100%;
 }
 .RegisterButton{
-  height: 30px;
+  height: 40px;
   width: 90%;
   font-size: medium;
   margin-top: 3%;
