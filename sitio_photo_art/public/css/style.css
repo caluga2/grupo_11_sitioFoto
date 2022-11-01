@@ -269,8 +269,11 @@
 }
 
 /*----------------------------------TERMINA HOME---------------------------------*/
-
-
+/*----------------------------------COMIENZA PRODUCTO---------------------------------*/
+.mainProducto{
+  background-color:#888888;
+  
+}
 /* Tablet*/
 
 @media (min-width: 361px) {
@@ -298,6 +301,7 @@
   }
 
   /* Cesar Detalles de Producto */
+  
  .NombrePoducto{
   display: flex;
   justify-content: space-evenly;
@@ -318,9 +322,11 @@
   justify-content: space-evenly;
   padding-bottom: 4%;
  }
-.ImagenPrincipal{
+.imagenPrincipal{
  
-  position: relative;
+  display:block;
+margin:auto;
+padding-bottom: 6%;
 }
 .MasFotos{
   display: flex;
@@ -340,7 +346,12 @@
   padding-top: 4px;
 }
 .BotonCompras{
- position: center;
+  text-align: center;
+  padding-bottom: 5%;
+}
+.BotonCompras h5 {
+  
+  padding-bottom: 5%;
 }
 /*----------------------------------INICIA LOGIN MEDIA QUERY TABLET---------------------------------*/
  
@@ -450,40 +461,5 @@
   }
 
    /* codigo Cesar Producto*/
-  .NombrePoducto{
-    display: inline-block;
-    position: relative;
-    left:  80%;
-    align-content: center;
-   } 
-   .NombrePoducto h2 {
-    font-size: 20px;
-
-   } 
-   .DetallesProducto{
-    display: block;
-    position: relative;
-    left:  80%;
-    align-content: center;
-   } 
-   .imagenPrincipal{
-    display: inline-block;
-    position: absolute;
-  top: 25%;
-  right: 30%;
-    
-    width: 40%;
-     
-    
-  }
-  .MasFotos{
-    display: table;
-  }
-  .Imagen{
-    width: 60%;
-    padding-bottom: 10%;
-    display: table-cell;
-	vertical-align: middle;
-  }
- 
+  
 }
