@@ -68,10 +68,12 @@
 .buscador {
   position: absolute;
   right: 72px;
+  color: black;
 }
 .carrito {
   position: absolute;
   right: 40px;
+  color: black;
 }
 
 .botonInicio {
@@ -80,6 +82,7 @@
 
 .perfil {
   display: none;
+  color: black;
 }
 
 /*-----------------------------------TERMINA MENU-------------------------------------*/

@@ -19,4 +19,8 @@ app.get('/login',(req,res)=>{
 }); 
 app.get('/Producto',(req,res)=>{
     res.sendFile(__dirname+'/views/Producto.html')
-}); 
+});
+
+app.get('/Carrito',(req,res)=>{
+    res.sendFile(__dirname+'/views/Carrito.html')
+});
