@@ -1,0 +1,75 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<%- include ('./partials/head') %>
+
+  <body>
+
+    <%- include ('./partials/header') %>
+
+
+
+
+
+
+
+<main class="Register">
+  <img class="imgLogo2" src="images/img-home-banner.jpg" />
+  <form action="/">
+    <p>
+      <label>Nombre de producto</label>
+      <input type="text" name="nombre" placeholder="Ingresá el nombre del producto" required>
+    </p>
+    <p>
+      <label>Descripción</label>
+      <textarea name="usuario"> Ingresá la descripcion del producto>
+      </textarea>
+    </p>
+    
+
+    <p>
+      <label><input type="radio" name="perfil" value="Comprador">Comprador</label>
+      <label><input type="radio" name="perfil" value="Vendedor">Vendedor</label>
+    </p>
+    <p>
+      <label type="text">Intereses:</label>
+    </p>
+    <p>
+      <label><input type="checkbox" name="intereses" value="Electro">Electro</label>
+    </p>
+    <p>
+      <label><input type="checkbox" name="intereses" value="Moda">Moda</label>
+    </p>
+    <p>
+      <label><input type="checkbox" name="intereses" value="Hogar">Hogar</label>
+    </p>
+    <p>
+      <label><input type="checkbox" name="intereses" value="Jugueteria">Jugueteria</label>
+    </p>
+    <p>
+      <label><input type="checkbox" name="intereses" value="Vida sana">Vida sana</label>
+    </p>
+    <p>
+      <label>Foto de usuario:</label>
+      <input type="file" name="foto" accept=".jpg" multiple />
+    </p>
+    <p>
+      <label>Contraseña:</label>
+      <input type="password" name="contrasena" required />
+    </p>
+    <p>
+      <label>Repetir contraseña:</label>
+      <input type="password" name="contrasena" required />
+    </p>
+    <p>
+      <button type="submit">Enviar</button>
+    </p>
+    <p>
+      <button type="reset">Cancelar</button>
+    </p>
+  </form>
+
+</main>
+
+  </body>
+</html>
