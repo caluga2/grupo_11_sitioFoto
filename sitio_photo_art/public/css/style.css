@@ -425,6 +425,40 @@
   border-radius: 3px;
   border-style: none;
 }
+/*----------------------------------TERMINA PRODUCTO---------------------------------*/
+
+/*----------------------------------COMIENZA PRODUCT ADD---------------------------------*/
+
+.main_productAdd{
+  display: flex;
+  justify-content: center;
+}
+
+.caja_productAdd{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 80%;
+  text-align: center;
+  background-color:#f7f7f7;
+  margin-top: 10%;
+  border-style: solid;
+  border-color:#f7f7f7;
+  border-radius: 10px;
+}
+
+.p_productAdd{
+  display: flex;
+  justify-content: left;
+  flex-wrap: wrap;
+  margin-left: 5%;
+  margin-right: 5%;
+  margin-bottom: 10%;
+  font-size: 1rem;
+}
+
+/*----------------------------------TERMINA PRODUCT ADD---------------------------------*/
+
 /* Tablet*/
 
 @media (min-width: 361px) {

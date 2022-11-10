@@ -8,49 +8,50 @@
     <%- include ('./partials/header') %>
 
 
-<main class="productAdd">
+<main class="main_productAdd">
+  <div class="caja_productAdd">
+    <form action="/">
+      <p  class="p_productAdd">
+        <img class="img_productAdd" src="#" />
+        <input type="file" name="foto" accept=".jpg" multiple />
+      </p>
 
-  <form action="/">
-    <p  class="p_productAdd">
-      <img class="img_productAdd" src="#" />
-      <input type="file" name="foto" accept=".jpg" multiple />
-    </p>
-
-    <p class="p_productAdd">
-      <label>Nombre de producto</label>
-      <input type="text" name="nombre" placeholder="Ingresá el nombre del producto" required>
-    </p>
-    <p class="p_productAdd">
-      <label>Descripción</label>
-      <textarea name="descripción"> Ingresá la descripcion del producto
-      </textarea>
-    </p>
-  
-    <p class="p_productAdd">
-      <label><input type="radio" name="tipoproducto" value="Prints">Prints</label>
-      <label><input type="radio" name="tipoproducto" value="Enmarcados">Enmarcados</label>
-      <label><input type="radio" name="tipoproducto" value="Servicios Fotográficos">Servicios Fotográficos</label>
-    </p>
-
-    <p class="p_productAdd">
-      <label><input type="radio" name="tamañoproducto" value="Pequeño">Pequeño A5</label>
-      <label><input type="radio" name="tamañoproducto" value="Medio">Medio 20x30</label>
-      <label><input type="radio" name="tamañoproducto" value="Grande">Grande 30x45</label>
-      <label><input type="radio" name="tamañoproducto" value="Master">Master 50x70</label>
-    </p>
-
-    <p class="p_productAdd">
-      <label type="text">Precio:</label>
-      <input type="text" name="precio" placeholder="Ingresá el precio del producto" required>
-    </p>
+      <p class="p_productAdd">
+        <label>Nombre de producto</label>
+        <input type="text" name="nombre" placeholder="Ingresá el nombre del producto" required>
+      </p>
+      <p class="p_productAdd">
+        <label>Descripción</label>
+        <textarea name="descripción"> Ingresá la descripcion del producto
+        </textarea>
+      </p>
     
-    <p class="p_productAdd">
-      <button type="submit">Enviar</button>
-    </p>
-    <p class="p_productAdd">
-      <button type="reset">Cancelar</button>
-    </p>
-  </form>
+      <p class="p_productAdd">
+        <label><input type="radio" name="tipoproducto" value="Prints">Prints</label>
+        <label><input type="radio" name="tipoproducto" value="Enmarcados">Enmarcados</label>
+        <label><input type="radio" name="tipoproducto" value="Servicios Fotográficos">Servicios Fotográficos</label>
+      </p>
+
+      <p class="p_productAdd">
+        <label><input type="radio" name="tamañoproducto" value="Pequeño">Pequeño A5</label>
+        <label><input type="radio" name="tamañoproducto" value="Medio">Medio 20x30</label>
+        <label><input type="radio" name="tamañoproducto" value="Grande">Grande 30x45</label>
+        <label><input type="radio" name="tamañoproducto" value="Master">Master 50x70</label>
+      </p>
+
+      <p class="p_productAdd">
+        <label type="text">Precio:</label>
+        <input type="text" name="precio" placeholder="Ingresá el precio del producto" required>
+      </p>
+      
+      <p class="p_productAdd">
+        <button type="submit">Enviar</button>
+      </p>
+      <p class="p_productAdd">
+        <button type="reset">Cancelar</button>
+      </p>
+    </form>
+  </div>
 
 </main>
 
