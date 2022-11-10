@@ -596,8 +596,12 @@ padding-bottom: 6%;
 
 /*----------------------------------TERMINA REGISTER MEDIA QUERY TABLET---------------------------------*/
 
+/*----------------------------------FOOTER INICIO CESAR ---------------------------------*/
 
-
+footer {
+  background-color: #888888;
+text-align: center;
+}
 }
 
 /*Desktop*/
