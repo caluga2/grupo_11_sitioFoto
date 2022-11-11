@@ -602,6 +602,16 @@ footer {
   background-color: #888888;
 text-align: center;
 }
+.iconosFooter{
+  display: flex;
+  justify-content:space-evenly ;
+
+}
+.iconosFooter a{
+ color: #222222;
+font-size: 25px;
+}
+
 }
 
 /*Desktop*/
@@ -664,4 +674,29 @@ text-align: center;
     width: 60%;
 
   }
+  /*----------------------------------FOOTER INICIO CESAR ---------------------------------*/
+
+footer {
+  display: flex;
+  justify-content:space-around ;
+  background-color: #888888;
+ padding-top: 5%;
+ position: relative;
+}
+
+.iconosFooter a{
+ color: #222222;
+font-size: 30px;
+margin: 80px;
+}
+footer p {
+  font-size: 20px;
+}
+.iconosFooter {
+position:absolute;
+top:0;
+
+
+ }
+
 }
