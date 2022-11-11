@@ -686,7 +686,7 @@ footer {
 
 .iconosFooter a{
  color: #222222;
-font-size: 30px;
+font-size: 40px;
 margin: 80px;
 }
 footer p {
@@ -697,6 +697,11 @@ position:absolute;
 top:0;
 
 
+ }
+ footer p{
+  
+ font-size: 25px;
+ 
  }
 
 }
