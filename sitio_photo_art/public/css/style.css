@@ -6,7 +6,7 @@
 }
 
 /*-----------------------------------INICIA MENU-------------------------------------*/
-
+/*****Modif. ariel 12_11_22***/
 .Inicio {
   display: flex;
   justify-content: space-between;
@@ -18,31 +18,51 @@
   padding: 10px;
 }
 
-.link-logo{
-  width: 80%;
+.link-logo {
+  width: 280px;
   display: flex;
   justify-content: center;
 }
 
-.link-logo a{
+.logo {
+  width: 80%;
+}
+
+.link-logo a {
   width: auto;
 }
 
-.menu-izquierda{
+.menu-izquierda {
   display: flex;
   justify-content: space-around;
-  width: 90%;
+  /*width: 90%;*/
   align-items: center;
 }
 
-.menu-derecha{
-  width: 15%;
+.menu-derecha {
   display: flex;
   justify-content: space-between;
-  align-items: center;
 }
 
-.paginas-menu{
+.menu-derecha ul {
+  display: flex;
+  justify-content: space-around;
+  align-content: center;
+}
+
+.menu-derecha ul li {
+  margin-left: 5px;
+}
+
+.menu-derecha ul li a {
+  margin-left: 20px;
+}
+
+.menu-derecha ul li i {
+  margin-left: 20px;
+}
+
+.paginas-menu {
   display: flex;
   width: 80%;
   justify-content: space-between;
@@ -86,43 +106,72 @@
   color: black;
 }
 
-/*-----------------------------------TERMINA MENU-------------------------------------*/
+.RegisterLogin {
+  display: flex;
+  justify-content: end;
+  padding: 0px;
+}
 
-.RegisterLogin{
-    width: 50%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px;
-    position: relative;
-    left: 50%;
-    color: #222222;
-  }
+.RegisterLogin div {
+  margin: 4px 10px;
+}
+
+.RegisterLogin a {
+  text-decoration: none;
+  color: #222222;
+}
+
+.RegisterLogin a:visited {
+  color: #888888;
+}
+.RegisterLogin {
+  display: flex;
+  justify-content: end;
+  padding: 0px;
+}
+
+.RegisterLogin div {
+  margin: 4px 10px;
+}
+
+.RegisterLogin a {
+  text-decoration: none;
+  color: #222222;
+}
+
+.RegisterLogin a:visited {
+  color: #888888;
+}
+
+a:hover {
+  font-weight: 600;
+}
+
+/*-----------------------------------TERMINA MENU-------------------------------------*/
 
 /*-----------------------------------INICIA LOGIN-------------------------------------*/
 .LoginCajaMain {
   display: flex;
   justify-content: center;
-  }
-.LoginMain{
+}
+.LoginMain {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
   width: 80%;
   text-align: center;
-  background-color:#f7f7f7;
+  background-color: #f7f7f7;
   margin-top: 10%;
   border-style: solid;
-  border-color:#f7f7f7;
+  border-color: #f7f7f7;
   border-radius: 10px;
 }
-
 
 /*.LoginMain .tituloFormLogin{
   display: block;
 }
 */
-.LoginMain img{
+.LoginMain img {
   width: 100%;
   padding: 5%;
   padding-top: 15%;
@@ -132,7 +181,7 @@
   width: 100%;
 }
 
-.LoginFormulario p{
+.LoginFormulario p {
   display: flex;
   justify-content: left;
   flex-wrap: wrap;
@@ -140,7 +189,7 @@
   margin-right: 5%;
   margin-bottom: 10%;
 }
-.LoginFormulario p label{
+.LoginFormulario p label {
   text-align: left;
   width: 100%;
 }
@@ -150,22 +199,21 @@
   width: auto;
   margin-bottom: 10%;
   text-align: center;
-  color: #2049EB;
+  color: #2049eb;
   text-decoration: none;
 }
 .LoginFormulario p input {
   height: 30px;
   width: 96%;
 }
-.LoginButton{
+.LoginButton {
   margin-bottom: 25%;
   width: 90%;
   height: 40px;
-  background-color: #2049EB;
+  background-color: #2049eb;
   color: white;
   border-style: none;
   border-radius: 50px;
-  
 }
 
 /*----------------------------------TERMINA LOGIN---------------------------------*/
@@ -175,46 +223,44 @@
 .RegisterCajaMain {
   display: flex;
   justify-content: center;
-  
-  }
-.RegisterMain{
+}
+.RegisterMain {
   display: flex;
   justify-content: left;
   flex-wrap: wrap;
   width: 80%;
   text-align: center;
-  background-color:#f7f7f7;
+  background-color: #f7f7f7;
   margin-top: 10%;
   border-style: solid;
-  border-color:#f7f7f7;
+  border-color: #f7f7f7;
   border-radius: 10px;
 }
-.RegisterMain img{
+.RegisterMain img {
   width: 100%;
   padding: 5%;
   padding-top: 15%;
 }
 
-.RegisterMain h2{
+.RegisterMain h2 {
   margin-left: 5%;
   width: 100%;
   text-align: left;
 }
 .RegisterFormulario a {
   text-align: center;
-  color: #2049EB;
+  color: #2049eb;
   text-decoration: none;
 }
-.RegisterFormulario p{
+.RegisterFormulario p {
   display: flex;
   justify-content: left;
   flex-wrap: wrap;
   margin-left: 5%;
   margin-right: 5%;
   margin-bottom: 3%;
-  
 }
-.RegisterFormulario p label{
+.RegisterFormulario p label {
   text-align: left;
   width: 100%;
 }
@@ -222,17 +268,16 @@
   height: 30px;
   width: 100%;
 }
-.RegisterButton{
+.RegisterButton {
   margin-bottom: 10%;
   margin-top: 15%;
   width: 60%;
   height: 30px;
-  background-color: #2049EB;
+  background-color: #2049eb;
   color: white;
   border-style: none;
   justify-self: center;
   border-radius: 50px;
-  
 }
 
 /*----------------------------------TERMINA REGISTER---------------------------------*/
@@ -249,23 +294,19 @@
 }
 */
 
-.RegisterLogin a:visited{
-  color: #888888;
-}
-
 /*----------------------------------INICIA HOME---------------------------------*/
 
 /* Cambios Carolina 23.10 - Home Carousel - in progress */
 
-.Carousel img{
+.Carousel img {
   width: 100%;
 }
 
-.img1Home{
+.img1Home {
   display: none;
 }
 
-.img1HomeMobile{
+.img1HomeMobile {
   display: flex;
 }
 
@@ -273,18 +314,18 @@
 
 /*----------------------------------INICIA CARRITO---------------------------------*/
 
-.back-carrito{
+.back-carrito {
   position: relative;
   top: 10px;
   left: 15px;
   color: #888888;
 }
 
-.fa-chevron-left{
+.fa-chevron-left {
   padding-right: 10px;
 }
 
-.producto-carrito{
+.producto-carrito {
   position: relative;
   display: flex;
   flex-direction: column;
@@ -293,40 +334,40 @@
   border-bottom: solid #888888;
 }
 
-.description-foto-carrito{
+.description-foto-carrito {
   display: flex;
   flex-direction: row;
   width: 100%;
 }
 
-.descripcion-carrito{
+.descripcion-carrito {
   position: relative;
   width: 60%;
   padding-bottom: 1rem;
 }
 
-.descripcion-carrito h4{
+.descripcion-carrito h4 {
   font-size: 1.3rem;
   padding-bottom: 0.5rem;
 }
 
-.descripcion-carrito p{
+.descripcion-carrito p {
   font-size: 1rem;
   padding-bottom: 0.5rem;
 }
 
-.foto-producto-carrito{
+.foto-producto-carrito {
   width: 60%;
   padding-left: 5rem;
   padding-bottom: 1rem;
 }
 
-.foto-producto-carrito img{
+.foto-producto-carrito img {
   width: 100%;
   max-width: 12rem;
 }
 
-.precio-cantidad-carrito{
+.precio-cantidad-carrito {
   display: flex;
   position: relative;
   flex-direction: row;
@@ -335,29 +376,29 @@
   width: 100%;
 }
 
-.cantidad-carrito{
+.cantidad-carrito {
   display: flex;
   flex-direction: row;
   width: 80%;
 }
 
-.cantidad-carrito p{
+.cantidad-carrito p {
   padding-left: 1rem;
   padding-right: 1rem;
 }
 
-.cantidad-carrito div{
+.cantidad-carrito div {
   padding-left: 0.5rem;
   padding-right: 0.5rem;
   border: solid #222222;
 }
 
-.precio-carrito{
+.precio-carrito {
   font-size: 1.1rem;
   font-weight: 800;
 }
 
-.entrega-carrito{
+.entrega-carrito {
   position: relative;
   display: flex;
   justify-content: space-around;
@@ -367,12 +408,12 @@
   border-bottom: solid #888888;
 }
 
-.entrega-carrito h4{
+.entrega-carrito h4 {
   font-size: 1.2rem;
   padding-bottom: 0.5rem;
 }
 
-.envio-carrito{
+.envio-carrito {
   display: flex;
   flex-direction: row;
   padding-bottom: 1rem;
@@ -397,29 +438,28 @@
 /*----------------------------------TERMINA CARRITO---------------------------------*/
 
 /*----------------------------------COMIENZA PRODUCTO---------------------------------*/
-.mainProducto{
-  background-color:#ece6e6;
-  
+.mainProducto {
+  background-color: #ece6e6;
 }
-.opcionesProducto1{
+.opcionesProducto1 {
   text-decoration: none;
   color: #222222;
   display: inline-block;
   list-style: none;
 }
-.seguir{
-  background-color: #2049EB;
+.seguir {
+  background-color: #2049eb;
   color: white;
   border-radius: 3px;
   border-style: none;
 }
-.Comprar{
-  background-color: #2049EB;
+.Comprar {
+  background-color: #2049eb;
   color: white;
   border-radius: 3px;
   border-style: none;
 }
-.Comprar2{
+.Comprar2 {
   background-color: black;
   color: white;
   border-radius: 3px;
@@ -427,209 +467,319 @@
 }
 /*----------------------------------TERMINA PRODUCTO---------------------------------*/
 
-/*----------------------------------COMIENZA PRODUCT ADD---------------------------------*/
-
-.main_productAdd{
-  display: flex;
-  justify-content: center;
+/*----------------------------------COMIENZA PRODUCT ADD ariel---------------------------------*/
+.main_productAdd {
+  /*background-color:#5242c9;*/
+  margin: 0vw 1vw;
 }
 
-.caja_productAdd{
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  width: 80%;
+.caja_productAdd {
+  /*background-color:#bb0101;*/
+  margin: auto;
+  width: 300px;
+}
+
+.caja_productAdd,
+h3 {
   text-align: center;
-  background-color:#f7f7f7;
-  margin-top: 10%;
-  border-style: solid;
-  border-color:#f7f7f7;
+}
+
+.main_form_productAdd {
+  background-color: #f7f7f7;
+  width: 300px;
+  margin: auto;
   border-radius: 10px;
+  padding: 10px 0;
 }
 
-.p_productAdd{
+/********* subir archivo *******/
+
+.cont_subirArchivo_productAdd{
   display: flex;
-  justify-content: left;
-  flex-wrap: wrap;
-  margin-left: 5%;
-  margin-right: 5%;
-  margin-bottom: 10%;
-  font-size: 1rem;
+  width: 95%;
+  height: 60px;
+  margin: auto;
+  align-items: center;
+  justify-content: center; 
 }
 
+.caja_productAdd img {
+  display: block;
+  height: 40px;
+    
+}
+
+div #texto_boton_subir_productAdd {
+  color: white;
+  text-align: center;
+  font-size: small;
+  line-height: 30px;  
+}
+
+div #div_file_productAdd {
+  position: relative;
+  background-color: #2049eb;
+  width: 115px;
+  height: 30px;
+  border-radius: 50px;
+  
+ 
+}
+
+input#InputBoton_subirFoto_productAdd {
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+}
+/**********Termina subir Archivo*********/
+
+.titulo_productAdd {
+  font-weight: 600;
+}
+
+.main_form_productAdd .text_productAdd {
+  width: 95%;
+  border-radius: 5px;
+  padding: 5px;
+}
+
+.main_form_productAdd textarea {
+  width: 95%;
+  border-radius: 5px;
+  padding: 5px;
+  resize: none;
+}
+
+.options_productAdd {
+  /*background-color: #5242c9;*/
+  display: flex;
+}
+
+.options_productAdd h4 {
+  margin-bottom: 15px;
+}
+
+.option_left_productAdd {
+  /*background-color: chartreuse;*/
+  display: flex;
+  flex-direction: column;
+  text-align: start;
+  width: 50%;
+  padding: 10px;
+}
+
+.option_right_productAdd {
+  /*background-color: rgb(193, 127, 15);*/
+  display: flex;
+  flex-direction: column;
+  text-align: start;
+  width: 50%;
+  padding: 10px;
+}
+
+.magen_top_productAdd {
+  margin: 10px;
+}
+
+.precio_text_productAdd {
+  width: 70%;
+  border-radius: 5px;
+  padding: 5px;
+}
+
+.Login_Button_productAdd {
+  margin-bottom: 0%;
+  width: 30%;
+  height: 40px;
+  background-color: #2049eb;
+  color: white;
+  line-height: 10px;
+  border-style: none;
+  border-radius: 50px;
+}
 /*----------------------------------TERMINA PRODUCT ADD---------------------------------*/
+
+/*----------------------------------FOOTER INICIO CESAR ---------------------------------*/
+/****** Modf ariel 12_11_22 *********/
+.main-footer {
+  margin-top: 20px;
+  background-color: #ece6e6;
+  box-shadow: 1px 1px 10px #313131;
+  align-items: center;
+}
+
+.iconosFooter {
+  text-align: center;
+}
+
+.iconosFooter i {
+  justify-content: center;
+  margin: 3px;
+  font-size: 20px;
+  color: #313131;
+}
+
+.main-footer p {
+  display: flex;
+  color: #222222;
+  justify-content: center;
+  font-size: 16px;
+}
 
 /* Tablet*/
 
 @media (min-width: 361px) {
-
-  .logo {
+  /*.logo { 
     width: 100%;
+  }*/
+
+  .link-logo {
+    width: 319px;
   }
 
-  .menu-izquierda{
+  .menu-izquierda {
     display: flex;
     justify-content: space-between;
-    width: 70%;
+    /*width: 75%;*/
     align-items: center;
   }
 
-  .Carousel img{
+  .Carousel img {
     width: 100%;
   }
 
-  .img1HomeMobile{
+  .img1HomeMobile {
     display: flex;
   }
 
-  .img1Home{
+  .img1Home {
     display: none;
   }
 
   /* Cesar Detalles de Producto */
-  
- .NombrePoducto{
-  display: flex;
-  justify-content: space-evenly;
-  padding-bottom: 4%;
-  padding-top: 4%;
-  
- }
- .NombrePoducto i{
-  margin-left: 10%;
-  
- }
- .NombrePoducto h2 {
-  font-size: 96%;
-  
- }
- .DetallesProducto{
-  display: flex;
-  justify-content: space-evenly;
-  padding-bottom: 4%;
- }
-.imagenPrincipal{
- 
-  display:block;
-margin:auto;
-padding-bottom: 6%;
-}
-.MasFotos{
-  display: flex;
-  justify-content: space-evenly;
-  
-}
-.Imagen{
-  width: 70px;
-  height: 70px;
-  padding: 0%;
-  margin: 0%;
-}
-.opcionesProducto{
-  display: flex;
-  justify-content: space-evenly;
-  font-size: 10px;
-  padding-top: 14px;
-}
-.BotonCompras{
-  text-align: center;
-  padding-top: 14px;
-  padding-bottom: 5%;
-}
-.BotonCompras h5 {
-  
-  padding-bottom: 5%;
-  
-}
 
-/*----------------------------------INICIA LOGIN MEDIA QUERY TABLET---------------------------------*/
- 
-.LoginMain{
-  flex-basis: 300px;
-  margin-top: 5px;
-  margin-bottom: 20px;
-}
+  .NombrePoducto {
+    display: flex;
+    justify-content: space-evenly;
+    padding-bottom: 4%;
+    padding-top: 4%;
+  }
+  .NombrePoducto i {
+    margin-left: 10%;
+  }
+  .NombrePoducto h2 {
+    font-size: 96%;
+  }
+  .DetallesProducto {
+    display: flex;
+    justify-content: space-evenly;
+    padding-bottom: 4%;
+  }
+  .imagenPrincipal {
+    display: block;
+    margin: auto;
+    padding-bottom: 6%;
+  }
+  .MasFotos {
+    display: flex;
+    justify-content: space-evenly;
+  }
+  .Imagen {
+    width: 70px;
+    height: 70px;
+    padding: 0%;
+    margin: 0%;
+  }
+  .opcionesProducto {
+    display: flex;
+    justify-content: space-evenly;
+    font-size: 10px;
+    padding-top: 14px;
+  }
+  .BotonCompras {
+    text-align: center;
+    padding-top: 14px;
+    padding-bottom: 5%;
+  }
+  .BotonCompras h5 {
+    padding-bottom: 5%;
+  }
 
-.LoginFormulario {
-  font-size:medium;
-}
+  /*----------------------------------INICIA LOGIN MEDIA QUERY TABLET---------------------------------*/
 
-.LoginFormulario p input {
-  height: 30px;
-}
-.LoginButton{
-  height: 40px;
-  font-size: medium;
-}
-.LoginFormulario p{
-  margin-bottom: 10px;
-}
+  .LoginMain {
+    flex-basis: 300px;
+    margin-top: 5px;
+    margin-bottom: 20px;
+  }
 
-/*----------------------------------TERMINA LOGIN MEDIA QUERY TABLET---------------------------------*/
+  .LoginFormulario {
+    font-size: medium;
+  }
 
-/*----------------------------------INICIA REGISTER MEDIA QUERY TABLET---------------------------------*/
-.RegisterCajaMain{
-  flex-basis: 25px;
-}
-.RegisterMain{
-  margin-top: 0;
-  flex-wrap: wrap;
-  width: 300px;
-}
+  .LoginFormulario p input {
+    height: 30px;
+  }
+  .LoginButton {
+    height: 40px;
+    font-size: medium;
+  }
+  .LoginFormulario p {
+    margin-bottom: 10px;
+  }
 
-.RegisterFormulario {
-  font-size:medium;
-}
+  /*----------------------------------TERMINA LOGIN MEDIA QUERY TABLET---------------------------------*/
 
+  /*----------------------------------INICIA REGISTER MEDIA QUERY TABLET---------------------------------*/
+  .RegisterCajaMain {
+    flex-basis: 25px;
+  }
+  .RegisterMain {
+    margin-top: 0;
+    flex-wrap: wrap;
+    width: 300px;
+  }
 
-.RegisterFormulario p input {
-  height: 30px;
-  width: 100%;
-}
-.RegisterButton{
-  height: 40px;
-  width: 90%;
-  font-size: medium;
-  margin-top: 3%;
-}
+  .RegisterFormulario {
+    font-size: medium;
+  }
 
+  .RegisterFormulario p input {
+    height: 30px;
+    width: 100%;
+  }
+  .RegisterButton {
+    height: 40px;
+    width: 90%;
+    font-size: medium;
+    margin-top: 3%;
+  }
 
-/*----------------------------------TERMINA REGISTER MEDIA QUERY TABLET---------------------------------*/
+  /*----------------------------------TERMINA REGISTER MEDIA QUERY TABLET---------------------------------*/
 
-/*----------------------------------FOOTER INICIO CESAR ---------------------------------*/
-
-footer {
-  background-color: #888888;
-text-align: center;
-}
-.iconosFooter{
-  display: flex;
-  justify-content:space-evenly ;
-
-}
-.iconosFooter a{
- color: #222222;
-font-size: 25px;
-}
-
-}
+  /*----------------------------------FOOTER INICIO CESAR ---------------------------------*/
+} /*********************************************** FIN @media 361 *****************************************************/
 
 /*Desktop*/
 
-@media (min-width: 761px) {
-
-  .link-logo{
-    width: 50%;
+@media (min-width: 801px) {
+  .link-logo {
+    width: 280px;
   }
 
   .logo {
     width: 80%;
   }
 
-  .menu-izquierda{
+  .menu-izquierda {
     display: flex;
     justify-content: space-between;
-    width: 70%;
+    /*width: 70%;*/
     align-items: center;
   }
 
@@ -645,63 +795,48 @@ font-size: 25px;
   }
   /* El hover que todavia no funciona
   
-  .Inicio:hover + */.RegisterLogin{
-    width: 20%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px;
-    position: relative;
-    left: 80%;
-    color: #222222;
-  }
+  .Inicio:hover + */
 
-  .Carousel img{
+  .Carousel img {
     width: 100%;
   }
 
-  .img1HomeMobile{
+  .img1HomeMobile {
     display: none;
   }
 
-  .img1Home{
+  .img1Home {
     display: flex;
   }
 
-   /* codigo Cesar Producto*/
+  /* codigo Cesar Producto*/
 
-  .imagenPrincipal{
+  .imagenPrincipal {
     width: 60%;
-
   }
-  /*----------------------------------FOOTER INICIO CESAR ---------------------------------*/
 
-footer {
-  display: flex;
-  justify-content:space-around ;
-  background-color: #888888;
- padding-top: 5%;
- position: relative;
-}
+  /****FOOTER PARA DESKTOP ********/
 
-.iconosFooter a{
- color: #222222;
-font-size: 40px;
-margin: 80px;
-}
-footer p {
-  font-size: 20px;
-}
-.iconosFooter {
-position:absolute;
-top:0;
+  .main-footer {
+    display: flex;
+    margin-top: 20px;
+    background-color: #ece6e6;
+    box-shadow: 1px 1px 10px #313131;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .iconosFooter i {
+    justify-content: center;
+    margin: 10px;
+    font-size: 20px;
+    color: #313131;
+  }
 
 
  }
  footer p{
   
- font-size: 20px;
+ font-size: 25px;
  
  }
-
-}
