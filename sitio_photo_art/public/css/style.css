@@ -829,14 +829,19 @@ input#InputBoton_subirFoto_productAdd {
   .iconosFooter i {
     justify-content: center;
     margin: 10px;
-    font-size: 20px;
+    font-size: 25px;
     color: #313131;
   }
 
-
- }
- footer p{
+  footer p{
+    
   
- font-size: 25px;
- 
+
+    margin-right: 20px;
+    
+    }
+    .main-footer p {
+      font-size: 20px;
+    }
  }
+ 
