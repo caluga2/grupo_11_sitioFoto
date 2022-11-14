@@ -492,39 +492,51 @@ h3 {
   padding: 10px 0;
 }
 
+/********* subir archivo *******/
+
+.cont_subirArchivo_productAdd{
+  display: flex;
+  width: 95%;
+  height: 60px;
+  margin: auto;
+  align-items: center;
+  justify-content: center; 
+}
+
 .caja_productAdd img {
   display: block;
-  width: 40px;
-  margin: auto;
-  padding: 2px;
+  height: 40px;
+    
 }
 
 div #texto_boton_subir_productAdd {
   color: white;
   text-align: center;
-  margin-top: 10px;
-  padding: 5px;
+  font-size: small;
+  line-height: 30px;  
 }
 
 div #div_file_productAdd {
   position: relative;
-  margin: auto;
-  margin-bottom: 10px;
-  width: 130px;
   background-color: #2049eb;
-  border-radius: 15px;
+  width: 115px;
+  height: 30px;
+  border-radius: 50px;
+  
+ 
 }
 
 input#InputBoton_subirFoto_productAdd {
   position: absolute;
+  opacity: 0;
   top: 0;
   left: 0;
   right: 0;
   bottom: 0;
   width: 100%;
   height: 100%;
-  opacity: 0;
 }
+/**********Termina subir Archivo*********/
 
 .titulo_productAdd {
   font-weight: 600;
@@ -586,6 +598,7 @@ input#InputBoton_subirFoto_productAdd {
   height: 40px;
   background-color: #2049eb;
   color: white;
+  line-height: 10px;
   border-style: none;
   border-radius: 50px;
 }

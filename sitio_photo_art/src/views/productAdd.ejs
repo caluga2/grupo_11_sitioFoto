@@ -10,16 +10,26 @@
         <h3>CARGUE DATOS DEL PRODUCTO</h3>
 
         <form action="/" class="main_form_productAdd">
-          <img class="img_productAdd" src="/images/file-svgrepo-com.svg" />
-
-          <div id="div_file_productAdd">
-            <p id="texto_boton_subir_productAdd">Subir Archivo</p>
-            <input type="file" name="foto" accept=".jpg" multiple id="InputBoton_subirFoto_productAdd" /><br />
-
+          <div class="cont_subirArchivo_productAdd">
+            <img class="img_productAdd" src="/images/file-svgrepo-com.svg" />
+            <div id="div_file_productAdd">
+              <div>
+                <p id="texto_boton_subir_productAdd">Subir Archivo</p>
+                <input
+                  type="file"
+                  name="foto"
+                  accept=".jpg"
+                  multiple
+                  id="InputBoton_subirFoto_productAdd"
+                /><br />
+              </div>
+            </div>
           </div>
-
-          <label for="nombre" class="titulo_productAdd magen_top_productAdd"> Nombre de producto </label><br />
-          <input class="text_productAdd"
+          <label for="nombre" class="titulo_productAdd magen_top_productAdd">
+            Nombre de producto </label
+          ><br />
+          <input
+            class="text_productAdd"
             type="text"
             name="nombre"
             placeholder="Ingresá el nombre del producto"
@@ -27,18 +37,24 @@
           />
           <br />
 
-          <label for="descripcion" class="titulo_productAdd magen_top_productAdd">Descripción</label>
-          <br />
-          <textarea name="descripcion"  rows="6" placeholder="Ingresá la descripcion del producto" required></textarea
+          <label
+            for="descripcion"
+            class="titulo_productAdd magen_top_productAdd"
+            >Descripción</label
           >
+          <br />
+          <textarea
+            name="descripcion"
+            rows="6"
+            placeholder="Ingresá la descripcion del producto"
+            required
+          ></textarea>
           <br />
 
           <div class="options_productAdd">
-
-            
             <section class="option_left_productAdd">
               <h4>Tipo de producto</h4>
-              
+
               <label for="tipoproducto"
                 ><input
                   type="radio"
@@ -103,19 +119,20 @@
 
           <div>
             <label type="text" class="titulo_productAdd">Precio:</label>
-            <input class="precio_text_productAdd"
+            <input
+              class="precio_text_productAdd"
               type="text"
               name="precio"
               placeholder="Ingresá el precio del producto"
               required
             />
 
-            <hr class="magen_top_productAdd">
+            <hr class="magen_top_productAdd" />
           </div>
 
-          <button type="submit" class="Login_Button_productAdd ">Enviar</button>
+          <button type="submit" class="Login_Button_productAdd">Enviar</button>
 
-          <button type="reset" class="Login_Button_productAdd ">Cancelar</button>
+          <button type="reset" class="Login_Button_productAdd">Cancelar</button>
         </form>
       </div>
     </main>
