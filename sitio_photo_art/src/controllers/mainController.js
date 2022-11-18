@@ -13,22 +13,26 @@ const inSale = products.filter(function(product){
 	return product.category == 'in-sale'
 })
 const controller = {
-	index: (req, res) => {
-		res.render('index', {
+	home: (req, res) => {
+		res.render('/', {
 			visited,
 			inSale,
 			toThousand
 		});
 	},
-	search: (req, res) => {
-		let search = req.query.keywords;
-		let productsToSearch = products.filter(product => product.name.toLowerCase().includes(search));	
-		res.render('results', { 
-			products: productsToSearch, 
-			search,
-			toThousand,
+	register: (req, res) => {
+		res.render('register', {
 		});
 	},
+    login: (req, res) => {
+		res.render('login', {
+		});
+	},
+    Carrito: (req, res) => {
+		res.render('Carrito', {
+		});
+	},
+   
 };
 
 module.exports = controller;
