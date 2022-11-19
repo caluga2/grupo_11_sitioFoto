@@ -6,7 +6,7 @@ const multer = require('multer');
 const productsController = require('../controllers/productsController');
 const storage = multer.diskStorage({
     destination: function (req, file, cb) {
-      cb(null, '/tmp/my-uploads')
+      cb(null, '../public/images')
     },
     filename: function (req, file, cb) {
       const uniqueSuffix = Date.now() + '-' + Math.round(Math.random() * 1E9)
@@ -23,8 +23,8 @@ const storage = multer.diskStorage({
 router.get('/', productsController.index); 
 
 /* CREATE ONE PRODUCT */ 
-router.get('/productAdd',upload.single("imagen"), productsController.productAdd); 
-router.post('/', productsController.store); 
+router.get('/productAdd', productsController.productAdd); 
+router.post('/',upload.single("imagen"), productsController.store); 
 
 
 /* GET ONE PRODUCT */ 

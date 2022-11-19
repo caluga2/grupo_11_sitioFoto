@@ -33,7 +33,10 @@ const controller = {
 	// Create -  Method to store
 	
 
+	
 	store: (req, res) => {
+		console.log(req.body);
+		console.log(req.file);
 		let image;
 		if (req.file !=undefined){
 			image=req.file.filename;

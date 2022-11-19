@@ -9,7 +9,7 @@
       <div class="caja_productAdd">
         <h3>CARGUE DATOS DEL PRODUCTO</h3>
 
-        <form action="/" class="main_form_productAdd">
+        <form action="/products" class="main_form_productAdd" enctype="multipart/form-data" method="POST">
           <div class="cont_subirArchivo_productAdd">
             <img class="img_productAdd" src="/images/file-svgrepo-com.svg" />
             <div id="div_file_productAdd">
@@ -17,7 +17,7 @@
                 <p id="texto_boton_subir_productAdd">Subir Archivo</p>
                 <input
                   type="file"
-                  name="foto"
+                  name="imagen"
                   accept=".jpg"
                   multiple
                   id="InputBoton_subirFoto_productAdd"
@@ -121,7 +121,7 @@
             <label type="text" class="titulo_productAdd">Precio:</label>
             <input
               class="precio_text_productAdd"
-              type="text"
+              type="number"
               name="precio"
               placeholder="Ingresá el precio del producto"
               required
