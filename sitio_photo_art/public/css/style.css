@@ -183,21 +183,25 @@ body {
 .Carousel {
   display: flex;
   justify-content: center;
-  width: 100vw;
-  height: 100vh;
+  align-items: center;
+  width: 100%;
+  height: 100hv;
 }
 
 .Carousel figure {
-  display: flex;
-  justify-content: center;
-  width: 100%;
+        margin-top: 80px;
+        margin-bottom: 20px;
+        position:relative;
+        height: 95%;       
+        width: 95%;
+        overflow: hidden;
+        border-radius: 6px;
+        box-shadow: 0px 15px 25px rgba(0,0,0,0.50);
 }
 
-.Carousel figure img {
-  max-width: 95%;
-  margin-top: 80px;
-  border-radius: 15px;
-  box-shadow: 0px 15px 25px rgba(0, 0, 0, 0.1);
+.Carousel figure img { 
+  width: 100%;
+  height: 100%;  
 }
 
 .img1Home {
@@ -795,6 +799,7 @@ input#InputBoton_subirFoto_productAdd {
     display: flex;
   } 
 
+
   .img1Home {
     display: flex;
   }
@@ -802,6 +807,8 @@ input#InputBoton_subirFoto_productAdd {
   .img1HomeMobile {
     display: none;
   }
+
+ 
 
   /****FOOTER PARA DESKTOP ********/
 
@@ -831,6 +838,11 @@ input#InputBoton_subirFoto_productAdd {
 }
 
 @media (min-width: 650px) {
+
+  .Carousel figure {
+    height: 90%;       
+    width: 90%;
+  }
   .img1Home {
     display: flex;
   }
