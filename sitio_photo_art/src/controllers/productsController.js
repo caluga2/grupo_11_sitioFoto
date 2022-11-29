@@ -16,11 +16,9 @@ const controller = {
 	},
 
 	// Detail - Detail from one product
-	detail: (req, res) => {
-		let id = req.params.id
-		let product = products.find(product => product.id == id)
-		res.render('detail', {
-			product,
+	productDetail: (req, res) => {
+		res.render('productDetail', {
+			products,
 			toThousand
 		})
 	},

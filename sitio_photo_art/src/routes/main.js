@@ -32,4 +32,8 @@ router.get("/productAdd", (req, res) => {
     res.render("productAdd");
   });
 
+ router.get("/productDetail", (req, res) => {
+    res.render("productDetail");
+  });
+
 module.exports = router;
