@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<%- include ('./partials/head') %>
+
+<body>
+
+  <%- include ('./partials/header') %>
+
+    <main>
+        <div class="LoginCajaMain">
+        <div class="LoginMain">
+            <img class = "logo" src="/images/logo photoartstudio sitioFoto.png" alt="Logo PhotoArtStudio"/>
+            <!-- <div><p class="tituloFormLogin">Iniciá tu sesión en PhotoArtStudio</p></div> -->
+            <div class="LoginFormulario"><form action="/" >
+            <p>
+                <label>Correo electrónico</label>
+            
+            
+                <input type="email" name="usuario" required>
+            </p>
+            <p>
+                <label>Contraseña</label>
+              
+                <input type="password" name="contraseña" required>
+            </p>
+         
+            
+            <a href="">¿Olvidaste tu Contraseña?</a>
+           
+                
+            <button type="submit" class="LoginButton">Ingresar</button>
+       
+        </form>
+    </div>
+</div>
+    </div>
+    </main>
+
+    <%- include ('./partials/footer') %>
+
+</body>
+</html>
