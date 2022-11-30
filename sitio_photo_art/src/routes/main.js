@@ -19,6 +19,9 @@ router.get("/register", (req, res) => {
   router.get("/Carrito", (req, res) => {
       res.render("Carrito");
     });
+    router.get("/producto", (req, res) => {
+      res.render("producto");
+    });
   
 router.get("/login", (req, res) => {
     res.render("login");
