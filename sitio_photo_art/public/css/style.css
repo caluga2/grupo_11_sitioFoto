@@ -19,6 +19,10 @@ body {
   background-color: var(--color-blanco);
 }
 
+img{
+  max-width: 100%;
+}
+
 /*-----------------------------------INICIA MENU-------------------------------------*/
 /*****Modif. ariel 12_11_22***/
 .main-header {
@@ -775,6 +779,44 @@ input#InputBoton_subirFoto_productAdd {
   font-size: medium;
   margin-top: 3%;
 }
+
+/*************************** USERS List *******************************/
+.mainUser{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+     max-width: 1200px;
+     margin: auto;
+     background-color: #dcdde0;    
+     padding: 5%;    
+     border-radius: 20px;
+     border-bottom: 3px solid grey;
+     justify-content: space-around;
+     margin-bottom: 50px;
+ }
+ 
+ .mainUser #carnetUsers{
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: space-around;
+ width: 300px;
+ background-color: #ffffff;
+ border-radius: 20px;
+ padding: 10px;
+ margin: 10px;
+ }
+ 
+ 
+ .mainUser .figureUser{
+   width: 50px;
+   margin: 0px  10px;
+ }
+ 
+ #carnet h2{
+   text-align: center;
+ }
+ 
+
 
 /*----------------------------------TERMINA REGISTER MEDIA QUERY TABLET---------------------------------*/
 

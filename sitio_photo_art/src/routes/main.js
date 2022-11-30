@@ -27,10 +27,13 @@ router.get("/Producto", (req, res) => {
 router.get("/Carrito", (req, res) => {
     res.render("Carrito");
   });
-  
-router.get("/productAdd", (req, res) => {
+
+  router.get("/productAdd", (req, res) => {
     res.render("productAdd");
   });
+
+
+
 
  router.get("/productDetail", (req, res) => {
     res.render("productDetail");
