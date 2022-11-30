@@ -25,6 +25,7 @@ const usersRouter = require("./routes/users"); //Rutas users
 
 app.use("/", mainRouter);
 app.use("/products", productsRouter);
+app.use("/users",usersRouter);
 
 const PUERTO = process.env.PORT || 3001;
 

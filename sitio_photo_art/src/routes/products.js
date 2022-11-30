@@ -16,7 +16,22 @@ const storage = multer.diskStorage({
   
   const upload = multer({ storage: storage })
 
- 
+  router.get("/Producto", (req, res) => {
+    res.render("Producto");
+  });
+  
+
+  router.get("/productAdd", (req, res) => {
+    res.render("productAdd");
+  });
+
+
+
+
+ router.get("/productDetail", (req, res) => {
+    res.render("productDetail");
+  });
+  
 /* REVISAR TODO LO ABAJO */ 
 
 /* GET ALL PRODUCTS */ 
@@ -37,6 +52,8 @@ router.patch('/edit/:id', productsController.update);
 
 /* DELETE ONE PRODUCT***/ 
 router.delete('/delete/:id', productsController.destroy); 
+
+
 
 
 module.exports = router;

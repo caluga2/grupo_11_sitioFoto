@@ -16,27 +16,14 @@ router.get("/register", (req, res) => {
     res.render("register");
   });
   
+  router.get("/Carrito", (req, res) => {
+      res.render("Carrito");
+    });
+  
 router.get("/login", (req, res) => {
     res.render("login");
   });
   
-router.get("/Producto", (req, res) => {
-    res.render("Producto");
-  });
-  
-router.get("/Carrito", (req, res) => {
-    res.render("Carrito");
-  });
 
-  router.get("/productAdd", (req, res) => {
-    res.render("productAdd");
-  });
-
-
-
-
- router.get("/productDetail", (req, res) => {
-    res.render("productDetail");
-  });
 
 module.exports = router;
