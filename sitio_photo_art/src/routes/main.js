@@ -23,6 +23,9 @@ router.get("/login", (req, res) => {
 router.get("/Producto", (req, res) => {
     res.render("Producto");
   });
+  router.get("/CatalogoProductos1", (req, res) => {
+    res.render("CatalogoProductos1");
+  });
   
 router.get("/Carrito", (req, res) => {
     res.render("Carrito");
