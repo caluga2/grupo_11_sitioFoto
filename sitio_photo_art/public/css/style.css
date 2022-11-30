@@ -828,7 +828,10 @@ input#InputBoton_subirFoto_productAdd {
   margin: auto;
 }
 .mainCatalogo h2 {
-  font-size: 24px;
+  font-size: 30px;
+  margin-top: 40px;
+  text-align: center;
+  
 }
 .catalogo{
   display: flex;
