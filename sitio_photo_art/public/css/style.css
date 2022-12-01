@@ -823,6 +823,35 @@ margin: 10px;
   text-align: center;
 }
 
+/*************************** ENCONSTRUCCION DISCULPE LAS MOLESTIAS *****************************/
+
+#main-enconstruction{
+  display: flex;
+  flex-wrap: wrap;  
+  background-color: var(--color-negro);
+  justify-content: center;
+  align-items: center;
+  height: 500px;
+ 
+}
+
+#figure-enconstruction{
+  max-width: 150px;
+}
+          
+
+#text-inconstruction{
+  color: var(--color-blanco);
+  font-size: 25px;
+
+       }
+
+#color-enconstruccion{
+background-color: #000000;
+
+}       
+
+
 /*----------------------------------FOOTER INICIO CESAR ---------------------------------*/
 /*Desktop*/
 
