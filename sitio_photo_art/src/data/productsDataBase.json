@@ -24,14 +24,5 @@
   "tipoproducto": "Servicios Fotográficos",
   "precio": "233",
   "image": "imagen-1668737574512-881819207"
- },
- {
-  "id": 4,
-  "nombre": "repuesto",
-  "descripcion": "Ventilador",
-  "tipoproducto": "Prints",
-  "tamaÃ±oproducto": "Pequeño",
-  "precio": "12000",
-  "image": "imagen-1669770013815-539645257.jpg"
  }
 ]

@@ -3,49 +3,49 @@
         "id": 1,
         "name": "Daniel Lopez",
         "email": "daniellopez@gmail.com",
-        "contraseña": 11111        
+        "contrasena": 11111        
        },
     {
         "id": 2,
         "name": "Juan Cerabona",
         "email": "JuanCerabona@smata.org.ar",
-        "contraseña": 11111        
+        "contrasena": 11111        
        },
     {
         "id": 3,
         "name": "Wendy Holman",
         "email": "wendy_holman@gmail.com",
-        "contraseña": 11111        
+        "contrasena": 11111        
        },
     {
         "id": 4,
         "name": "Jorge Sanchez",
         "email": "jorgesanchez@hotmail.com",
-        "contraseña": 11111        
+        "contrasena": 11111        
        },{
        "id": 5,
        "name": "Carolina",
        "email": "Carolina@gmail.com",
-       "contraseña": 11111        
+       "contrasena": 11111        
     },    
     {
         "id": 6,
         "name": "Cesar",
         "email": "cesar@gmail.com",
-        "contraseña": 11111    
+        "contrasena": 11111    
         
     },
     {
         "id": 7,
         "name": "Nicolas",
         "email": "arielmosquera@gmail.com",
-        "contraseña": 11111        
+        "contrasena": 11111        
     },
     {
         "id": 8,
         "name": "Ariel Mosquera",
         "email": "ariel@gmail.com",
-        "contraseña": 11111        
+        "contrasena": 11111        
         }    
     
 ]

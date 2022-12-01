@@ -11,25 +11,26 @@
         <h2>LISTADO DE USUARIOS</h2>
 
     <section class="mainUser">
-
-     <div id="carnetUsers">
-
-       <figure class="figureUser">
-         <img src="/images/icons/usuario.png" alt="">    
+      
+      <% for(let i =0; i < users.length; i++) { %>
+       <div id="carnetUsers">
+       
+        <figure class="figureUser">
+          <img src="/images/icons/usuario.png" alt="">    
         </figure>
-        
-        <article class="articleUser">
-          <p>id: 10</p>
-          <P>Nombre: Ariel Mosquera</P>
-          <p>email: ariel@gmail.com</p>        
-        </article>
-      </div> 
-     
+          
+          <article class="articleUser">
+            <p>ID: <%= users[i].id %></p>
+            <p>NOMBRE: <%= users[i].name %></p>
+            <p>EMAIL: <%= users[i].email %></p>
+            <p>CONTRASEÑA <%= users[i].contrasena %></p>
 
+                    
+          </article>
+        </div>     
+    <% } %> 
 
-      </section>
-
-        
+      </section>       
  
     </main>
 

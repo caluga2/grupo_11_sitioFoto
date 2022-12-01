@@ -10,5 +10,4 @@ const userController = require("../controllers/userController");
 //router.get('/search', mainController.search);
 router.get("/userList", userController.list);
 
-
 module.exports = router;

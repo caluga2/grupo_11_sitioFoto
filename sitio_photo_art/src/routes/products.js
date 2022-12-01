@@ -10,7 +10,7 @@ const storage = multer.diskStorage({
     },
     filename: function (req, file, cb) {
       const uniqueSuffix = Date.now() + '-' + Math.round(Math.random() * 1E9)
-      cb(null, file.fieldname + '-' + uniqueSuffix + ".jpg" )
+      cb(null, file.fieldname + '-' + uniqueSuffix)
     }
   })
   
@@ -20,18 +20,11 @@ const storage = multer.diskStorage({
     res.render("Producto");
   });
   
-
   router.get("/productAdd", (req, res) => {
     res.render("productAdd");
   });
 
 
-
-
- router.get("/productDetail", (req, res) => {
-    res.render("productDetail");
-  });
-  
 /* REVISAR TODO LO ABAJO */ 
 
 /* GET ALL PRODUCTS */ 
@@ -43,7 +36,7 @@ router.post('/',upload.single("imagen"), productsController.store);
 
 
 /* GET ONE PRODUCT */ 
-router.get('/productDetail/:id', productsController.productDetail); 
+router.get('/detail/:id', productsController.detail); 
 
 /* EDIT ONE PRODUCT */ 
 router.get('/edit/:id', productsController.edit); 
@@ -52,8 +45,6 @@ router.patch('/edit/:id', productsController.update);
 
 /* DELETE ONE PRODUCT***/ 
 router.delete('/delete/:id', productsController.destroy); 
-
-
 
 
 module.exports = router;
