@@ -789,7 +789,7 @@ input#InputBoton_subirFoto_productAdd {
     align-items: center;
     max-width: 1200px;
     margin: auto;
-    background-color: #e7e6e6;    
+    background-color: var(--color-gris-oscuro);
     padding: 5%;    
     border-radius: 25px;
     border-bottom: 3px solid rgb(184, 177, 177);
