@@ -474,8 +474,10 @@ body {
   display: flex;
   width: 25%;
   padding: 1rem;
-  border: solid 3px var(--color-negro);
-  border-radius: 10px;
+  background-color: var(--color-azul);
+  color: var(--color-blanco);
+  letter-spacing: 2px;
+  border-radius: 50px;
   align-items: center;
   justify-content: center;
 }
@@ -787,9 +789,10 @@ input#InputBoton_subirFoto_productAdd {
     align-items: center;
     max-width: 1200px;
     margin: auto;
-    background-color: #dcdde0;    
+    background-color: #e7e6e6;    
     padding: 5%;    
-    border-bottom: 3px solid grey;
+    border-radius: 25px;
+    border-bottom: 3px solid rgb(184, 177, 177);
     font-size: 13px;
     margin-bottom: 20px;
     justify-content:space-evenly; 
@@ -800,8 +803,10 @@ input#InputBoton_subirFoto_productAdd {
 .mainUser #carnetUsers{
 display: flex;
 flex-wrap: wrap;
+justify-content: center;
 width: 330px;
 background-color: #ffffff;
+border: var(--color-gris-oscuro) solid 1px;
 border-radius: 20px;
 padding: 10px;
 margin: 10px;
@@ -818,6 +823,33 @@ margin: 10px;
   text-align: center;
 }
 
+/*************************** ENCONSTRUCCION DISCULPE LAS MOLESTIAS *****************************/
+
+#main-enconstruction{
+  display: flex;
+  flex-wrap: wrap;  
+  background-color: var(--color-negro);
+  justify-content: center;
+  align-items: center;
+  height: 500px;
+ 
+}
+
+#figure-enconstruction{
+  max-width: 150px;
+}
+          
+
+#text-inconstruction{
+  color: var(--color-blanco);
+  font-size: 25px;
+
+       }
+
+#color-enconstruccion{
+background-color: #000000;
+
+}       
 
 
 /*----------------------------------FOOTER INICIO CESAR ---------------------------------*/
