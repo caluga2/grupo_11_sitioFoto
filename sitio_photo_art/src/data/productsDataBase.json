@@ -51,5 +51,40 @@
   "tamaÃ±oproducto": "Grande",
   "precio": "10",
   "image": "1671758838828.jpg"
+ },
+ {
+  "id": 7,
+  "nombre": "111",
+  "descripcion": "112",
+  "tipoproducto": "Prints",
+  "tamaÃ±oproducto": "Pequeño",
+  "precio": "11",
+  "image": "1671759493358.jpg"
+ },
+ {
+  "id": 8,
+  "nombre": "1221",
+  "descripcion": "3223",
+  "tipoproducto": "Prints",
+  "tamaÃ±oproducto": "Master",
+  "precio": "122",
+  "image": "1671760000661.jpg"
+ },
+ {
+  "id": 9,
+  "nombre": "qwwq",
+  "descripcion": "2121",
+  "tipoproducto": "Prints",
+  "precio": "12",
+  "image": "1671760077777.jpg"
+ },
+ {
+  "id": 10,
+  "nombre": "43",
+  "descripcion": "dfsfd",
+  "tipoproducto": "Prints",
+  "tamaÃ±oproducto": "Master",
+  "precio": "21",
+  "image": "1671760241404.jpg"
  }
 ]
