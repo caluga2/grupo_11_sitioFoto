@@ -42,5 +42,14 @@
   "tamaÃ±oproducto": "Pequeño",
   "precio": "10",
   "image": "imagen-1671755422947-23927248"
+ },
+ {
+  "id": 6,
+  "nombre": "llavero",
+  "descripcion": "llavero",
+  "tipoproducto": "Prints",
+  "tamaÃ±oproducto": "Grande",
+  "precio": "10",
+  "image": "1671758838828.jpg"
  }
 ]
