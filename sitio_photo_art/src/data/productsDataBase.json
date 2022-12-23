@@ -24,5 +24,23 @@
   "tipoproducto": "Servicios Fotográficos",
   "precio": "233",
   "image": "imagen-1668737574512-881819207"
+ },
+ {
+  "id": 4,
+  "nombre": "ruru",
+  "descripcion": "agrego ruru",
+  "tipoproducto": "Prints",
+  "tamaÃ±oproducto": "Grande",
+  "precio": "10",
+  "image": "imagen-1671755387546-153387583"
+ },
+ {
+  "id": 5,
+  "nombre": "rere",
+  "descripcion": "agrego rere",
+  "tipoproducto": "Prints",
+  "tamaÃ±oproducto": "Pequeño",
+  "precio": "10",
+  "image": "imagen-1671755422947-23927248"
  }
 ]
