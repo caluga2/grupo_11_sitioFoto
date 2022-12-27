@@ -19,7 +19,7 @@ const upload = multer({ storage: storage });
 
 
 //Actualizar para lo nuestro
-router.get('/', userController.index);
+//router.get("/", userController.index);
 //router.get('/search', mainController.search)
 /* CREATE ONE USER */
 router.get("/register", userController.register);
