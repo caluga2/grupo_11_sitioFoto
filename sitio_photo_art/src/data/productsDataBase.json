@@ -86,5 +86,14 @@
   "tamaÃ±oproducto": "Master",
   "precio": "21",
   "image": "1671760241404.jpg"
+ },
+ {
+  "id": 11,
+  "nombre": "asadds",
+  "descripcion": "sdsd",
+  "tipoproducto": "Prints",
+  "tamaÃ±oproducto": "Medio",
+  "precio": "2121",
+  "image": "1672102460515.jpg"
  }
 ]

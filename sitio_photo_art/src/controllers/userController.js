@@ -1,21 +1,18 @@
-const { json } = require("express");
 const fs = require("fs");
 const path = require("path");
 
-const productsFilePath = path.join(__dirname, "../data/users.json");
-const usuarios = JSON.parse(fs.readFileSync(productsFilePath, "utf-8"));
+const usersFilePath = path.join(__dirname, "../data/users.json");
+const users = JSON.parse(fs.readFileSync(usersFilePath, "utf-8"));
+
 const toThousand = (n) => n.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ".");
 
 const controller = {
-  /*index: (req, res) => {
-    res.render("Producto", {
-      products,
-      toThousand,
-    });
-  },*/
+  index: (req, res) => {
+    res.resdirect("home")
+  },
 
   list: function (req, res) {
-    res.render("userList", { users: usuarios });
+    res.render("userList", { users: users });
   },
 
   register: (req, res) => {
@@ -30,13 +27,13 @@ const controller = {
     } else {
       image = "default-image.png";
     }
-    let newProduct = {
-      id: products[products.length - 1].id + 1,
+    let newUser = {
+      id: users[users.length - 1].id + 1,
       ...req.body,
       image,
     };
-    products.push(newProduct);
-    fs.writeFileSync(productsFilePath, JSON.stringify(products, null, " "));
+    users.push(newUser);
+    fs.writeFileSync(usersFilePath, JSON.stringify(users, null, " "));
     res.redirect("/");
   },
 };
