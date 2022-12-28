@@ -12,6 +12,11 @@
               
                 <img class = "logo" src="/images/logo photoartstudio sitioFoto.png" alt="Logo PhotoArtStudio"/>
                <h2>Crear cuenta</h2>
+                <% if (locals.errores){
+                 errores.forEach(unError => { %>
+                  <p class="erroresRegister"><%= unError.msg %></p>
+                  <%})} %>
+
         <form class="RegisterFormulario" action="/users" enctype="multipart/form-data" method="POST">
             <div class="cont_subirArchivo_productAdd">
                 <div id="div_file_productAdd">
@@ -29,21 +34,21 @@
               </div>
         <p>
             <label>Tu nombre</label>
-            <input type="text" name="nombre" placeholder="Nombre y Apellido" required>
+            <input type="text" name="nombre" placeholder="Nombre y Apellido" >
         </p>
       
         <p>
             <label>Correo electrónico</label>
-            <input type="email" name="email" required>
+            <input type="email" name="email" >
         </p>
         
         <p>
             <label>Contraseña</label>
-            <input type="password" name="contrasena" placeholder="Como mínimo 6 caracteres" required/>
+            <input type="password" name="contrasena" placeholder="Como mínimo 6 caracteres" />
         </p>
         <p>
             <label>Vuelve a introducir la contraseña</label>
-            <input type="password" name="contrasena1" required/>
+            <input type="password" name="contrasena1" />
         </p>
        
             <button class="RegisterButton" type="submit">Continuar</button>
@@ -61,3 +66,7 @@
 
 </body>
 </html>
+
+
+
+}

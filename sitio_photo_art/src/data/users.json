@@ -115,5 +115,19 @@
   "email": "cedpu28@gmail.com",
   "contrasena": "$2a$10$gdjxdKaPgXjjUWzlzNkfweUjQFJJjNnybEXACJoHgTN7QB0dBCd6a",
   "image": "1672196246455.jpg"
+ },
+ {
+  "id": 17,
+  "nombre": "llavero boca",
+  "email": "asda@wdw",
+  "contrasena": "$2a$10$ygwNdCtn6jHCX8mz.w7V9.4ds0D5LmiU4o3j6ZARd1N8eKQUysL9O",
+  "image": "1672241996199.jpg"
+ },
+ {
+  "id": 18,
+  "nombre": "nicolas",
+  "email": "asa@xdc.com",
+  "contrasena": "$2a$10$VK5LSVJj.zKT.NANYnRMBOafLD4yWwfyt0VtkXL/MFyU3UNQGpjZi",
+  "image": "1672266357910.jpg"
  }
 ]
