@@ -108,5 +108,12 @@
    "1234"
   ],
   "image": "1672195007564.jpg"
+ },
+ {
+  "id": 16,
+  "nombre": "Cesar David ",
+  "email": "cedpu28@gmail.com",
+  "contrasena": "$2a$10$gdjxdKaPgXjjUWzlzNkfweUjQFJJjNnybEXACJoHgTN7QB0dBCd6a",
+  "image": "1672196246455.jpg"
  }
 ]
