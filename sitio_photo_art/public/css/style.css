@@ -349,6 +349,12 @@ body {
   justify-self: center;
   border-radius: 50px;
 }
+.erroresRegister {
+  font: bold;
+  color:red;
+  font-size: small;
+  margin-left: 10px;
+}
 
 /*----------------------------------TERMINA REGISTER---------------------------------*/
 
