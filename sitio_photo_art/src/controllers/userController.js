@@ -1,11 +1,13 @@
 const fs = require("fs");
 const path = require("path");
+const bcrypt = require("bcryptjs");
+const { syncBuiltinESMExports } = require("module");
 
 const usersFilePath = path.join(__dirname, "../data/users.json");
 const users = JSON.parse(fs.readFileSync(usersFilePath, "utf-8"));
 
 const toThousand = (n) => n.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ".");
-
+const salt = bcrypt.genSaltSync(10);
 const controller = {
   index: (req, res) => {
     res.resdirect("home");
@@ -31,7 +33,7 @@ const controller = {
       id: users[users.length - 1].id + 1,
       nombre: req.body.nombre,
       email: req.body.email,
-      contrasena: req.body.contrasena,
+      contrasena: bcrypt.hashSync(req.body.contrasena, salt),
       image,
     };
     users.push(newUser);
