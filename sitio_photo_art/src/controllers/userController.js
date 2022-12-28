@@ -8,7 +8,7 @@ const toThousand = (n) => n.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ".");
 
 const controller = {
   index: (req, res) => {
-    res.resdirect("home")
+    res.resdirect("home");
   },
 
   list: function (req, res) {
@@ -29,7 +29,9 @@ const controller = {
     }
     let newUser = {
       id: users[users.length - 1].id + 1,
-      ...req.body,
+      nombre: req.body.nombre,
+      email: req.body.email,
+      contrasena: req.body.contrasena,
       image,
     };
     users.push(newUser);
