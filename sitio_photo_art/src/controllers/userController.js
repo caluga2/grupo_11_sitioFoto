@@ -16,7 +16,9 @@ const controller = {
   list: function (req, res) {
     res.render("userList", { users: users });
   },
-
+  login: (req, res) => {
+    res.render('login');
+  },
   register: (req, res) => {
     res.render("register");
   },

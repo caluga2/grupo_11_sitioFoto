@@ -31,7 +31,7 @@ const validaciones = [
   }),
 ];
 const upload = multer({ storage: storage });
-
+router.get("/login", userController.login);
 //Actualizar para lo nuestro
 router.get("/", userController.index);
 //router.get('/search', mainController.search)
