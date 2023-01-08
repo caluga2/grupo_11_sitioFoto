@@ -275,13 +275,16 @@ body {
   width: 96%;
 }
 .LoginButton {
-  margin-bottom: 25%;
+  margin-bottom: 5%;
   width: 90%;
   height: 40px;
   background-color: #2049eb;
   color: white;
   border-style: none;
   border-radius: 50px;
+}
+.LoginCheckbox {
+margin-bottom: 20%;
 }
 
 /*----------------------------------TERMINA LOGIN---------------------------------*/
@@ -353,6 +356,12 @@ body {
 .erroresRegister {
   font: bold;
   color:red;
+  font-size: small;
+  margin-left: 10px;
+}
+.erroresLogin {
+  font: bold;
+  color: red;
   font-size: small;
   margin-left: 10px;
 }
