@@ -1,7 +1,7 @@
 const fs = require("fs");
 const path = require("path");
 const bcrypt = require("bcryptjs");
-const { validationResult } = require("express-validator");
+const { check, validationResult, body } = require("express-validator");
 
 const usersFilePath = path.join(__dirname, "../data/users.json");
 const users = JSON.parse(fs.readFileSync(usersFilePath, "utf-8"));
@@ -17,8 +17,56 @@ const controller = {
     res.render("userList", { users: users });
   },
   login: (req, res) => {
-    res.render('login');
+    return res.render("login");
   },
+  procesLogin: (req, res) => {
+    let errores = validationResult(req);
+    /*if (errores.isEmpty()) {
+      let userssJSON = usersFilePath;
+      let userss;
+      if (userss.JSON == "") {
+        userss = [];
+      } else {
+        userss = JSON.parse(userssJSON);
+      }*/
+    for (let i = 0; i < users.length; i++) {
+      if (users[i].email == req.body.email) {
+        if (bcrypt.compareSync(req.body.contrasenaLogin, users[i].contrasena)) {
+          var usuarioALogearse = users[i];
+          //break;
+        }
+      }
+    }
+    if (usuarioALogearse == undefined) {
+      return res.render("login", {
+        errores: [{ msg: "Credenciales inválidas" }],
+      });
+      // agregar este corchete cuando se descomente la 24 }
+    } else {
+      return res.render("login", { errores: errores.errores });
+    }
+    res.redirect("home");
+  },
+
+  /*
+ users = JSON.parse(usersJSON);
+      for (let i = 0; i < users.length; i++) {
+        if (users[i].email == req.body.email) {
+          if (
+            bcrypt.compareSync(req.body.contrasenaLogin, users[i].contrasena)
+          ) {
+            var usuarioALogearse = users[i];
+            break;
+          }
+        }
+        if (usuarioALogearse == undefined) {
+          
+        }
+        req.session.usuarioALogearse = usuarioALogearse;
+        res.render("login");
+      }
+    }
+  },*/
   register: (req, res) => {
     res.render("register");
   },

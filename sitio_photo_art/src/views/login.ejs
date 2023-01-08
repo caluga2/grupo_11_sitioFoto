@@ -3,6 +3,11 @@
 <%- include ('./partials/head') %>
 
 <body>
+<% if (locals.errores){ errores.forEach(unError=> { %>
+  <p class="erroresLogin">
+    <%= unError.msg %>
+  </p>
+  <%})} %>
 
   <%- include ('./partials/header') %>
 
@@ -11,7 +16,7 @@
         <div class="LoginMain">
             <img class = "logo" src="/images/logo photoartstudio sitioFoto.png" alt="Logo PhotoArtStudio"/>
             <!-- <div><p class="tituloFormLogin">Iniciá tu sesión en PhotoArtStudio</p></div> -->
-            <div class="LoginFormulario"><form action="/" >
+            <div class="LoginFormulario"><form action="/users/login" method="POST" >
             <p>
                 <label>Correo electrónico</label>
             
@@ -21,7 +26,7 @@
             <p>
                 <label>Contraseña</label>
               
-                <input type="password" name="contraseña" required>
+                <input type="password" name="contrasenaLogin" required>
             </p>
          
             
@@ -29,6 +34,8 @@
            
                 
             <button type="submit" class="LoginButton">Ingresar</button>
+            <label for="">Recuerdame</label>
+            <input class="LoginCheckbox" type="checkbox" name="Recuerdame"><br>
        
         </form>
     </div>

@@ -14,7 +14,7 @@ const storage = multer.diskStorage({
     cb(null, Date.now() + path.extname(file.originalname));
   },
 });
-const validaciones = [
+const validacionesRegistro = [
   body("nombre").notEmpty().withMessage("Debe introducir su nombre"),
   body("email")
     .isEmail()
@@ -30,8 +30,18 @@ const validaciones = [
     return true;
   }),
 ];
+const validacionesLogin = [
+  body("email")
+    .isEmail()
+    .withMessage("Debe introducir un mail válido (xxx@xx.com)"),
+  body("contrasenaLogin")
+    .notEmpty()
+    .isLength({ min: 6 })
+    .withMessage("Contraseña no válida, mínimo 6 caracteres"),
+];
 const upload = multer({ storage: storage });
 router.get("/login", userController.login);
+router.post("/login", validacionesLogin, userController.procesLogin);
 //Actualizar para lo nuestro
 router.get("/", userController.index);
 //router.get('/search', mainController.search)
@@ -39,6 +49,11 @@ router.get("/", userController.index);
 router.get("/register", userController.register);
 
 router.get("/userList", userController.list);
-router.post("/", upload.single("imagen"), validaciones, userController.store);
+router.post(
+  "/",
+  upload.single("imagen"),
+  validacionesRegistro,
+  userController.store
+);
 
 module.exports = router;
