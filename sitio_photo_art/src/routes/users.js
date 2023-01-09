@@ -30,18 +30,9 @@ const validacionesRegistro = [
     return true;
   }),
 ];
-const validacionesLogin = [
-  body("email")
-    .isEmail()
-    .withMessage("Debe introducir un mail válido (xxx@xx.com)"),
-  body("contrasenaLogin")
-    .notEmpty()
-    .isLength({ min: 6 })
-    .withMessage("Contraseña no válida, mínimo 6 caracteres"),
-];
 const upload = multer({ storage: storage });
 router.get("/login", userController.login);
-router.post("/login", validacionesLogin, userController.procesLogin);
+router.post("/login", userController.procesLogin);
 //Actualizar para lo nuestro
 router.get("/", userController.index);
 //router.get('/search', mainController.search)

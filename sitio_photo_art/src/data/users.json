@@ -129,5 +129,19 @@
   "email": "asa@xdc.com",
   "contrasena": "$2a$10$VK5LSVJj.zKT.NANYnRMBOafLD4yWwfyt0VtkXL/MFyU3UNQGpjZi",
   "image": "1672266357910.jpg"
+ },
+ {
+  "id": 19,
+  "nombre": "nicolas damian cabrera",
+  "email": "nicocabrera8@outlook.com",
+  "contrasena": "$2a$10$MvKmGK.AhyVRTq1pcxm2bOdzgqH/lcvxnww99jW7Z1U/j0SsyDkfC",
+  "image": "1673205954564.jpg"
+ },
+ {
+  "id": 20,
+  "nombre": "nicolas damian cabrera",
+  "email": "nicocabrera8@outlook.com",
+  "contrasena": "$2a$10$iilgwqjYmHFtqi88GbsEYOlj/VphGZL0q5ik4HNNCUvdKVS7RGgQa",
+  "image": "1673206040356.jpg"
  }
 ]
