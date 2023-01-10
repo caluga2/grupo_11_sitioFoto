@@ -1,0 +1,99 @@
+[
+ {
+  "id": 1,
+  "name": "Cafetera Moulinex Dolce Gusto Edited",
+  "price": 100,
+  "discount": 50,
+  "category": "visited",
+  "description": "Cafetera Dolce Gusto Lumio. La cafetera Dolce Gusto Lumio es de variedad automática que ha llegado con un diseño radical al que nos tenía acostumbrados Dolce Gusto.En este post te contamos todo lo que necesitas saber sobre ella, desde sus características técnicas hasta la calidad de las cápsulas o price.",
+  "image": "img-cafetera-moulinex.jpg"
+ },
+ {
+  "id": 2,
+  "name": "Macbook Pro 2022",
+  "price": 500,
+  "discount": 3,
+  "category": "in-sale",
+  "description": "Macbook Pro 2019 Mpxq2ll/a Intel Core i5 2.3 Ghz 8gb RAM 128gb SSD Pantalla 13.3\" Retina Apple Nueva Original. Importada de USA. Se entrega con la factura de compra para contar con la garantía del fabricante",
+  "image": "img-macbook-pro-2019.jpg"
+ },
+ {
+  "id": 3,
+  "nombre": "sas",
+  "descripcion": "das",
+  "tipoproducto": "Servicios Fotográficos",
+  "precio": "233",
+  "image": "imagen-1668737574512-881819207"
+ },
+ {
+  "id": 4,
+  "nombre": "ruru",
+  "descripcion": "agrego ruru",
+  "tipoproducto": "Prints",
+  "tamaÃ±oproducto": "Grande",
+  "precio": "10",
+  "image": "imagen-1671755387546-153387583"
+ },
+ {
+  "id": 5,
+  "nombre": "rere",
+  "descripcion": "agrego rere",
+  "tipoproducto": "Prints",
+  "tamaÃ±oproducto": "Pequeño",
+  "precio": "10",
+  "image": "imagen-1671755422947-23927248"
+ },
+ {
+  "id": 6,
+  "nombre": "llavero",
+  "descripcion": "llavero",
+  "tipoproducto": "Prints",
+  "tamaÃ±oproducto": "Grande",
+  "precio": "10",
+  "image": "1671758838828.jpg"
+ },
+ {
+  "id": 7,
+  "nombre": "111",
+  "descripcion": "112",
+  "tipoproducto": "Prints",
+  "tamaÃ±oproducto": "Pequeño",
+  "precio": "11",
+  "image": "1671759493358.jpg"
+ },
+ {
+  "id": 8,
+  "nombre": "1221",
+  "descripcion": "3223",
+  "tipoproducto": "Prints",
+  "tamaÃ±oproducto": "Master",
+  "precio": "122",
+  "image": "1671760000661.jpg"
+ },
+ {
+  "id": 9,
+  "nombre": "qwwq",
+  "descripcion": "2121",
+  "tipoproducto": "Prints",
+  "precio": "12",
+  "image": "1671760077777.jpg"
+ },
+ {
+  "id": 10,
+  "nombre": "43",
+  "descripcion": "dfsfd",
+  "tipoproducto": "Prints",
+  "tamaÃ±oproducto": "Master",
+  "precio": "21",
+  "image": "1671760241404.jpg"
+ },
+ {
+  "id": 11,
+  "nombre": "asadds",
+  "descripcion": "sdsd",
+  "tipoproducto": "Prints",
+  "tamaÃ±oproducto": "Medio",
+  "precio": "2121",
+  "image": "1672102460515.jpg"
+ }
+]
