@@ -31,7 +31,12 @@ const controller = {
     if (usuarioALogearse == undefined) {
       return res.render("errorLogin")
     }else {
-      return res.render("home");}
+       req.session.userLogged =usuarioALogearse;
+       console.log(req.session)
+
+      return res.render("home",{
+        user: req.session.userLogged
+      });}
     },
 
   register: (req, res) => {
@@ -48,6 +53,7 @@ const controller = {
       } else {
         image = "default-image.png";
       }
+      
 
       let newUser = {
         id: users[users.length - 1].id + 1,
@@ -68,3 +74,4 @@ const controller = {
 };
 
 module.exports = controller;
+
