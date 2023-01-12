@@ -28,8 +28,12 @@ const controller = {
     if (usuarioALogearse == undefined) {
       return res.render("errorLogin");
     } else {
-      req.session.usuarioLogueado = usuarioALogearse;
-      return res.render("home", { user: req.session.usuarioLogueado });
+      req.session.userLogged = usuarioALogearse;
+      console.log(req.session);
+
+      return res.render("home", {
+        user: req.session.userLogged,
+      });
     }
   },
 
