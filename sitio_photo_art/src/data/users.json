@@ -143,5 +143,12 @@
   "email": "nicocabrera8@outlook.com",
   "contrasena": "$2a$10$iilgwqjYmHFtqi88GbsEYOlj/VphGZL0q5ik4HNNCUvdKVS7RGgQa",
   "image": "1673206040356.jpg"
+ },
+ {
+  "id": 21,
+  "nombre": "Carolina Menezes",
+  "email": "carolfreitas50@gmail.com",
+  "contrasena": "$2a$10$Hl7ZvHZmGi41dmWWxvvrqONWulz8ZAd6IkTcnhueuF432f8sp1tX.",
+  "image": "default-image.png"
  }
 ]
