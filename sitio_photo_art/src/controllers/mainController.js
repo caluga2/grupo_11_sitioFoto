@@ -18,33 +18,36 @@ const inSale = products.filter(function (product) {
 const controller = {
   home: (req, res) => {
     res.render("home", {
+      user: req.session.userLogged,
       visited,
       inSale,
       toThousand,
     });
   },
   Carrito: (req, res) => {
-    res.render("carrito", {});
+    res.render("carrito", {
+      user: req.session.userLogged,
+    });
   },
 
   soporte: (req, res) => {
     let VARRUTA = "./ SOPORTE";
-    res.render("enconstruccion", { VARRUTA });
+    res.render("enconstruccion", { user: req.session.userLogged, VARRUTA });
   },
 
   enmarcados: (req, res) => {
     let VARRUTA = "./ ENMARCADOS";
-    res.render("enconstruccion", { VARRUTA });
+    res.render("enconstruccion", { user: req.session.userLogged, VARRUTA });
   },
 
   prints: (req, res) => {
     let VARRUTA = "./ PRINTS";
-    res.render("enconstruccion", { VARRUTA });
+    res.render("enconstruccion", { user: req.session.userLogged, VARRUTA });
   },
 
   buscar: (req, res) => {
     let VARRUTA = "./ BUSCADOR";
-    res.render("enconstruccion", { VARRUTA });
+    res.render("enconstruccion", { user: req.session.userLogged, VARRUTA });
   },
 };
 

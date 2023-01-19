@@ -8,14 +8,18 @@ const users = JSON.parse(fs.readFileSync(usersFilePath, "utf-8"));
 
 const controller = {
   index: (req, res) => {
-    res.resdirect("home");
+    res.resdirect("home", {
+      user: req.session.userLogged,
+    });
   },
 
   list: function (req, res) {
-    res.render("userList", { users: users });
+    res.render("userList", { users: users, user: req.session.userLogged });
   },
   login: (req, res) => {
-    return res.render("login");
+    return res.render("login", {
+      user: req.session.userLogged,
+    });
   },
   procesLogin: (req, res) => {
     for (let i = 0; i < users.length; i++) {
@@ -38,7 +42,9 @@ const controller = {
   },
 
   register: (req, res) => {
-    res.render("register");
+    res.render("register", {
+      user: req.session.userLogged,
+    });
   },
   // Create -  Method to store
 
