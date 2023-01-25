@@ -1,50 +1,41 @@
 const fs = require("fs");
 const path = require("path");
 const bcrypt = require("bcryptjs");
-const { validationResult } = require("express-validator");
+const {validationResult} = require("express-validator");
 
 const usersFilePath = path.join(__dirname, "../data/users.json");
 const users = JSON.parse(fs.readFileSync(usersFilePath, "utf-8"));
 
+
 const controller = {
   index: (req, res) => {
-    res.resdirect("home", {
-      user: req.session.userLogged,
-    });
+    res.resdirect("home");
   },
 
   list: function (req, res) {
-    res.render("userList", { users: users, user: req.session.userLogged });
+    res.render("userList", { users: users });
   },
   login: (req, res) => {
-    return res.render("login", {
-      user: req.session.userLogged,
-    });
+    return res.render("login");
   },
   procesLogin: (req, res) => {
+
     for (let i = 0; i < users.length; i++) {
       if (users[i].email == req.body.email) {
         if (bcrypt.compareSync(req.body.contrasenaLogin, users[i].contrasena)) {
           var usuarioALogearse = users[i];
         }
       }
+      console.log(req.body.email)
     }
     if (usuarioALogearse == undefined) {
-      return res.render("errorLogin");
-    } else {
-      req.session.userLogged = usuarioALogearse;
-      console.log(req.session);
-
-      return res.render("home", {
-        user: req.session.userLogged,
-      });
-    }
-  },
+      return res.render("errorLogin")
+    }else {
+      return res.render("home");}
+    },
 
   register: (req, res) => {
-    res.render("register", {
-      user: req.session.userLogged,
-    });
+    res.render("register");
   },
   // Create -  Method to store
 
@@ -52,17 +43,6 @@ const controller = {
     let errores = validationResult(req);
     if (errores.isEmpty()) {
       let image;
-      // seguir revisando para que se fije si el mail ya se encuentra registrado
-      for (let i = 0; i < users.length; i++) {
-        if (users[i].email == req.body.email) {
-          return res.render("register", {
-            errores: {
-              msg: "Este email ya está registrado",
-            },
-          });
-        }
-      }
-      // --------------------------------- hasta aca ---------------------
       if (req.file != undefined) {
         image = req.file.filename;
       } else {

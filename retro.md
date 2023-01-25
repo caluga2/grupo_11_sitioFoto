@@ -45,22 +45,4 @@ Creemos que el punto el cual perjudico la ejecución de este sprint fueron los t
 -CONCLUSIONES
 Nos sorprendió la complejidad del sprint y debemos buscar mas alternativas para la solución de los diferentes casos que se nos presentan en la ejecución de sprint  para poder incorporarnos todos y así lograr un buen desarrollo del mismo .
 
-Sprint 6
-
-1.	¿Que hicimos bien?
-El equipo mantuvo los buenos puntos del sprint anterior, sabiendo planificar y dividir las tareas para que cada integrante desarrolle parte del código para el bien del proyecto y de la organización del grupo.
-•	organizar las tareas de manera rotativa para que todos podamos hacer parte del proceso de 
-•	elaboración.
-•	más Commits cortos y más frecuentes.
-2.	¿Que hicimos mal?
-Dedicar más tiempo del necesario para detectar errores sencillos, donde entendemos que la experiencia va a mejorar nuestro entendimiento de los problemas que se nos puedan presentar.
-•	No dejar todo para último momento.
-•	No subestimar la complejidad de los retos que nos plantea el sprint.
-
-3.	¿Que deberíamos empezar a hacer?
-Creemos que tratar en lo posible juntarnos más a manudo para poder compartir ideas en estas nuevas etapas del proyecto que cada vez es más compleja y necesita de más tiempo.
-4.	¿Que deberíamos dejar de hacer?
-A la de resolver los conflictos en el código no generamos las dudas que no quedan a los docentes o compañeros los cuales nos pueden dar diferentes puntos de vista para lograr comprender mejor los temas que más nos costó resolver, esto nos ayudaría a ahorrar más tiempo.
-
-
 
