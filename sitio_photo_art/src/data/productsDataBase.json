@@ -95,5 +95,12 @@
   "tamaÃ±oproducto": "Medio",
   "precio": "2121",
   "image": "1672102460515.jpg"
+ },
+ {
+  "id": 12,
+  "nombre": "asd",
+  "descripcion": "asda",
+  "precio": "1221",
+  "image": "default-image.png"
  }
 ]
