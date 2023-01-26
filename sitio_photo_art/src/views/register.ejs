@@ -10,14 +10,14 @@
    
   
 
+    
     <main>
         <div class="RegisterCajaMain">
             <div class="RegisterMain">
               
                 <img class = "logo" src="/images/logo photoartstudio sitioFoto.png" alt="Logo PhotoArtStudio"/>
                <h2>Crear cuenta</h2>
-                <% if (locals.errores){
-                 errores.forEach(unError => { %>
+                <% if (locals.errores){errores.forEach(unError => { %>
                   <p class="erroresRegister"><%= unError.msg %></p>
                   <%})} %>
 
@@ -69,7 +69,3 @@
 
 </body>
 </html>
-
-
-
-}

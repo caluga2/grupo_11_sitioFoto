@@ -1,49 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
-<%- include ('./partials/head') %>
+  <%- include ('./partials/head') %>
 
-<body>
-<% if (locals.errores){ errores.forEach(unError=> { %>
-  <p class="erroresLogin">
-    <%= unError.msg %>
-  </p>
-  <%})} %>
-
-  <%- include ('./partials/header') %>
-
+  <body>
+    <%- include ('./partials/header') %> <%- include ('./partials/header') %>
     <main>
-        <div class="LoginCajaMain">
+      <div class="LoginCajaMain">
         <div class="LoginMain">
-            <img class = "logo" src="/images/logo photoartstudio sitioFoto.png" alt="Logo PhotoArtStudio"/>
-            <!-- <div><p class="tituloFormLogin">Iniciá tu sesión en PhotoArtStudio</p></div> -->
-            <div class="LoginFormulario"><form action="/users/login" method="POST" >
-            <p>
+          <img
+            class="logo"
+            src="/images/logo photoartstudio sitioFoto.png"
+            alt="Logo PhotoArtStudio"
+          />
+          <!-- <div><p class="tituloFormLogin">Iniciá tu sesión en PhotoArtStudio</p></div> -->
+          <div class="LoginFormulario">
+            <form action="/users/login" method="POST">
+              <p>
                 <label>Correo electrónico</label>
-            
-            
-                <input type="email" name="email" required>
-            </p>
-            <p>
+
+                <input type="email" name="email" required />
+              </p>
+              <p>
                 <label>Contraseña</label>
-              
-                <input type="password" name="contrasenaLogin" required>
-            </p>
-         
-            
-            <a href="">¿Olvidaste tu Contraseña?</a>
-           
-                
-            <button type="submit" class="LoginButton">Ingresar</button>
-            <label for="">Recuerdame</label>
-            <input class="LoginCheckbox" type="checkbox" name="Recuerdame"><br>
-       
-        </form>
-    </div>
-</div>
-    </div>
+
+                <input type="password" name="contrasenaLogin" required />
+              </p>
+
+              <a href="">¿Olvidaste tu Contraseña?</a>
+
+              <button type="submit" class="LoginButton">Ingresar</button>
+              <label for="">Recuerdame</label>
+              <input
+                class="LoginCheckbox"
+                type="checkbox"
+                name="Recuerdame"
+              /><br />
+            </form>
+          </div>
+        </div>
+      </div>
     </main>
 
     <%- include ('./partials/footer') %>
-
-</body>
+  </body>
 </html>

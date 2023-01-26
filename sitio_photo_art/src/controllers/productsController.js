@@ -11,6 +11,8 @@ const controller = {
   index: (req, res) => {
     res.render("Producto", {
       products,
+      user: req.session.userLogged,
+
       toThousand,
     });
   },
@@ -21,13 +23,17 @@ const controller = {
     let product = products.find((product) => product.id == id);
     res.render("detail", {
       product,
+      user: req.session.userLogged,
+
       toThousand,
     });
   },
 
   // Create - Form to create
   productAdd: (req, res) => {
-    res.render("productAdd");
+    res.render("productAdd", {
+      user: req.session.userLogged,
+    });
   },
 
   // Create -  Method to store
