@@ -15,13 +15,17 @@ const storage = multer.diskStorage({
   },
 });
 const validacionesRegistro = [
-  body("nombre").notEmpty().withMessage("Debe introducir su nombre"),
-  body("email")
+  body("nombre")
+    .notEmpty()
+    .isLength({ min: 2 })
+    .withMessage("Debe introducir su nombre"),
+  body("email") // **** Agregar validacion que el mail no puede ser repetido con una que ya esta registrado ****
+    .notEmpty()
     .isEmail()
     .withMessage("Debe introducir un mail válido (xxx@xx.com)"),
   body("contrasena")
     .notEmpty()
-    .isLength({ min: 6 })
+    .isLength({ min: 8 })
     .withMessage("Debe introducir una contraseña más larga"),
   body("contrasena1").custom((value, { req }) => {
     if (value !== req.body.contrasena) {
