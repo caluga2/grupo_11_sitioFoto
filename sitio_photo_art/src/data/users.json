@@ -157,5 +157,12 @@
   "email": "sfegw@outlook.com",
   "contrasena": "$2a$10$vMAt4CnWd4GLIPhPZaWYnuJgHL4pJKNMpeiU5rkmDBoIppA0aFUrS",
   "image": "default-image.png"
+ },
+ {
+  "id": 23,
+  "nombre": "nicolas",
+  "email": "nsf@outlook.com",
+  "contrasena": "$2a$10$7k1/xjAqlo.8PNcVBegqF.MUzxhC8UTntowtFyDkkwNOdue.5HQie",
+  "image": "default-image.png"
  }
 ]

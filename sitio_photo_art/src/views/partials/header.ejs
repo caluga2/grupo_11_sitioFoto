@@ -65,9 +65,14 @@
      
     
    
+ 
+     <% if(user){%>
+          <p class="holaUser">Hola <%= user.nombre %></p>
+          <%}else{%>
 <div class="Button"><a href="/users/login">Login</a></div>
     <div class="Button"><a href="/users/register">Registro</a></div>
-  
- 
+     <%}%>
+
+
   <!--.RegisterLogin-->
 </header>

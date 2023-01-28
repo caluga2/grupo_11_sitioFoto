@@ -56,9 +56,12 @@ const controller = {
       for (let i = 0; i < users.length; i++) {
         if (users[i].email == req.body.email) {
           return res.render("register", {
-            errores: {
-              msg: "Este email ya está registrado",
-            },
+            errores: [
+              {
+                msg: "Este email ya está registrado",
+              },
+            ],
+            user: req.session.userLogged,
           });
         }
       }
@@ -82,6 +85,7 @@ const controller = {
     } else {
       res.render("register", {
         errores: errores.array(),
+        user: req.session.userLogged,
       });
     }
   },
