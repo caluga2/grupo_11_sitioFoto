@@ -42,7 +42,7 @@ router.get("/", userController.index);
 //router.get('/search', mainController.search)
 /* CREATE ONE USER */
 router.get("/register", userController.register);
-
+router.get("/logout", userController.logout);
 router.get("/userList", userController.list);
 router.post(
   "/",

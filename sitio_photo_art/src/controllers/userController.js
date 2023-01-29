@@ -21,6 +21,11 @@ const controller = {
       user: req.session.userLogged,
     });
   },
+  logout: (req, res) => {
+    req.session.destroy();
+    return res.redirect("/");
+  },
+
   procesLogin: (req, res) => {
     for (let i = 0; i < users.length; i++) {
       if (users[i].email == req.body.email) {
