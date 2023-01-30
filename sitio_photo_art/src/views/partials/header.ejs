@@ -61,22 +61,22 @@
     <!--.INICIO-->
   </div>
   <div class="RegisterLogin">
-
-     
-    
-   
  
      <% if(user){%>
+     
            <p class="holaUser">Hola <%= user.nombre %></p>
-             <a href="/users/logout"  button  class="logoutButton" type="submit" >Logout</button></a> 
-      
-
+              <a href="/users/logout"  button  class="logoutButton" type="submit" >Logout</button></a>
            
+               
           <%}else{%>
 <div class="Button"><a href="/users/login">Login</a></div>
     <div class="Button"><a href="/users/register">Registro</a></div>
      <%}%>
-
-
-  <!--.RegisterLogin-->
+  </div>
+  <% if(user){%>
+   <% if(user.email == 'sitioFoto@outlook.com'){%>
+     <ul><a href="/products/edit/:id"  button  class="buttonEdit" type="submit" >Editar un producto</button></a> </ul>
+       <ul><a href="/products/productAdd"  button  class="buttonEdit" type="submit" >Agregar un producto</button></a> </ul>
+          <%}%>
+           <%}%>
 </header>

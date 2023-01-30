@@ -35,11 +35,9 @@ const controller = {
       }
     }
     if (usuarioALogearse == undefined) {
-      return res.render("errorLogin");
+      return res.render("errorLogin", { user: req.session.userLogged });
     } else {
       req.session.userLogged = usuarioALogearse;
-      console.log(req.session);
-
       return res.render("home", {
         user: req.session.userLogged,
       });

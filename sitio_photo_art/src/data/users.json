@@ -164,5 +164,12 @@
   "email": "nsf@outlook.com",
   "contrasena": "$2a$10$7k1/xjAqlo.8PNcVBegqF.MUzxhC8UTntowtFyDkkwNOdue.5HQie",
   "image": "default-image.png"
+ },
+ {
+  "id": 24,
+  "nombre": "sitioFoto",
+  "email": "sitioFoto@outlook.com",
+  "contrasena": "$2a$10$pinQheXDrVPLMNwv6LzrgO4peWBEBwtrxuwWZt5uKZs2iEQ393iR6",
+  "image": "1675049632422.jpg"
  }
 ]

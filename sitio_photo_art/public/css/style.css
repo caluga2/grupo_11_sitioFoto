@@ -303,7 +303,17 @@ body {
   margin-left: 20px;
 }
 /*----------------------------------TERMINA LOGOUT---------------------------------*/
+/*----------------------------------INICIA boton editar---------------------------------*/
+.buttonEdit {
+  color: #757575;
+  font-family: sans-serif;
+  font-size: 17px;
+  margin-top: 5px;
+  margin-left: 5px;
+  text-align: left;
+}
 
+/*----------------------------------TERMINA boton editar---------------------------------*/
 /*----------------------------------INICIA REGISTER---------------------------------*/
 
 .RegisterCajaMain {
