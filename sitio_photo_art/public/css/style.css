@@ -71,8 +71,15 @@ body {
 .paginas-menu {
   display: flex;
   align-items: center;
-
   height: 100%;
+  box-sizing: border-box;
+}
+
+.paginas-menu li {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  border-bottom: var(--color-blanco) 3px solid;
   box-sizing: border-box;
 }
 
@@ -100,6 +107,9 @@ body {
   display: none;
 }
 
+.menu-derecha .menuderecha_izquierda {
+  border-bottom: solid var(--color-blanco) 3px;
+}
 .menu-derecha .menuderecha_izquierda:hover {
   border-bottom: solid var(--color-azul) 3px;
 }
