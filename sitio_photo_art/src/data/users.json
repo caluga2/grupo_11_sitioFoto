@@ -171,5 +171,12 @@
   "email": "sitioFoto@outlook.com",
   "contrasena": "$2a$10$pinQheXDrVPLMNwv6LzrgO4peWBEBwtrxuwWZt5uKZs2iEQ393iR6",
   "image": "1675049632422.jpg"
+ },
+ {
+  "id": 25,
+  "nombre": "Carol",
+  "email": "carolfreitas20@hotmail.com",
+  "contrasena": "$2a$10$9sbatZhyhAs2NHFMUjzRKO7NrOyyy9lcM71X6VTFWjChChooUc0Eu",
+  "image": "default-image.png"
  }
 ]
