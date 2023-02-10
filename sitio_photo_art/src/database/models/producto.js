@@ -7,39 +7,39 @@ module.exports = function (sequelize, dataTypes) {
   let colums = {
     productoID: {
       type: dataTypes.INTEGER,
-      allowNull: FALSE,
+      allowNull: false,
     },
 
     nombre: {
-      type: dataTypes.VARCHAR(45),
-      allowNull: FALSE,
+      type: dataTypes.STRING(45),
+      allowNull: false,
     },
 
     descripcion: {
       type: dataTypes.TEXT,
-      allowNull: FALSE,
+      allowNull: false,
     },
 
     precio: {
       type: dataTypes.DECIMAL(10, 2),
-      allowNull: FALSE,
+      allowNull: false,
     },
 
     tipoDeProductoID: {
       type: dataTypes.INTEGER,
       validate: {
-        defaultValue: NULL,
+        defaultValue: null,
         max: 11,
-        allowNull: TRUE,
+        allowNull: true,
       },
     },
 
     tamanoDeProductoID: {
       type: dataTypes.INTEGER,
       validate: {
-        defaultValue: NULL,
+        defaultValue: null,
         max: 11,
-        allowNull: TRUE,
+        allowNull: true,
       },
     },
   };

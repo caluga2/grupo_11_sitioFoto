@@ -1,4 +1,4 @@
-const carritosProductos = require("carritoProducto.js");
+const carritosProductos = require("./carritoProducto.js");
 
 module.exports = function (sequelize, dataTypes) {
   let alias = "usuarios";
@@ -9,30 +9,30 @@ module.exports = function (sequelize, dataTypes) {
   let colums = {
     usuarioID: {
       type: dataTypes.INTEGER,
-      allowNull: FALSE,
+      allowNull: false,
       validate: {
         max: 11,
       },
     },
     nombre: {
-      type: dataTypes.VARCHAR(45),
-      allowNull: FALSE,
+      type: dataTypes.STRING(45),
+      allowNull: false,
     },
     email: {
-      type: dataTypes.VARCHAR(45),
-      allowNull: FALSE,
+      type: dataTypes.STRING(45),
+      allowNull: false,
     },
     contrasena: {
-      type: dataTypes.VARCHAR(45),
-      allowNull: FALSE,
+      type: dataTypes.STRING(45),
+      allowNull: false,
     },
     foto: {
-      type: dataTypes.VARCHAR(100),
-      allowNull: FALSE,
+      type: dataTypes.STRING(45),
+      allowNull: false,
     },
     carritoProductoID: {
       type: dataTypes.INTEGER,
-      allowNull: FALSE,
+      allowNull: false,
       validate: {
         max: 11,
       },
@@ -40,11 +40,12 @@ module.exports = function (sequelize, dataTypes) {
   };
   const usuario = sequelize.define(alias, colums, config);
 
-  usuario.associate = function (models) {};
-  usuario.belongsTo(models.carritosProductos, {
+  usuario.associate = function (models) {
+    usuario.belongsTo(models.carritosProductos, {
     as: "carritos",
     foreignKey: "carritoID",
-  });
+  });};
+  
 
   return usuario;
 };

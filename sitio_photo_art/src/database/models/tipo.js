@@ -7,14 +7,14 @@ module.exports = function (sequelize, dataTypes) {
   let colums = {
     tipoDeProductoID: {
       type: dataTypes.INTEGER,
-      allowNull: FALSE,
+      allowNull: false,
       validate: {
         max: 11,
       },
     },
     tipoDeProducto: {
-      type: dataTypes.VARCHAR(45),
-      allowNull: FALSE,
+      type: dataTypes.STRING(45),
+      allowNull: false,
     },
   };
 

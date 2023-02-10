@@ -18,11 +18,13 @@ module.exports = function (sequelize, dataTypes) {
 
   const carritoProducto = sequelize.define(alias, colums, config);
 
-  carritoProducto.associate = function (models) {};
-  carritoProducto.hasMany(models.usuarios, {
+  carritoProducto.associate = function (models) {
+    carritoProducto.hasMany(models.usuarios, {
     as: "usuarios",
     foreignKey: "carritoID",
-  });
+  });};
+  
 
   return carritoProducto;
 };
+ 
