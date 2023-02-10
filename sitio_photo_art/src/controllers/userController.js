@@ -85,7 +85,12 @@ const controller = {
       };
       users.push(newUser);
       fs.writeFileSync(usersFilePath, JSON.stringify(users, null, " "));
-      res.redirect("/");
+      db.usuarios
+        .create(newUser)
+        .then((storedUser) => {
+          return res.redirect("/users/login");
+        })
+        .catch((error) => console.log(error));
     } else {
       res.render("register", {
         errores: errores.array(),

@@ -178,5 +178,19 @@
   "email": "carolfreitas20@hotmail.com",
   "contrasena": "$2a$10$9sbatZhyhAs2NHFMUjzRKO7NrOyyy9lcM71X6VTFWjChChooUc0Eu",
   "image": "default-image.png"
+ },
+ {
+  "id": 26,
+  "nombre": "calu",
+  "email": "calu@gmail.com",
+  "contrasena": "$2a$10$XOBMhOTFDUogdfh1F4Prz.m1L7hB3qVt9pWIyzDlEhlQhFBZe../S",
+  "image": "default-image.png"
+ },
+ {
+  "id": 27,
+  "nombre": "luga",
+  "email": "luga@gmail.com",
+  "contrasena": "$2a$10$p0afeH5jRiHb8058/bXw1.Gf72f5xLyhHVpYM16HqBqbL6CA.O19W",
+  "image": "default-image.png"
  }
 ]
