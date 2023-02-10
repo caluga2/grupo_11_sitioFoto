@@ -77,11 +77,12 @@ const controller = {
       }
 
       let newUser = {
-        id: users[users.length - 1].id + 1,
+        usuarioID: users[users.length - 1].usuarioID + 1,
         nombre: req.body.nombre,
         email: req.body.email,
         contrasena: bcrypt.hashSync(req.body.contrasena, 10),
         image,
+        //carritoProductoID: users[users.length - 1].usuarioID + 1,
       };
       users.push(newUser);
       fs.writeFileSync(usersFilePath, JSON.stringify(users, null, " "));

@@ -180,17 +180,17 @@
   "image": "default-image.png"
  },
  {
-  "id": 26,
-  "nombre": "calu",
-  "email": "calu@gmail.com",
-  "contrasena": "$2a$10$XOBMhOTFDUogdfh1F4Prz.m1L7hB3qVt9pWIyzDlEhlQhFBZe../S",
+  "usuarioID": null,
+  "nombre": "yuyu",
+  "email": "yuyu@yu.com",
+  "contrasena": "$2a$10$kXcSpelCXExmBPLJWAtEYeIGHUrUMEi3ci0BLq0U6mvA9WJLn3A2i",
   "image": "default-image.png"
  },
  {
-  "id": 27,
-  "nombre": "luga",
-  "email": "luga@gmail.com",
-  "contrasena": "$2a$10$p0afeH5jRiHb8058/bXw1.Gf72f5xLyhHVpYM16HqBqbL6CA.O19W",
+  "usuarioID": 1,
+  "nombre": "yuyu",
+  "email": "yuyu@lal.com",
+  "contrasena": "$2a$10$w5zgkQlapGenXZUgDGW9PuhSrvHZA6Rr1wb2Dn3mGZfw2aAD7o/bC",
   "image": "default-image.png"
  }
 ]

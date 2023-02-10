@@ -34,7 +34,7 @@ CREATE TABLE IF NOT EXISTS `sitioFotodb`.`CarritoProductos` (
   `productoID` INT NOT NULL,
   `carritoID` INT NOT NULL,
   PRIMARY KEY (`carritoProductoID`),
-  INDEX `carritoID_idx` (`carritoID` ASC) VISIBLE,
+  INDEX `carritoID_idx` (`carritoID` ASC),
   CONSTRAINT `carritoID`
     FOREIGN KEY (`carritoID`)
     REFERENCES `sitioFotodb`.`Carritos` (`carritoID`)
@@ -50,11 +50,11 @@ CREATE TABLE IF NOT EXISTS `sitioFotodb`.`Usuarios` (
   `usuarioID` INT NOT NULL AUTO_INCREMENT,
   `nombre` VARCHAR(45) NOT NULL,
   `email` VARCHAR(45) NOT NULL,
-  `contrasena` VARCHAR(45) NOT NULL,
-  `foto` VARCHAR(100) NOT NULL,
-  `carritoProductoID` INT NOT NULL,
+  `contrasena` VARCHAR(100) NOT NULL,
+  `fotoUsuario` VARCHAR(100),
+  `carritoProductoID` INT /*NOT NULL*/,
   PRIMARY KEY (`usuarioID`),
-  INDEX `Usuarios_idx` (`carritoProductoID` ASC) VISIBLE,
+  INDEX `Usuarios_idx` (`carritoProductoID` ASC),
   CONSTRAINT `carritoProductoID`
     FOREIGN KEY (`carritoProductoID`)
     REFERENCES `sitioFotodb`.`CarritoProductos` (`carritoProductoID`)
@@ -93,9 +93,10 @@ CREATE TABLE IF NOT EXISTS `sitioFotodb`.`Productos` (
   `precio` DECIMAL(10,2) NOT NULL,
   `tipoDeProductoID` INT NULL,
   `tamanoDeProductoID` INT NULL,
+  `fotoProducto` VARCHAR(100),
   PRIMARY KEY (`productoID`),
-  INDEX `tipoDeProductoID_idx` (`tipoDeProductoID` ASC) VISIBLE,
-  INDEX `tamanoDeProductoID_idx` (`tamanoDeProductoID` ASC) VISIBLE,
+  INDEX `tipoDeProductoID_idx` (`tipoDeProductoID` ASC) ,
+  INDEX `tamanoDeProductoID_idx` (`tamanoDeProductoID` ASC) ,
   CONSTRAINT `tipoDeProductoID`
     FOREIGN KEY (`tipoDeProductoID`)
     REFERENCES `sitioFotodb`.`Tipos` (`tipoDeProductoID`)

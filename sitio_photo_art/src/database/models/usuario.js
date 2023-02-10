@@ -8,6 +8,8 @@ module.exports = function (sequelize, dataTypes) {
   };
   let colums = {
     usuarioID: {
+      primaryKey: true,
+      autoIncrement: true,
       type: dataTypes.INTEGER,
       allowNull: false,
       validate: {
@@ -23,16 +25,15 @@ module.exports = function (sequelize, dataTypes) {
       allowNull: false,
     },
     contrasena: {
-      type: dataTypes.STRING(45),
+      type: dataTypes.STRING(100),
       allowNull: false,
     },
-    foto: {
+    fotoUsuario: {
       type: dataTypes.STRING(45),
-      allowNull: false,
     },
     carritoProductoID: {
       type: dataTypes.INTEGER,
-      allowNull: false,
+      //allowNull: false,
       validate: {
         max: 11,
       },
