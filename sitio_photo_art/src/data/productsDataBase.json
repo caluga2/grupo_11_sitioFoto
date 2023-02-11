@@ -102,5 +102,23 @@
   "descripcion": "asda",
   "precio": "1221",
   "image": "default-image.png"
+ },
+ {
+  "id": 13,
+  "nombre": "ampliacao 1",
+  "descripcion": "ampliacao pb",
+  "tipoproducto": "Prints",
+  "tamaÃ±oproducto": "Pequeño",
+  "precio": "3000",
+  "image": "1676077623803.jpg"
+ },
+ {
+  "productoID": null,
+  "nombre": "Rio - Ampliación Blanco y Negro",
+  "descripcion": "Impresión analógica de una fotografía de Rio de Janeiro",
+  "tipoproducto": "Prints",
+  "tamaÃ±oproducto": "Pequeño",
+  "precio": "3000",
+  "image": "1676082395891.jpg"
  }
 ]

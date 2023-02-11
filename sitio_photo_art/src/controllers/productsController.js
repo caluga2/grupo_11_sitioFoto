@@ -20,8 +20,8 @@ const controller = {
 
   // Detail - Detail from one product
   detail: (req, res) => {
-    let id = req.params.id;
-    let product = products.find((product) => product.id == id);
+    let productoID = req.params.productoID;
+    let product = products.find((product) => product.productoID == productoID);
     res.render("detail", {
       product,
       user: req.session.userLogged,
@@ -47,34 +47,40 @@ const controller = {
       image = "default-image.png";
     }
     let newProduct = {
-      id: products[products.length - 1].id + 1,
+      productoID: products[products.length - 1].productoID + 1,
       ...req.body,
       image,
     };
     products.push(newProduct);
     fs.writeFileSync(productsFilePath, JSON.stringify(products, null, " "));
-    res.redirect("/");
+    db.productos
+        .create(newProduct)
+        .then((storedProduct) => {
+          return res.redirect("/");
+        })
+        .catch((error) => console.log(error));
+    //res.redirect("/");
   },
 
   // Update - Form to edit
   edit: (req, res) => {
-    let id = req.params.id;
-    let productToEdit = products.find((product) => product.id == id);
+    let productoID = req.params.productoID;
+    let productToEdit = products.find((product) => product.productoID == productoID);
     res.render("product-edit-form", { productToEdit });
   },
   // Update - Method to update
   update: (req, res) => {
-    let id = req.params.id;
-    let productToEdit = products.find((product) => product.id == id);
+    let productoID = req.params.productoID;
+    let productToEdit = products.find((product) => product.productoID == productoID);
 
     productToEdit = {
-      id: productToEdit.id,
+      productoID: productToEdit.productoID,
       ...req.body,
       image: productToEdit.image,
     };
 
     let newProducts = products.map((product) => {
-      if (product.id == productToEdit.id) {
+      if (product.productoID == productToEdit.productoID) {
         return (product = { ...productToEdit });
       }
       return product;
@@ -86,8 +92,8 @@ const controller = {
 
   // Delete - Delete one product from DB
   destroy: (req, res) => {
-    let id = req.params.id;
-    let finalProducts = products.filter((product) => product.id != id);
+    let productoID = req.params.productoID;
+    let finalProducts = products.filter((product) => product.productoID != productoID);
     fs.writeFileSync(
       productsFilePath,
       JSON.stringify(finalProducts, null, " ")

@@ -6,6 +6,8 @@ module.exports = function (sequelize, dataTypes) {
   };
   let colums = {
     productoID: {
+      primaryKey: true,
+      autoIncrement: true,
       type: dataTypes.INTEGER,
       allowNull: false,
     },
