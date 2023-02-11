@@ -1,9 +1,11 @@
 const fs = require("fs");
 const path = require("path");
 
+const usersFilePath = path.join(__dirname, "../data/users.json");
+const users = JSON.parse(fs.readFileSync(usersFilePath, "utf-8"));
 const productsFilePath = path.join(__dirname, "../data/productsDataBase.json");
 const products = JSON.parse(fs.readFileSync(productsFilePath, "utf-8"));
-const db = require('../database/models');
+const db = require("../database/models");
 
 const toThousand = (n) => n.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ".");
 
@@ -27,6 +29,13 @@ const controller = {
       user: req.session.userLogged,
 
       toThousand,
+    });
+  },
+  list: function (req, res) {
+    res.render("productsList", {
+      products: products,
+      users: users,
+      user: req.session.userLogged,
     });
   },
 
@@ -54,24 +63,28 @@ const controller = {
     products.push(newProduct);
     fs.writeFileSync(productsFilePath, JSON.stringify(products, null, " "));
     db.productos
-        .create(newProduct)
-        .then((storedProduct) => {
-          return res.redirect("/");
-        })
-        .catch((error) => console.log(error));
+      .create(newProduct)
+      .then((storedProduct) => {
+        return res.redirect("/");
+      })
+      .catch((error) => console.log(error));
     //res.redirect("/");
   },
 
   // Update - Form to edit
   edit: (req, res) => {
     let productoID = req.params.productoID;
-    let productToEdit = products.find((product) => product.productoID == productoID);
+    let productToEdit = products.find(
+      (product) => product.productoID == productoID
+    );
     res.render("product-edit-form", { productToEdit });
   },
   // Update - Method to update
   update: (req, res) => {
     let productoID = req.params.productoID;
-    let productToEdit = products.find((product) => product.productoID == productoID);
+    let productToEdit = products.find(
+      (product) => product.productoID == productoID
+    );
 
     productToEdit = {
       productoID: productToEdit.productoID,
@@ -93,7 +106,9 @@ const controller = {
   // Delete - Delete one product from DB
   destroy: (req, res) => {
     let productoID = req.params.productoID;
-    let finalProducts = products.filter((product) => product.productoID != productoID);
+    let finalProducts = products.filter(
+      (product) => product.productoID != productoID
+    );
     fs.writeFileSync(
       productsFilePath,
       JSON.stringify(finalProducts, null, " ")

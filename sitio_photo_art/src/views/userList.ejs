@@ -3,7 +3,7 @@
   <%- include ('./partials/head') %>
 
   <body>
-    <%- include ('./partials/header') %> <%- include ('./partials/header') %>
+    <%- include ('./partials/header') %>
     <main id="carnet">
       <br /><br /><br /><br />
       <h2>LISTADO DE USUARIOS</h2>
@@ -16,10 +16,9 @@
           </figure>
 
           <article class="articleUser">
-            <p><b>ID: </b> <%= users[i].id %></p>
+            <p><b>usuarioID: </b> <%= users[i].usuarioID %></p>
             <p><b>NOMBRE: </b> <%= users[i].name %></p>
             <p><b>EMAIL: </b> <%= users[i].email %></p>
-            <p><b>CONTRASEÑA: </b> <%= users[i].contrasena %></p>
           </article>
         </div>
         <% } %>
