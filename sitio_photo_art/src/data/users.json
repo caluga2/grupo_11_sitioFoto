@@ -40,5 +40,12 @@
   "email": "asa@masm.com",
   "contrasena": "$2a$10$JM.JUqfss98kWg.VBQJPDOuEwtajQlXiCryfxdhMtg2eNo9xHPKZu",
   "image": "default-image.png"
+ },
+ {
+  "usuarioID": 7,
+  "nombre": "asasa",
+  "email": "das@sa.com",
+  "contrasena": "$2a$10$.KtCbOdkJ3Kb9eINwrFUsey4B5qTs7L.8bTsFeJD8k7zbBSZMkBAi",
+  "image": "default-image.png"
  }
 ]

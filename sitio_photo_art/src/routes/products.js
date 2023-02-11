@@ -25,14 +25,16 @@ router.get("/productAdd", productsController.productAdd);
 router.post("/", upload.single("imagen"), productsController.store);
 
 /* GET ONE PRODUCT DETAIL */
-router.get("/detail/:id", productsController.detail);
+router.get("/detail/:productoID", productsController.detail);
 
 /* EDIT ONE PRODUCT */
-router.get("/edit/:id", productsController.edit);
-router.patch("/edit/:id", productsController.update);
+router.get("/edit/:productoID", productsController.edit);
+router.post("/edit/:productoID", productsController.update);
+router.patch("/edit/:productoID", productsController.update);
 router.get("/productsList", productsController.list);
 
 /* DELETE ONE PRODUCT***/
-router.delete("/delete/:id", productsController.destroy);
+router.post("/delete/:productoID", productsController.delete);
+router.delete('/delete/:productoID', productsController.delete);
 
 module.exports = router;

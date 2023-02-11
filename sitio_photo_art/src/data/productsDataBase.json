@@ -192,5 +192,22 @@
   "tamanoDeProductoID": "3",
   "precio": "656566",
   "image": "default-image.png"
+ },
+ {
+  "productoID": 9,
+  "image": "default-image.png"
+ },
+ {
+  "productoID": 10,
+  "image": "default-image.png"
+ },
+ {
+  "productoID": 11,
+  "nombre": "assda",
+  "descripcion": "asasd",
+  "tipoDeProductoID": "1",
+  "tamanoDeProductoID": "2",
+  "precio": "111",
+  "image": "default-image.png"
  }
 ]

@@ -24,6 +24,7 @@
                   accept=".jpg"
                   multiple
                   id="InputBoton_subirFoto_productAdd"
+                  value="<%=products.imagen%>"
                 /><br />
               </div>
             </div>
@@ -37,6 +38,7 @@
             name="nombre"
             placeholder="Ingresá el nombre del producto"
             required
+            value="<%=products.nombre%>"
           />
           <br />
 
@@ -51,6 +53,7 @@
             rows="6"
             placeholder="Ingresá la descripcion del producto"
             required
+            value="<%=products.descripcion%>"
           ></textarea>
           <br />
 
@@ -58,11 +61,11 @@
             <section class="option_left_productAdd">
               <h4>Tipo de producto</h4>
 
-              <label for="tipoproducto"
+              <label for="tipoDeProducto"
                 ><input
                   type="radio"
-                  name="tipoproducto"
-                  value="Prints"
+                  name="tipoDeProducto"
+                  value="<%=products.tipoDeProducto%>"
                 />Prints</label
               >
               <br />
@@ -70,16 +73,16 @@
               <label
                 ><input
                   type="radio"
-                  name="tipoproducto"
-                  value="Enmarcados"
+                  name="tipoDeProducto"
+                  value="<%=products.tipoDeProducto%>"
                 />Enmarcados</label
               >
               <br />
               <label
                 ><input
                   type="radio"
-                  name="tipoproducto"
-                  value="Servicios Fotográficos"
+                  name="tipoDeProducto"
+                  value="<%=products.tipoDeProducto%>"
                 />Servicios Fotográficos</label
               >
             </section>
@@ -89,23 +92,25 @@
               <label
                 ><input
                   type="radio"
-                  name="tamanoproducto"
-                  value="Pequeño"
+                  name="tamanoDeProducto"
+                  value="<%=products.tamanoDeProducto%>"
                 />Pequeño A5</label
               >
               <br />
 
               <label
-                ><input type="radio" name="tamanoproducto" value="Medio" />Medio
-                20x30</label
+                ><input type="radio" 
+                name="tamanoDeProducto" 
+                value="<%=products.tamanoDeProducto%>" 
+                />Medio 20x30</label
               >
               <br />
 
               <label
                 ><input
                   type="radio"
-                  name="tamanoproducto"
-                  value="Grande"
+                  name="tamanoDeProducto"
+                  value="<%=products.tamanoDeProducto%>"
                 />Grande 30x45</label
               >
               <br />
@@ -113,8 +118,8 @@
               <label
                 ><input
                   type="radio"
-                  name="tamanoproducto"
-                  value="Master"
+                  name="tamanoDeProducto"
+                  value="<%=products.tamanoDeProducto%>"
                 />Master 50x70</label
               >
             </section>
@@ -128,6 +133,7 @@
               name="precio"
               placeholder="Ingresá el precio del producto"
               required
+              value="<%=products.precio%>"
             />
 
             <hr class="magen_top_productAdd" />

@@ -72,44 +72,40 @@ const controller = {
         return res.redirect("/");
       })
       .catch((error) => console.log(error));
-    //res.redirect("/");
   },
 
   // Update - Form to edit
   edit: (req, res) => {
-    let productoID = req.params.productoID;
-    let productToEdit = products.find(
-      (product) => product.productoID == productoID
-    );
-    res.render("product-edit-form", { productToEdit });
+    db.productos.findByPk(req.params.productoID)
+      .then(function(productos){
+        res.render('product-edit-form'), {productos:productos}
+      })
   },
+
   // Update - Method to update
   update: (req, res) => {
-    let productoID = req.params.productoID;
-    let productToEdit = products.find(
-      (product) => product.productoID == productoID
-    );
-
-    productToEdit = {
-      productoID: productToEdit.productoID,
-      ...req.body,
-      image: productToEdit.image,
-    };
-
-    let newProducts = products.map((product) => {
-      if (product.productoID == productToEdit.productoID) {
-        return (product = { ...productToEdit });
+    db.productos.update({
+        nombre: req.body.nombre,
+        descripcion: req.body.descripcion,
+        tipoDeProductoID: req.body.tipoDeProducto,
+        tamanoDeProductoID: req.body.tamanoDeProducto,
+        precio: req.body.precio, 
+        image,
+      },
+      {
+        where: {productoID:req.params.productoID}
       }
-      return product;
-    });
-
-    fs.writeFileSync(productsFilePath, JSON.stringify(newProducts, null, " "));
-    res.redirect("/");
+    )
+    res.redirect('../views/product-edit-form.ejs'+req.params.productoID)
   },
 
   // Delete - Delete one product from DB
-  destroy: (req, res) => {
-    let productoID = req.params.productoID;
+  delete: (req, res) => {
+    db.productos.destroy({
+      where: {productoID:req.params.productoID}
+    })
+    res.redirect('/productsList')
+    /*let productoID = req.params.productoID;
     let finalProducts = products.filter(
       (product) => product.productoID != productoID
     );
@@ -117,7 +113,7 @@ const controller = {
       productsFilePath,
       JSON.stringify(finalProducts, null, " ")
     );
-    res.redirect("/");
+    res.redirect("/");*/
   },
 };
 

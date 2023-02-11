@@ -23,6 +23,12 @@
             <p><b>tamanoproducto: </b> <%= products[i].tamanoproducto %></p>
             <p><b>precio: </b> <%= products[i].precio %></p>
             <p><b>image: </b> <%= products[i].image %></p>
+            <form action="../Products/delete/<%= products.productoID %>" method="POST">
+              <button type="submit" class="LoginButton">Eliminar</button>
+            </form>
+            <form action="../Products/edit/<%= products.productoID %>" method="POST">
+              <button type="submit" class="LoginButton">Editar</button>
+            </form>
           </article>
         </div>
         <% } %>
