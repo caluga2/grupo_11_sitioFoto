@@ -41,12 +41,13 @@ body {
 .main-header-zocalo .Inicio {
   /*background-color: #2049eb;*/
   display: flex;
-  max-width: 1200px;
+  /*max-width: 1200px;*/
   align-items: center;
   margin: auto;
 }
 
 .main-header-zocalo .Inicio nav {
+  /*background-color: brown;*/
   display: flex;
   width: 100%;
 }
@@ -120,6 +121,7 @@ body {
   height: 100%;
   font-size: 20px;
   color: var(--color-negro);
+  margin-right: 5%;
 }
 
 .menu-derecha ul {
