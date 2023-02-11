@@ -1,3 +1,5 @@
+const tamanos = require("./tamano.js");
+
 module.exports = function (sequelize, dataTypes) {
   let alias = "productos";
   let config = {
@@ -30,22 +32,29 @@ module.exports = function (sequelize, dataTypes) {
     tipoDeProductoID: {
       type: dataTypes.INTEGER,
       validate: {
-        defaultValue: null,
+        //defaultValue: null,
         max: 11,
-        allowNull: true,
+        //allowNull: true,
       },
     },
 
     tamanoDeProductoID: {
       type: dataTypes.INTEGER,
       validate: {
-        defaultValue: null,
+        //defaultValue: null,
         max: 11,
-        allowNull: true,
+        //allowNull: true,
       },
     },
   };
   const producto = sequelize.define(alias, colums, config);
+
+  producto.associate = function(models){
+    producto.belongsTo(models.tamanos, {
+      as: 'tamanoDeProducto',
+      foreignKey: 'tamanoDeProductoID'
+    })
+  }
 
   return producto;
 };

@@ -12,5 +12,33 @@
   "email": "sitioFoto@outlook.com",
   "contrasena": "$2a$10$yFEeyamYHmN1/e0mAns08OFnb/2fWZuBkiMuGRwNAkG7PTzD4LCO2",
   "image": "default-image.png"
+ },
+ {
+  "usuarioID": 3,
+  "nombre": "dsd",
+  "email": "ass@gmail.com",
+  "contrasena": "$2a$10$QSaOKe6NlTU3pQlyvLEHxOQRWW5fcSOMS75ABTfhCWaAf7gyE8uCO",
+  "image": "default-image.png"
+ },
+ {
+  "usuarioID": 4,
+  "nombre": "asas",
+  "email": "asas@gmail.com",
+  "contrasena": "$2a$10$BLz./Uea/X2zdHwlRuiQfeaao49kSqDrPuf8iIYoyixwXKnvAAkSm",
+  "image": "default-image.png"
+ },
+ {
+  "usuarioID": 5,
+  "nombre": "asas",
+  "email": "asas@aslk.com",
+  "contrasena": "$2a$10$oNpqJJMHCaNwMCr1OQ3DMOfPZu4mUNTePLKqWWCb1e/3SiDGRhbNy",
+  "image": "default-image.png"
+ },
+ {
+  "usuarioID": 6,
+  "nombre": "aads",
+  "email": "asa@masm.com",
+  "contrasena": "$2a$10$JM.JUqfss98kWg.VBQJPDOuEwtajQlXiCryfxdhMtg2eNo9xHPKZu",
+  "image": "default-image.png"
  }
 ]

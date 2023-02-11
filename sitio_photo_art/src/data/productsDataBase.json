@@ -120,5 +120,68 @@
   "tamaÃ±oproducto": "Pequeño",
   "precio": "3000",
   "image": "1676082395891.jpg"
+ },
+ {
+  "productoID": 1,
+  "nombre": "lmlkm",
+  "descripcion": "lmkml",
+  "tipoproducto": "Prints",
+  "tamanoproducto": "Medio",
+  "precio": "7979",
+  "image": "default-image.png"
+ },
+ {
+  "productoID": 2,
+  "nombre": "asas",
+  "descripcion": "asas",
+  "tipoproducto": "Prints",
+  "tamanoDeProducto": "Pequeño",
+  "precio": "3333",
+  "image": "default-image.png"
+ },
+ {
+  "productoID": 3,
+  "nombre": "wdsd",
+  "descripcion": "sdsd",
+  "tipoDeProducto": "Prints",
+  "tamanoDeProducto": "Medio",
+  "precio": "3332",
+  "image": "default-image.png"
+ },
+ {
+  "productoID": 4,
+  "nombre": "dsdsdsd",
+  "descripcion": "dddd",
+  "tipoDeProductoID": "Prints",
+  "tamanoDeProductoID": "Medio",
+  "precio": "4444",
+  "image": "default-image.png"
+ },
+ {
+  "productoID": 5,
+  "nombre": "w343",
+  "descripcion": "444",
+  "tipoDeProductoID": "Prints",
+  "tamanoDeProductoID": "Medio",
+  "precio": "4434",
+  "image": "default-image.png"
+ },
+ {
+  "productoID": 6,
+  "nombre": "2121",
+  "descripcion": "assa",
+  "tipoDeProductoID": "1",
+  "tamanoDeProductoID": "2",
+  "precio": "323",
+  "image": "default-image.png"
+ },
+ {
+  "productoID": 7,
+  "nombre": "2233",
+  "descripcion": "32323",
+  "tipoDeProductoID": "1",
+  "tamanoDeProductoID": "1",
+  "precio": "3333",
+  "image": "default-image.png"
  }
 ]

@@ -67,9 +67,9 @@ ENGINE = InnoDB;
 -- Table `sitioFotodb`.`Tipos`
 -- -----------------------------------------------------
 CREATE TABLE IF NOT EXISTS `sitioFotodb`.`Tipos` (
-  `tipoDeProductoID` INT NOT NULL,
+  `tipoDeProductoID` INT NOT NULL,
   `tipoDeProducto` VARCHAR(45) NOT NULL,
-  PRIMARY KEY (`tipoDeProductoID`))
+  PRIMARY KEY (`tipoDeProductoID`))
 ENGINE = InnoDB;
 
 
@@ -99,7 +99,7 @@ CREATE TABLE IF NOT EXISTS `sitioFotodb`.`Productos` (
   INDEX `tamanoDeProductoID_idx` (`tamanoDeProductoID` ASC) ,
   CONSTRAINT `tipoDeProductoID`
     FOREIGN KEY (`tipoDeProductoID`)
-    REFERENCES `sitioFotodb`.`Tipos` (`tipoDeProductoID`)
+    REFERENCES `sitioFotodb`.`Tipos` (`tipoDeProductoID`)
     ON DELETE NO ACTION
     ON UPDATE NO ACTION,
   CONSTRAINT `tamanoDeProductoID`

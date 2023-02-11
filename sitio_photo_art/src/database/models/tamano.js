@@ -1,3 +1,5 @@
+const productos = require("./producto.js");
+
 module.exports = function (sequelize, dataTypes) {
   let alias = "tamanos";
   let config = {
@@ -6,6 +8,7 @@ module.exports = function (sequelize, dataTypes) {
   };
   let colums = {
     tamanoDeProductoID: {
+      primaryKey: true,
       type: dataTypes.INTEGER,
       allowNull: false,
       validate: {
@@ -19,6 +22,13 @@ module.exports = function (sequelize, dataTypes) {
   };
 
   const tamano = sequelize.define(alias, colums, config);
+
+  tamano.associate = function(models){
+    tamano.hasMany(models.productos, {
+      foreignKey: 'tamanoDeProductoID',
+      as: 'productos',
+    })
+  }
 
   return tamano;
 };

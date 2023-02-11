@@ -57,7 +57,11 @@ const controller = {
     }
     let newProduct = {
       productoID: products[products.length - 1].productoID + 1,
-      ...req.body,
+      nombre: req.body.nombre,
+      descripcion: req.body.descripcion,
+      tipoDeProductoID: req.body.tipoDeProducto,
+      tamanoDeProductoID: req.body.tamanoDeProducto,
+      precio: req.body.precio, 
       image,
     };
     products.push(newProduct);
