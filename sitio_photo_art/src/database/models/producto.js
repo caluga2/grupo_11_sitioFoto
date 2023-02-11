@@ -1,4 +1,6 @@
 const tamanos = require("./tamano.js");
+const tipos = require("./tipo.js");
+
 
 module.exports = function (sequelize, dataTypes) {
   let alias = "productos";
@@ -53,6 +55,10 @@ module.exports = function (sequelize, dataTypes) {
     producto.belongsTo(models.tamanos, {
       as: 'tamanoDeProducto',
       foreignKey: 'tamanoDeProductoID'
+    }),
+    producto.belongsTo(models.tipos, {
+      as: 'tipoDeProducto',
+      foreignKey: 'tipoDeProductoID'
     })
   }
 

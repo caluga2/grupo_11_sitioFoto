@@ -183,5 +183,14 @@
   "tamanoDeProductoID": "1",
   "precio": "3333",
   "image": "default-image.png"
+ },
+ {
+  "productoID": 8,
+  "nombre": "sdfdss",
+  "descripcion": "asasdsd",
+  "tipoDeProductoID": "2",
+  "tamanoDeProductoID": "3",
+  "precio": "656566",
+  "image": "default-image.png"
  }
 ]

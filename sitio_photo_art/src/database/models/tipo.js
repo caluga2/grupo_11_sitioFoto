@@ -1,3 +1,5 @@
+const productos = require("./producto.js");
+
 module.exports = function (sequelize, dataTypes) {
   let alias = "tipos";
   let config = {
@@ -19,6 +21,13 @@ module.exports = function (sequelize, dataTypes) {
   };
 
   const tipo = sequelize.define(alias, colums, config);
+
+  tipo.associate = function(models){
+    tipo.hasMany(models.productos, {
+      foreignKey: 'tipoDeProductoID',
+      as: 'productos',
+    })
+  }
 
   return tipo;
 };
