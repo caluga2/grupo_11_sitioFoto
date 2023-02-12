@@ -61,7 +61,7 @@ const controller = {
       descripcion: req.body.descripcion,
       tipoDeProductoID: req.body.tipoDeProducto,
       tamanoDeProductoID: req.body.tamanoDeProducto,
-      precio: req.body.precio, 
+      precio: req.body.precio,
       image,
     };
     products.push(newProduct);
@@ -76,44 +76,41 @@ const controller = {
 
   // Update - Form to edit
   edit: (req, res) => {
-    db.productos.findByPk(req.params.productoID)
-      .then(function(productos){
-        res.render('product-edit-form'), {productos:productos}
-      })
+    db.productos.findByPk(req.params.productoID).then(function (productos) {
+      res.render("product-edit-form"), { productos: productos };
+    });
   },
 
   // Update - Method to update
   update: (req, res) => {
-    db.productos.update({
+    db.productos.update(
+      {
         nombre: req.body.nombre,
         descripcion: req.body.descripcion,
         tipoDeProductoID: req.body.tipoDeProducto,
         tamanoDeProductoID: req.body.tamanoDeProducto,
-        precio: req.body.precio, 
+        precio: req.body.precio,
         image,
       },
       {
-        where: {productoID:req.params.productoID}
+        where: { productoID: req.params.productoID },
       }
-    )
-    res.redirect('../views/product-edit-form.ejs'+req.params.productoID)
+    );
+    res.redirect("../views/product-edit-form.ejs" + req.params.productoID);
   },
 
   // Delete - Delete one product from DB
   delete: (req, res) => {
     db.productos.destroy({
-      where: {productoID:req.params.productoID}
-    })
-    res.redirect('/productsList')
-    /*let productoID = req.params.productoID;
+      where: { productoID: req.params.productoID },
+    });
+
+    let productoID = req.params.productoID;
     let finalProducts = products.filter(
       (product) => product.productoID != productoID
     );
-    fs.writeFileSync(
-      productsFilePath,
-      JSON.stringify(finalProducts, null, " ")
-    );
-    res.redirect("/");*/
+    fs.writeFileSync(productsFilePath, JSON.stringify(finalProducts, null, 2));
+    res.redirect("../");
   },
 };
 

@@ -1,21 +1,21 @@
 module.exports = {
   //para MACOS
-  development: {
+  /*development: {
     username: "root",
     password: "root",
     database: "sitiofotodb",
     host: "127.0.0.1",
     dialect: "mysql",
-    port: '8889' 
-  },
+    port: "8889",
+  },*/
   //para Windows
-  /*development: {
-    password: null, 
-    password: "root",
+  development: {
+    password: null,
+    username: "root",
     database: "sitiofotodb",
     host: "127.0.0.1",
     dialect: "mysql",
-  },*/
+  },
   test: {
     username: "root",
     password: null,

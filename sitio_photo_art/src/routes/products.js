@@ -35,6 +35,5 @@ router.get("/productsList", productsController.list);
 
 /* DELETE ONE PRODUCT***/
 router.post("/delete/:productoID", productsController.delete);
-router.delete('/delete/:productoID', productsController.delete);
 
 module.exports = router;
