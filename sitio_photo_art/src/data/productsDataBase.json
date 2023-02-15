@@ -25,5 +25,21 @@
   "tamanoDeProductoID": "1",
   "precio": "56",
   "fotoProducto": "1676488894970.jpg"
+ },
+ {
+  "nombre": "sewe",
+  "descripcion": "wewe",
+  "tipoDeProductoID": "1",
+  "tamanoDeProductoID": "2",
+  "precio": "233",
+  "fotoProducto": "default-image.png"
+ },
+ {
+  "nombre": "2332",
+  "descripcion": "2323",
+  "tipoDeProductoID": "1",
+  "tamanoDeProductoID": "2",
+  "precio": "3223",
+  "fotoProducto": "default-image.png"
  }
 ]

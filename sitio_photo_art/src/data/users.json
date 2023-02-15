@@ -12,5 +12,17 @@
   "email": "234@a.com",
   "contrasena": "$2a$10$n/uvO/X8/aCgQE96d6qUFOIQB6BJkPYvlzMEJHbvJk3z/yrdTX4hS",
   "fotoUsuario": "1676489639942.jpg"
+ },
+ {
+  "nombre": "334",
+  "email": "3443@1.com",
+  "contrasena": "$2a$10$ExqyCEmV9svTr/jUtcxsTugr8LVTmO.CBLg6qN9YKtmF7tVYrUI/i",
+  "fotoUsuario": "default fotoUsuario.png"
+ },
+ {
+  "nombre": "1221",
+  "email": "1221@gmail.com",
+  "contrasena": "$2a$10$SYG6vAmtzRK7gn4lv7kS9Ofyv1lqXvsokFv1Bnr5uG7xLdi8q0AY2",
+  "fotoUsuario": "default fotoUsuario.png"
  }
 ]

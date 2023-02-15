@@ -87,7 +87,7 @@ ENGINE = InnoDB;
 -- Table `sitioFotodb`.`Productos`
 -- -----------------------------------------------------
 CREATE TABLE IF NOT EXISTS `sitioFotodb`.`Productos` (
-  `productoID` INT NOT NULL,
+  `productoID` INT NOT NULL AUTO_INCREMENT,
   `nombre` VARCHAR(45) NOT NULL,
   `descripcion` TEXT NOT NULL,
   `precio` DECIMAL(10,2) NOT NULL,

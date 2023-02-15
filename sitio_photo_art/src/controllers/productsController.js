@@ -56,7 +56,7 @@ const controller = {
       fotoProducto = "default-image.png";
     }
     let newProduct = {
-      productoID: products[products.length - 1].productoID + 1,
+      //productoID: products[products.length - 1].productoID + 1,
       nombre: req.body.nombre,
       descripcion: req.body.descripcion,
       tipoDeProductoID: req.body.tipoDeProducto,

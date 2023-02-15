@@ -57,6 +57,7 @@ const controller = {
     if (errores.isEmpty()) {
       let fotoUsuario;
       // seguir revisando para que se fije si el mail ya se encuentra registrado
+      //buscar metodo para remplazar
       for (let i = 0; i < users.length; i++) {
         if (users[i].email == req.body.email) {
           return res.render("register", {
@@ -77,7 +78,7 @@ const controller = {
       }
 
       let newUser = {
-        usuarioID: users[users.length - 1].usuarioID + 1,
+        //usuarioID: users[users.length - 1].usuarioID + 1,
         nombre: req.body.nombre,
         email: req.body.email,
         contrasena: bcrypt.hashSync(req.body.contrasena, 10),
