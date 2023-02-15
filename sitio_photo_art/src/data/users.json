@@ -1,3 +1,16 @@
 [
- 
+ {
+  "usuarioID": 1,
+  "nombre": "Carolina",
+  "email": "carol@email.com",
+  "contrasena": "contrasena",
+  "fotoUsuario": "default.png"
+ },
+ {
+  "usuarioID": 2,
+  "nombre": "243",
+  "email": "234@a.com",
+  "contrasena": "$2a$10$n/uvO/X8/aCgQE96d6qUFOIQB6BJkPYvlzMEJHbvJk3z/yrdTX4hS",
+  "fotoUsuario": "1676489639942.jpg"
+ }
 ]

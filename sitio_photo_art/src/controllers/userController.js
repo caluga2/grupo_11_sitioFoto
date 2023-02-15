@@ -55,7 +55,7 @@ const controller = {
   store: (req, res) => {
     let errores = validationResult(req);
     if (errores.isEmpty()) {
-      let image;
+      let fotoUsuario;
       // seguir revisando para que se fije si el mail ya se encuentra registrado
       for (let i = 0; i < users.length; i++) {
         if (users[i].email == req.body.email) {
@@ -71,9 +71,9 @@ const controller = {
       }
       // --------------------------------- hasta aca ---------------------
       if (req.file != undefined) {
-        image = req.file.filename;
+       fotoUsuario = req.file.filename;
       } else {
-        image = "default-image.png";
+       fotoUsuario = "default fotoUsuario.png";
       }
 
       let newUser = {
@@ -81,7 +81,7 @@ const controller = {
         nombre: req.body.nombre,
         email: req.body.email,
         contrasena: bcrypt.hashSync(req.body.contrasena, 10),
-        image,
+       fotoUsuario,
         //carritoProductoID: users[users.length - 1].usuarioID + 1,
       };
       users.push(newUser);
