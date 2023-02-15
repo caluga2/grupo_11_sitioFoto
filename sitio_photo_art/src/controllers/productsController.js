@@ -49,11 +49,11 @@ const controller = {
   // Create -  Method to store
 
   store: (req, res) => {
-    let image;
+    let fotoProducto;
     if (req.file != undefined) {
-      image = req.file.filename;
+      fotoProducto = req.file.filename;
     } else {
-      image = "default-image.png";
+      fotoProducto = "default-image.png";
     }
     let newProduct = {
       productoID: products[products.length - 1].productoID + 1,
@@ -62,7 +62,7 @@ const controller = {
       tipoDeProductoID: req.body.tipoDeProducto,
       tamanoDeProductoID: req.body.tamanoDeProducto,
       precio: req.body.precio,
-      image,
+      fotoProducto,
     };
     products.push(newProduct);
     fs.writeFileSync(productsFilePath, JSON.stringify(products, null, " "));
@@ -90,7 +90,7 @@ const controller = {
         tipoDeProductoID: req.body.tipoDeProducto,
         tamanoDeProductoID: req.body.tamanoDeProducto,
         precio: req.body.precio,
-        image,
+        fotoProducto,
       },
       {
         where: { productoID: req.params.productoID },

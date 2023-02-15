@@ -48,6 +48,10 @@ module.exports = function (sequelize, dataTypes) {
         //allowNull: true,
       },
     },
+
+    fotoProducto:{
+      type:dataTypes.STRING(100),
+    }
   };
   const producto = sequelize.define(alias, colums, config);
 
