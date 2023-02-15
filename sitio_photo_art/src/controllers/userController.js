@@ -35,6 +35,18 @@ const controller = {
         }
       }
     }
+
+    //en proceso - cambiar del json a base de datos
+    /*if (db.usuarios.findAll({
+      where: {email : req.body.email},
+    })){
+      if (bcrypt.compareSync(req.body.contrasenaLogin, db.usuarios.findAll({
+        where: {contrasena : req.body.contrasena}
+      }))) {
+        var usuarioALogearse = users[i];
+      }
+    }*/
+    
     if (usuarioALogearse == undefined) {
       return res.render("errorLogin", { user: req.session.userLogged });
     } else {

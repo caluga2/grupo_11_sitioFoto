@@ -9,6 +9,12 @@
       <div class="caja_productAdd">
         <h3>CARGUE DATOS DEL PRODUCTO</h3>
 
+        <% if (locals.errores) { %>
+          <% errores.forEach(unError => { %>
+          <p class="erroresRegister"><%= unError.msg %></p>
+          <%}) %>
+          <%}%>
+
         <form
           action="../products"
           class="main_form_productAdd"

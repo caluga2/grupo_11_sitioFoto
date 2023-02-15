@@ -24,5 +24,11 @@
   "email": "1221@gmail.com",
   "contrasena": "$2a$10$SYG6vAmtzRK7gn4lv7kS9Ofyv1lqXvsokFv1Bnr5uG7xLdi8q0AY2",
   "fotoUsuario": "default fotoUsuario.png"
+ },
+ {
+  "nombre": "ab",
+  "email": "ab@ab.com",
+  "contrasena": "$2a$10$eGWZCOPGqjzU2ZtYsN7sL.Fielor/1tQnmCnv.iYFGgCg2u9L9inC",
+  "fotoUsuario": "default fotoUsuario.png"
  }
 ]

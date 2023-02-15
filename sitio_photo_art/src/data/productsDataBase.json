@@ -41,5 +41,19 @@
   "tamanoDeProductoID": "2",
   "precio": "3223",
   "fotoProducto": "default-image.png"
+ },
+ {
+  "nombre": "33",
+  "descripcion": "333",
+  "precio": "33",
+  "fotoProducto": "default-image.png"
+ },
+ {
+  "nombre": "qwwqqw",
+  "descripcion": "qwqwwqqwwqwqqwwqwqqwwq",
+  "tipoDeProductoID": "1",
+  "tamanoDeProductoID": "2",
+  "precio": "1333",
+  "fotoProducto": "default-image.png"
  }
 ]

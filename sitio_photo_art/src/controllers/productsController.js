@@ -1,6 +1,6 @@
 const fs = require("fs");
 const path = require("path");
-
+const { validationResult } = require("express-validator");
 const usersFilePath = path.join(__dirname, "../data/users.json");
 const users = JSON.parse(fs.readFileSync(usersFilePath, "utf-8"));
 const productsFilePath = path.join(__dirname, "../data/productsDataBase.json");
@@ -49,6 +49,8 @@ const controller = {
   // Create -  Method to store
 
   store: (req, res) => {
+    let errores = validationResult(req);
+    if (errores.isEmpty()) {
     let fotoProducto;
     if (req.file != undefined) {
       fotoProducto = req.file.filename;
@@ -71,7 +73,13 @@ const controller = {
       .then((storedProduct) => {
         return res.redirect("/");
       })
-      .catch((error) => console.log(error));
+      .catch((error) => console.log(error));}
+      else {
+        res.render("productAdd", {
+          errores: errores.array(),
+          user: req.session.userLogged,
+        });
+      }
   },
 
   // Update - Form to edit
