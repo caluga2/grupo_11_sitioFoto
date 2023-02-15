@@ -1,187 +1,241 @@
 [
-  {
-    "id": 1,
-    "name": "Cafetera Moulinex Dolce Gusto Edited",
-    "price": 100,
-    "discount": 50,
-    "category": "visited",
-    "description": "Cafetera Dolce Gusto Lumio. La cafetera Dolce Gusto Lumio es de variedad automática que ha llegado con un diseño radical al que nos tenía acostumbrados Dolce Gusto.En este post te contamos todo lo que necesitas saber sobre ella, desde sus características técnicas hasta la calidad de las cápsulas o price.",
-    "image": "img-cafetera-moulinex.jpg"
-  },
-  {
-    "id": 2,
-    "name": "Macbook Pro 2022",
-    "price": 500,
-    "discount": 3,
-    "category": "in-sale",
-    "description": "Macbook Pro 2019 Mpxq2ll/a Intel Core i5 2.3 Ghz 8gb RAM 128gb SSD Pantalla 13.3\" Retina Apple Nueva Original. Importada de USA. Se entrega con la factura de compra para contar con la garantía del fabricante",
-    "image": "img-macbook-pro-2019.jpg"
-  },
-  {
-    "id": 3,
-    "nombre": "sas",
-    "descripcion": "das",
-    "tipoproducto": "Servicios Fotográficos",
-    "precio": "233",
-    "image": "imagen-1668737574512-881819207"
-  },
-  {
-    "id": 4,
-    "nombre": "ruru",
-    "descripcion": "agrego ruru",
-    "tipoproducto": "Prints",
-    "tamaÃ±oproducto": "Grande",
-    "precio": "10",
-    "image": "imagen-1671755387546-153387583"
-  },
-  {
-    "id": 5,
-    "nombre": "rere",
-    "descripcion": "agrego rere",
-    "tipoproducto": "Prints",
-    "tamaÃ±oproducto": "Pequeño",
-    "precio": "10",
-    "image": "imagen-1671755422947-23927248"
-  },
-  {
-    "id": 6,
-    "nombre": "llavero",
-    "descripcion": "llavero",
-    "tipoproducto": "Prints",
-    "tamaÃ±oproducto": "Grande",
-    "precio": "10",
-    "image": "1671758838828.jpg"
-  },
-  {
-    "id": 7,
-    "nombre": "111",
-    "descripcion": "112",
-    "tipoproducto": "Prints",
-    "tamaÃ±oproducto": "Pequeño",
-    "precio": "11",
-    "image": "1671759493358.jpg"
-  },
-  {
-    "id": 8,
-    "nombre": "1221",
-    "descripcion": "3223",
-    "tipoproducto": "Prints",
-    "tamaÃ±oproducto": "Master",
-    "precio": "122",
-    "image": "1671760000661.jpg"
-  },
-  {
-    "id": 9,
-    "nombre": "qwwq",
-    "descripcion": "2121",
-    "tipoproducto": "Prints",
-    "precio": "12",
-    "image": "1671760077777.jpg"
-  },
-  {
-    "id": 10,
-    "nombre": "43",
-    "descripcion": "dfsfd",
-    "tipoproducto": "Prints",
-    "tamaÃ±oproducto": "Master",
-    "precio": "21",
-    "image": "1671760241404.jpg"
-  },
-  {
-    "id": 11,
-    "nombre": "asadds",
-    "descripcion": "sdsd",
-    "tipoproducto": "Prints",
-    "tamaÃ±oproducto": "Medio",
-    "precio": "2121",
-    "image": "1672102460515.jpg"
-  },
-  {
-    "id": 12,
-    "nombre": "asd",
-    "descripcion": "asda",
-    "precio": "1221",
-    "image": "default-image.png"
-  },
-  {
-    "id": 13,
-    "nombre": "ampliacao 1",
-    "descripcion": "ampliacao pb",
-    "tipoproducto": "Prints",
-    "tamaÃ±oproducto": "Pequeño",
-    "precio": "3000",
-    "image": "1676077623803.jpg"
-  },
-  {
-    "productoID": null,
-    "nombre": "Rio - Ampliación Blanco y Negro",
-    "descripcion": "Impresión analógica de una fotografía de Rio de Janeiro",
-    "tipoproducto": "Prints",
-    "tamaÃ±oproducto": "Pequeño",
-    "precio": "3000",
-    "image": "1676082395891.jpg"
-  },
-  {
-    "productoID": 1,
-    "nombre": "lmlkm",
-    "descripcion": "lmkml",
-    "tipoproducto": "Prints",
-    "tamanoproducto": "Medio",
-    "precio": "7979",
-    "image": "default-image.png"
-  },
-  {
-    "productoID": 2,
-    "nombre": "asas",
-    "descripcion": "asas",
-    "tipoproducto": "Prints",
-    "tamanoDeProducto": "Pequeño",
-    "precio": "3333",
-    "image": "default-image.png"
-  },
-  {
-    "productoID": 3,
-    "nombre": "wdsd",
-    "descripcion": "sdsd",
-    "tipoDeProducto": "Prints",
-    "tamanoDeProducto": "Medio",
-    "precio": "3332",
-    "image": "default-image.png"
-  },
-  {
-    "productoID": 4,
-    "nombre": "dsdsdsd",
-    "descripcion": "dddd",
-    "tipoDeProductoID": "Prints",
-    "tamanoDeProductoID": "Medio",
-    "precio": "4444",
-    "image": "default-image.png"
-  },
-  {
-    "productoID": 5,
-    "nombre": "w343",
-    "descripcion": "444",
-    "tipoDeProductoID": "Prints",
-    "tamanoDeProductoID": "Medio",
-    "precio": "4434",
-    "image": "default-image.png"
-  },
-  {
-    "productoID": 6,
-    "nombre": "2121",
-    "descripcion": "assa",
-    "tipoDeProductoID": "1",
-    "tamanoDeProductoID": "2",
-    "precio": "323",
-    "image": "default-image.png"
-  },
-  {
-    "productoID": 7,
-    "nombre": "2233",
-    "descripcion": "32323",
-    "tipoDeProductoID": "1",
-    "tamanoDeProductoID": "1",
-    "precio": "3333",
-    "image": "default-image.png"
-  }
+ {
+  "id": 1,
+  "name": "Cafetera Moulinex Dolce Gusto Edited",
+  "price": 100,
+  "discount": 50,
+  "category": "visited",
+  "description": "Cafetera Dolce Gusto Lumio. La cafetera Dolce Gusto Lumio es de variedad automática que ha llegado con un diseño radical al que nos tenía acostumbrados Dolce Gusto.En este post te contamos todo lo que necesitas saber sobre ella, desde sus características técnicas hasta la calidad de las cápsulas o price.",
+  "image": "img-cafetera-moulinex.jpg"
+ },
+ {
+  "id": 2,
+  "name": "Macbook Pro 2022",
+  "price": 500,
+  "discount": 3,
+  "category": "in-sale",
+  "description": "Macbook Pro 2019 Mpxq2ll/a Intel Core i5 2.3 Ghz 8gb RAM 128gb SSD Pantalla 13.3\" Retina Apple Nueva Original. Importada de USA. Se entrega con la factura de compra para contar con la garantía del fabricante",
+  "image": "img-macbook-pro-2019.jpg"
+ },
+ {
+  "id": 3,
+  "nombre": "sas",
+  "descripcion": "das",
+  "tipoproducto": "Servicios Fotográficos",
+  "precio": "233",
+  "image": "imagen-1668737574512-881819207"
+ },
+ {
+  "id": 4,
+  "nombre": "ruru",
+  "descripcion": "agrego ruru",
+  "tipoproducto": "Prints",
+  "tamaÃ±oproducto": "Grande",
+  "precio": "10",
+  "image": "imagen-1671755387546-153387583"
+ },
+ {
+  "id": 5,
+  "nombre": "rere",
+  "descripcion": "agrego rere",
+  "tipoproducto": "Prints",
+  "tamaÃ±oproducto": "Pequeño",
+  "precio": "10",
+  "image": "imagen-1671755422947-23927248"
+ },
+ {
+  "id": 6,
+  "nombre": "llavero",
+  "descripcion": "llavero",
+  "tipoproducto": "Prints",
+  "tamaÃ±oproducto": "Grande",
+  "precio": "10",
+  "image": "1671758838828.jpg"
+ },
+ {
+  "id": 7,
+  "nombre": "111",
+  "descripcion": "112",
+  "tipoproducto": "Prints",
+  "tamaÃ±oproducto": "Pequeño",
+  "precio": "11",
+  "image": "1671759493358.jpg"
+ },
+ {
+  "id": 8,
+  "nombre": "1221",
+  "descripcion": "3223",
+  "tipoproducto": "Prints",
+  "tamaÃ±oproducto": "Master",
+  "precio": "122",
+  "image": "1671760000661.jpg"
+ },
+ {
+  "id": 9,
+  "nombre": "qwwq",
+  "descripcion": "2121",
+  "tipoproducto": "Prints",
+  "precio": "12",
+  "image": "1671760077777.jpg"
+ },
+ {
+  "id": 10,
+  "nombre": "43",
+  "descripcion": "dfsfd",
+  "tipoproducto": "Prints",
+  "tamaÃ±oproducto": "Master",
+  "precio": "21",
+  "image": "1671760241404.jpg"
+ },
+ {
+  "id": 11,
+  "nombre": "asadds",
+  "descripcion": "sdsd",
+  "tipoproducto": "Prints",
+  "tamaÃ±oproducto": "Medio",
+  "precio": "2121",
+  "image": "1672102460515.jpg"
+ },
+ {
+  "id": 12,
+  "nombre": "asd",
+  "descripcion": "asda",
+  "precio": "1221",
+  "image": "default-image.png"
+ },
+ {
+  "id": 13,
+  "nombre": "ampliacao 1",
+  "descripcion": "ampliacao pb",
+  "tipoproducto": "Prints",
+  "tamaÃ±oproducto": "Pequeño",
+  "precio": "3000",
+  "image": "1676077623803.jpg"
+ },
+ {
+  "productoID": null,
+  "nombre": "Rio - Ampliación Blanco y Negro",
+  "descripcion": "Impresión analógica de una fotografía de Rio de Janeiro",
+  "tipoproducto": "Prints",
+  "tamaÃ±oproducto": "Pequeño",
+  "precio": "3000",
+  "image": "1676082395891.jpg"
+ },
+ {
+  "productoID": 1,
+  "nombre": "lmlkm",
+  "descripcion": "lmkml",
+  "tipoproducto": "Prints",
+  "tamanoproducto": "Medio",
+  "precio": "7979",
+  "image": "default-image.png"
+ },
+ {
+  "productoID": 2,
+  "nombre": "asas",
+  "descripcion": "asas",
+  "tipoproducto": "Prints",
+  "tamanoDeProducto": "Pequeño",
+  "precio": "3333",
+  "image": "default-image.png"
+ },
+ {
+  "productoID": 3,
+  "nombre": "wdsd",
+  "descripcion": "sdsd",
+  "tipoDeProducto": "Prints",
+  "tamanoDeProducto": "Medio",
+  "precio": "3332",
+  "image": "default-image.png"
+ },
+ {
+  "productoID": 4,
+  "nombre": "dsdsdsd",
+  "descripcion": "dddd",
+  "tipoDeProductoID": "Prints",
+  "tamanoDeProductoID": "Medio",
+  "precio": "4444",
+  "image": "default-image.png"
+ },
+ {
+  "productoID": 5,
+  "nombre": "w343",
+  "descripcion": "444",
+  "tipoDeProductoID": "Prints",
+  "tamanoDeProductoID": "Medio",
+  "precio": "4434",
+  "image": "default-image.png"
+ },
+ {
+  "productoID": 6,
+  "nombre": "2121",
+  "descripcion": "assa",
+  "tipoDeProductoID": "1",
+  "tamanoDeProductoID": "2",
+  "precio": "323",
+  "image": "default-image.png"
+ },
+ {
+  "productoID": 7,
+  "nombre": "2233",
+  "descripcion": "32323",
+  "tipoDeProductoID": "1",
+  "tamanoDeProductoID": "1",
+  "precio": "3333",
+  "image": "default-image.png"
+ },
+ {
+  "productoID": 8,
+  "nombre": "paisaje",
+  "descripcion": "paisaje nuevo",
+  "tipoDeProductoID": "1",
+  "tamanoDeProductoID": "1",
+  "precio": "100",
+  "image": "1676423687282.jpg"
+ },
+ {
+  "productoID": 9,
+  "nombre": "paisaje 2",
+  "descripcion": "paisaje nuevo 2",
+  "tipoDeProductoID": "1",
+  "tamanoDeProductoID": "1",
+  "precio": "1001",
+  "image": "1676423820495.jpg"
+ },
+ {
+  "productoID": 10,
+  "nombre": "paisaje 21",
+  "descripcion": "paisaje nuevo 12",
+  "tipoDeProductoID": "2",
+  "tamanoDeProductoID": "1",
+  "precio": "10013",
+  "image": "1676423829147.jpg"
+ },
+ {
+  "productoID": 11,
+  "nombre": "paisaje 211",
+  "descripcion": "paisaje nuevo 121",
+  "tipoDeProductoID": "2",
+  "tamanoDeProductoID": "3",
+  "precio": "10",
+  "image": "1676423835432.jpg"
+ },
+ {
+  "productoID": 12,
+  "nombre": "paisaje 2112",
+  "descripcion": "paisaje nuevo 1212",
+  "tipoDeProductoID": "2",
+  "tamanoDeProductoID": "4",
+  "precio": "101",
+  "image": "1676423843127.jpg"
+ },
+ {
+  "productoID": 13,
+  "nombre": "wewew",
+  "descripcion": "wewewe",
+  "tipoDeProductoID": "3",
+  "tamanoDeProductoID": "4",
+  "precio": "44",
+  "image": "default-image.png"
+ }
 ]

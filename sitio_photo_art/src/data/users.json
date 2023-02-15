@@ -47,5 +47,33 @@
   "email": "das@sa.com",
   "contrasena": "$2a$10$.KtCbOdkJ3Kb9eINwrFUsey4B5qTs7L.8bTsFeJD8k7zbBSZMkBAi",
   "image": "default-image.png"
+ },
+ {
+  "usuarioID": 8,
+  "nombre": "ariel",
+  "email": "nanan@gmail.com",
+  "contrasena": "$2a$10$9jtDhR7Dm8SjnPC9BRSoI.nlit56F6WLDcjScfbn9UK4tQjr8HAyu",
+  "image": "default-image.png"
+ },
+ {
+  "usuarioID": 9,
+  "nombre": "carolina",
+  "email": "caro@gmail.com",
+  "contrasena": "$2a$10$WUFOrEn4HgJ7n3TSCn5GfePWD7BLygiFZwojOOasfYY548SCLFFcW",
+  "image": "default-image.png"
+ },
+ {
+  "usuarioID": 10,
+  "nombre": "cesar",
+  "email": "cesar@gmail.com",
+  "contrasena": "$2a$10$iUh8a.Gcth3xaIpD1au2Be.M.NRYao462Yzhf5pT4F4CLo4CrAup.",
+  "image": "default-image.png"
+ },
+ {
+  "usuarioID": 11,
+  "nombre": "nicolas",
+  "email": "nico@gmail.com",
+  "contrasena": "$2a$10$T8D8uINQctHt/L.7FwLQz.q4aU7EGhhNJQ3gP8gyfI5ONY5HXyfGy",
+  "image": "default-image.png"
  }
 ]
