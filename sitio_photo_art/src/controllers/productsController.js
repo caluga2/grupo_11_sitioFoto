@@ -91,6 +91,8 @@ const controller = {
 
   // Update - Method to update
   update: (req, res) => {
+    let errores = validationResult(req);
+    if (errores.isEmpty()) {
     db.productos.update(
       {
         nombre: req.body.nombre,
@@ -104,7 +106,14 @@ const controller = {
         where: { productoID: req.params.productoID },
       }
     );
-    res.redirect("../views/product-edit-form.ejs" + req.params.productoID);
+    res.redirect("../views/product-edit-form.ejs" + req.params.productoID);}
+    else {
+      res.render("product-edit-form", {
+        errores: errores.array(),
+        productos: productos,
+        user: req.session.userLogged,
+      });
+    }
   },
 
   // Delete - Delete one product from DB

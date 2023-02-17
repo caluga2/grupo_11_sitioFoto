@@ -50,7 +50,7 @@ router.get("/detail/:productoID", productsController.detail);
 
 /* EDIT ONE PRODUCT */
 router.get("/edit/:productoID", productsController.edit);
-router.post("/edit/:productoID", productsController.update);
+router.post("/edit/:productoID", validacionesRegistro, productsController.update);
 router.patch("/edit/:productoID", productsController.update);
 router.get("/productsList", productsController.list);
 

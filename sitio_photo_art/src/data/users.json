@@ -30,5 +30,11 @@
   "email": "ab@ab.com",
   "contrasena": "$2a$10$eGWZCOPGqjzU2ZtYsN7sL.Fielor/1tQnmCnv.iYFGgCg2u9L9inC",
   "fotoUsuario": "default fotoUsuario.png"
+ },
+ {
+  "nombre": "sitioFoto",
+  "email": "sitioFoto@outlook.com",
+  "contrasena": "$2a$10$82A5ygdO21hrXbq5X9VOOOsxVBVDeMjXv84j7OmbTOYnrUCpgrvtK",
+  "fotoUsuario": "default fotoUsuario.png"
  }
 ]
