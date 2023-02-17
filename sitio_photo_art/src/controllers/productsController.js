@@ -51,41 +51,42 @@ const controller = {
   store: (req, res) => {
     let errores = validationResult(req);
     if (errores.isEmpty()) {
-    let fotoProducto;
-    if (req.file != undefined) {
-      fotoProducto = req.file.filename;
-    } else {
-      fotoProducto = "default-image.png";
-    }
-    let newProduct = {
-      //productoID: products[products.length - 1].productoID + 1,
-      nombre: req.body.nombre,
-      descripcion: req.body.descripcion,
-      tipoDeProductoID: req.body.tipoDeProducto,
-      tamanoDeProductoID: req.body.tamanoDeProducto,
-      precio: req.body.precio,
-      fotoProducto,
-    };
-    products.push(newProduct);
-    fs.writeFileSync(productsFilePath, JSON.stringify(products, null, " "));
-    db.productos
-      .create(newProduct)
-      .then((storedProduct) => {
-        return res.redirect("/");
-      })
-      .catch((error) => console.log(error));}
-      else {
-        res.render("productAdd", {
-          errores: errores.array(),
-          user: req.session.userLogged,
-        });
+      let fotoProducto;
+      if (req.file != undefined) {
+        fotoProducto = req.file.filename;
+      } else {
+        fotoProducto = "default-image.png";
       }
+      let newProduct = {
+        //productoID: products[products.length - 1].productoID + 1,
+        nombre: req.body.nombre,
+        descripcion: req.body.descripcion,
+        tipoDeProductoID: req.body.tipoDeProducto,
+        tamanoDeProductoID: req.body.tamanoDeProducto,
+        precio: req.body.precio,
+        fotoProducto,
+      };
+      products.push(newProduct);
+      fs.writeFileSync(productsFilePath, JSON.stringify(products, null, " "));
+      db.productos
+        .create(newProduct)
+        .then((storedProduct) => {
+          return res.redirect("/");
+        })
+        .catch((error) => console.log(error));
+    } else {
+      res.render("productAdd", {
+        errores: errores.array(),
+        user: req.session.userLogged,
+      });
+    }
   },
 
   // Update - Form to edit
   edit: (req, res) => {
-    db.productos.findByPk(req.params.productoID).then(function (productos) {
-      res.render("product-edit-form"), { productos: productos };
+    db.productos.findByPk(req.params.productoID).then(function (data) {
+      console.log(data.dataValues);
+      res.render("product-edit-form"), { productos: data.dataValues };
     });
   },
 
