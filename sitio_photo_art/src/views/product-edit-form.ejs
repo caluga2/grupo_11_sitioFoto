@@ -7,6 +7,12 @@
       <div class="caja_productAdd">
         <h3>EDITAR PRODUCTO</h3>
 
+        <% if (locals.errores) { %>
+          <% errores.forEach(unError => { %>
+          <p class="erroresRegister"><%= unError.msg %></p>
+          <%}) %>
+          <%}%>
+
         <form
           action="/products/edit/<%= productos.productoID %>"
           class="main_form_productAdd"
@@ -99,10 +105,16 @@
               <br />
 
               <label
+<<<<<<< HEAD
                 ><input
                   type="radio"
                   name="tamanoDeProducto"
                   value="<%=productos.tamanoDeProducto%>"
+=======
+                ><input type="radio" 
+                name="tamanoDeProducto" 
+                value="<%=productos.tamanoDeProducto%>" 
+>>>>>>> c6474978ef3c646eeea3cb27bc499b2fc6226a4e
                 />Medio 20x30</label
               >
               <br />
