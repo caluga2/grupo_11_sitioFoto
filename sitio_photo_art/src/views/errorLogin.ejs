@@ -17,6 +17,9 @@
           <div class="errorLogin">
             <form action="/users/login" method="POST">
               <p>Credenciales invalidas</p>
+              <% if (locals.errores) { %> <% errores.forEach(unError => { %>
+              <p class="erroresRegister"><%= unError.msg %></p>
+              <%}) %> <%}%>
 
               <div class="Button">
                 <a href="/users/login">Volver a intentarlo</a>

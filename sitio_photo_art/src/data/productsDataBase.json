@@ -1,29 +1,38 @@
 [
  {
   "productoID": 1,
-  "nombre": "212",
-  "descripcion": "1212",
-  "tipoDeProductoID": "1",
-  "tamanoDeProductoID": "2",
-  "precio": "1213",
-  "fotoProducto": "1676488131411.jpg"
+  "nombre": "Fotografía a paisajes",
+  "descripcion": "Fotografía a paisajes en toda la argentina y brasil.",
+  "tipoDeProductoID": "3",
+  "tamanoDeProductoID": "1",
+  "precio": "1500",
+  "fotoProducto": "1676787707325.jpg"
  },
  {
   "productoID": 2,
-  "nombre": "343",
-  "descripcion": "4343",
-  "tipoDeProductoID": "1",
-  "tamanoDeProductoID": "2",
-  "precio": "4334",
-  "fotoProducto": "1676488355126.jpg"
+  "nombre": "Fotogrfía a productos",
+  "descripcion": "Fotogrfía a productos para impulsar sus ventas.",
+  "tipoDeProductoID": "3",
+  "tamanoDeProductoID": "1",
+  "precio": "2000",
+  "fotoProducto": "1676787783743.jpg"
  },
  {
   "productoID": 3,
-  "nombre": "4456",
-  "descripcion": "456",
-  "tipoDeProductoID": "2",
+  "nombre": "Fotografía en eventos",
+  "descripcion": "Fotografía de eventos en Argentina y Brazil.",
+  "tipoDeProductoID": "3",
   "tamanoDeProductoID": "1",
-  "precio": "56",
-  "fotoProducto": "1676488894970.jpg"
+  "precio": "3000",
+  "fotoProducto": "1676787859854.jpg"
+ },
+ {
+  "productoID": 4,
+  "nombre": "Fotografía en deporte",
+  "descripcion": "Fotografía en desarrollo de diferentes disiplinas deportivas",
+  "tipoDeProductoID": "3",
+  "tamanoDeProductoID": "3",
+  "precio": "5000",
+  "fotoProducto": "1676787913343.jpg"
  }
 ]

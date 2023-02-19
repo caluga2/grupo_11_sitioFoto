@@ -22,21 +22,42 @@ const validacionesRegistro = [
   body("email") // **** Agregar validacion que el mail no puede ser repetido con una que ya esta registrado ****
     .notEmpty()
     .isEmail()
-    .withMessage("Debe introducir un mail válido (xxx@xx.com)"),
+    .withMessage("Debe introducir un mail válido (ejemplo@email.com)"),
   body("contrasena")
     .notEmpty()
     .isLength({ min: 8 })
     .withMessage("Debe introducir una contraseña más larga"),
-  body("contrasena1").custom((value, { req }) => {
-    if (value !== req.body.contrasena) {
-      throw new Error("Las contraseñas no coinciden");
+
+  body("imagen").custom((value, { req }) => {
+    if (value !== undefined) {
+      if (
+        req.file.mimetype !== "application/jpg" &&
+        req.file.mimetype !== "application/jpeg" &&
+        req.file.mimetype !== "application/gif" &&
+        req.file.mimetype !== "application/png"
+      ) {
+        throw new Error(
+          "Este no es un tipo archivo válido, solo se aceptan jpg, jpeg, png y gif"
+        );
+      }
     }
     return true;
   }),
 ];
+
+const validacionesLogin = [
+  body("emailLogin") // **** Agregar validacion que el mail no puede ser repetido con una que ya esta registrado ****
+    .notEmpty()
+    .isEmail()
+    .withMessage("Debe introducir un mail válido (ejemplo@email.com)"),
+  body("contrasenaLogin")
+    .notEmpty()
+    .isLength({ min: 8 })
+    .withMessage("Debe introducir una contraseña más larga"),
+];
 const upload = multer({ storage: storage });
 router.get("/login", userController.login);
-router.post("/login", userController.procesLogin);
+router.post("/login", validacionesLogin, userController.procesLogin);
 //Actualizar para lo nuestro
 router.get("/", userController.index);
 //router.get('/search', mainController.search)

@@ -11,9 +11,6 @@ module.exports = function (sequelize, dataTypes) {
       primaryKey: true,
       type: dataTypes.INTEGER,
       allowNull: false,
-      validate: {
-        max: 11,
-      },
     },
     tamanoDeProducto: {
       type: dataTypes.STRING(45),
@@ -23,12 +20,12 @@ module.exports = function (sequelize, dataTypes) {
 
   const tamano = sequelize.define(alias, colums, config);
 
-  tamano.associate = function(models){
+  tamano.associate = function (models) {
     tamano.hasMany(models.productos, {
-      foreignKey: 'tamanoDeProductoID',
-      as: 'productos',
-    })
-  }
+      foreignKey: "tamanoDeProductoID",
+      as: "productos",
+    });
+  };
 
   return tamano;
 };

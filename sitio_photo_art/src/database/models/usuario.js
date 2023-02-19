@@ -12,9 +12,6 @@ module.exports = function (sequelize, dataTypes) {
       autoIncrement: true,
       type: dataTypes.INTEGER,
       allowNull: false,
-      validate: {
-        max: 11,
-      },
     },
     nombre: {
       type: dataTypes.STRING(45),
@@ -34,19 +31,16 @@ module.exports = function (sequelize, dataTypes) {
     carritoProductoID: {
       type: dataTypes.INTEGER,
       //allowNull: false,
-      validate: {
-        max: 11,
-      },
     },
   };
   const usuario = sequelize.define(alias, colums, config);
 
   usuario.associate = function (models) {
     usuario.belongsTo(models.carritosProductos, {
-    as: "carritos",
-    foreignKey: "carritoID",
-  });};
-  
+      as: "carritos",
+      foreignKey: "carritoID",
+    });
+  };
 
   return usuario;
 };

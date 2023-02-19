@@ -575,6 +575,11 @@ body {
   margin-top: 80px;
   margin-bottom: 5px;
 }
+.fotoProductoCaja {
+  display: flex;
+  justify-content: center;
+  height: 15vw;
+}
 
 .caja_productAdd {
   /*background-color:#bb0101;*/
@@ -863,36 +868,46 @@ input#InputBoton_subirFoto_productAdd {
 }
 .mainCatalogo h2 {
   font-size: 24px;
+  margin-top: 100px;
+  margin-bottom: 50px;
 }
+.mainCatalogo section {
+  display: flex;
+  justify-content: space-between;
+}
+
+.producto {
+  margin: 10px;
+  width: 100%;
+  transition: all 0, 5s;
+}
+
 .catalogo {
   display: flex;
   justify-content: space-between;
 }
-.producto {
-  margin-top: 10px;
-  background-color: white;
-  width: 100%;
-  transition: all 0, 5s;
-}
 .detalle-producto {
-  border-top: 1px solid #ebebeb;
   padding: 15px;
   margin: 0px;
+  margin-top: 50px;
   position: relative;
 }
-.detalle-producto i {
+.carritoProductos {
   display: block;
   font-size: 16px;
   padding: 5px;
+
   width: 30px;
   height: 30px;
-  border: 1px solid #232323;
+  border: 1px solid green;
   background-color: #fff;
   border-radius: 50%;
-  position: absolute;
-  right: 20px;
-  top: -15px;
+  position: relative;
+
   color: #000000;
+}
+.carritoProductos i {
+  color: green;
 }
 .detalle-pro {
   display: flex;
@@ -915,12 +930,7 @@ input#InputBoton_subirFoto_productAdd {
   flex-direction: column;
   justify-content: center;
 }
-.producto {
-  margin-top: 10px;
-  background-color: rgb(226, 224, 224);
-  width: 100%;
-  transition: all 0, 5s;
-}
+
 .producto:hover {
   box-shadow: 0px 0px 10px rgb(100, 100, 100);
 }

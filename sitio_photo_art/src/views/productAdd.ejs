@@ -8,9 +8,11 @@
     <main class="main_productAdd">
       <div class="caja_productAdd">
         <h3>CARGUE DATOS DEL PRODUCTO</h3>
-
+        <% if (locals.errores) { %> <% errores.forEach(unError => { %>
+        <p class="erroresRegister"><%= unError.msg %></p>
+        <%}) %> <%}%>
         <form
-          action="../products"
+          action="/products"
           class="main_form_productAdd"
           enctype="multipart/form-data"
           method="POST"
@@ -23,7 +25,7 @@
                 <input
                   type="file"
                   name="imagen"
-                  accept=".jpg"
+                  accept="image/jpg,image/gif,image/png,image/jpeg"
                   multiple
                   id="InputBoton_subirFoto_productAdd"
                 /><br />
@@ -38,6 +40,7 @@
             type="text"
             name="nombre"
             placeholder="Ingresá el nombre del producto"
+            minlength="5"
             required
           />
           <br />
@@ -52,6 +55,7 @@
             name="descripcion"
             rows="6"
             placeholder="Ingresá la descripcion del producto"
+            minlength="20"
             required
           ></textarea>
           <br />
@@ -82,6 +86,7 @@
                   type="radio"
                   name="tipoDeProducto"
                   value="3"
+                  checked
                 />Servicios Fotográficos</label
               >
             </section>
@@ -93,6 +98,7 @@
                   type="radio"
                   name="tamanoDeProducto"
                   value="1"
+                  checked
                 />Pequeño A5</label
               >
               <br />
@@ -104,20 +110,14 @@
               <br />
 
               <label
-                ><input
-                  type="radio"
-                  name="tamanoDeProducto"
-                  value="3"
-                />Grande 30x45</label
+                ><input type="radio" name="tamanoDeProducto" value="3" />Grande
+                30x45</label
               >
               <br />
 
               <label
-                ><input
-                  type="radio"
-                  name="tamanoDeProducto"
-                  value="4"
-                />Master 50x70</label
+                ><input type="radio" name="tamanoDeProducto" value="4" />Master
+                50x70</label
               >
             </section>
           </div>

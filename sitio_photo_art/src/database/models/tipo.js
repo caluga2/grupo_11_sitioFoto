@@ -10,9 +10,6 @@ module.exports = function (sequelize, dataTypes) {
     tipoDeProductoID: {
       type: dataTypes.INTEGER,
       allowNull: false,
-      validate: {
-        max: 11,
-      },
     },
     tipoDeProducto: {
       type: dataTypes.STRING(45),
@@ -22,12 +19,12 @@ module.exports = function (sequelize, dataTypes) {
 
   const tipo = sequelize.define(alias, colums, config);
 
-  tipo.associate = function(models){
+  tipo.associate = function (models) {
     tipo.hasMany(models.productos, {
-      foreignKey: 'tipoDeProductoID',
-      as: 'productos',
-    })
-  }
+      foreignKey: "tipoDeProductoID",
+      as: "productos",
+    });
+  };
 
   return tipo;
 };

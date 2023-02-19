@@ -11,7 +11,7 @@
           action="/products/edit/:id"
           class="main_form_productAdd"
           enctype="multipart/form-data"
-          method="patch"
+          method="POST"
         >
           <div class="cont_subirArchivo_productAdd">
             <img class="img_productAdd" src="/images/file-svgrepo-com.svg" />
@@ -24,7 +24,7 @@
                   accept=".jpg"
                   multiple
                   id="InputBoton_subirFoto_productAdd"
-                  value="<%=products.imagen%>"
+                  value="<%= products.fotoProducto %>"
                 /><br />
               </div>
             </div>
@@ -99,9 +99,10 @@
               <br />
 
               <label
-                ><input type="radio" 
-                name="tamanoDeProducto" 
-                value="<%=products.tamanoDeProducto%>" 
+                ><input
+                  type="radio"
+                  name="tamanoDeProducto"
+                  value="<%=products.tamanoDeProducto%>"
                 />Medio 20x30</label
               >
               <br />

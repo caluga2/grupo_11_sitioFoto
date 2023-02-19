@@ -6,6 +6,7 @@ const users = JSON.parse(fs.readFileSync(usersFilePath, "utf-8"));
 const productsFilePath = path.join(__dirname, "../data/productsDataBase.json");
 const products = JSON.parse(fs.readFileSync(productsFilePath, "utf-8"));
 const db = require("../database/models");
+const { validationResult } = require("express-validator");
 
 const toThousand = (n) => n.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ".");
 
@@ -49,29 +50,58 @@ const controller = {
   // Create -  Method to store
 
   store: (req, res) => {
-    let fotoProducto;
-    if (req.file != undefined) {
-      fotoProducto = req.file.filename;
+    let errores = validationResult(req);
+    if (errores.isEmpty()) {
+      let fotoProducto;
+      if (req.file != undefined) {
+        fotoProducto = req.file.filename;
+      } else {
+        fotoProducto = "default.png";
+      }
+
+      if (products.length != 0) {
+        let newProduct = {
+          productoID: products[products.length - 1].productoID + 1,
+          nombre: req.body.nombre,
+          descripcion: req.body.descripcion,
+          tipoDeProductoID: req.body.tipoDeProducto,
+          tamanoDeProductoID: req.body.tamanoDeProducto,
+          precio: req.body.precio,
+          fotoProducto,
+        };
+        products.push(newProduct);
+        fs.writeFileSync(productsFilePath, JSON.stringify(products, null, " "));
+        db.productos
+          .create(newProduct)
+          .then((storedProduct) => {
+            return res.redirect("/");
+          })
+          .catch((error) => console.log(error));
+      } else {
+        let newProduct = {
+          productoID: 1,
+          nombre: req.body.nombre,
+          descripcion: req.body.descripcion,
+          tipoDeProductoID: req.body.tipoDeProducto,
+          tamanoDeProductoID: req.body.tamanoDeProducto,
+          precio: req.body.precio,
+          fotoProducto,
+        };
+        products.push(newProduct);
+        fs.writeFileSync(productsFilePath, JSON.stringify(products, null, " "));
+        db.productos
+          .create(newProduct)
+          .then((storedProduct) => {
+            return res.redirect("/");
+          })
+          .catch((error) => console.log(error));
+      }
     } else {
-      fotoProducto = "default-image.png";
+      res.render("productAdd", {
+        errores: errores.array(),
+        user: req.session.userLogged,
+      });
     }
-    let newProduct = {
-      productoID: products[products.length - 1].productoID + 1,
-      nombre: req.body.nombre,
-      descripcion: req.body.descripcion,
-      tipoDeProductoID: req.body.tipoDeProducto,
-      tamanoDeProductoID: req.body.tamanoDeProducto,
-      precio: req.body.precio,
-      fotoProducto,
-    };
-    products.push(newProduct);
-    fs.writeFileSync(productsFilePath, JSON.stringify(products, null, " "));
-    db.productos
-      .create(newProduct)
-      .then((storedProduct) => {
-        return res.redirect("/");
-      })
-      .catch((error) => console.log(error));
   },
 
   // Update - Form to edit
