@@ -64,4 +64,23 @@ Creemos que el punto el cual perjudico la ejecución de este sprint fueron los t
 -CONCLUSIONES
 Nos sorprendió la complejidad del sprint y tambien lo complicado de implementar algunos puntos ya que tuvimos que realizar grandes modificaciones, para el siguinte sprint debemos buscar mas alternativas para la solución de los diferentes casos que se nos presentan en la ejecución de sprint  para poder incorporarnos todos y así lograr un buen desarrollo del mismo.
 
+Sprint 6
+
+-¿Que hicimos bien?
+
+El equipo trabajó de forma eficiente y en conjunto para solucionar de la mejor forma los desafíos del proyecto. Todo esto gracias a una buena comunicación, y al manejo de la herramienta que nos plantea el Sprint.
+
+
+-¿Que hicimos mal?
+
+Notamos en el equipo que cada sprint lo arrancamos a tiempo, pero dedicándole un buen tramo a la planificación del mismo. En este caso logramos atender las exigencias del sprint en las primeras semanas, pero solo lo concluímos cerca de la fecha límite para el mismo.
+
+-¿Que deberíamos empezar a hacer?
+
+Seguir mejorando en la organización de los tiempos y lograr una planificación para poder trabajar individualmente en partes distintas del sprint.
+
+-CONCLUSIONES
+
+El sprint en general fue realizado con suceso, tuvimos algunas cuestiones que luego se resolvieron. El equipo logró llegar al resultado deseado en tiempo y forma.
+
 
