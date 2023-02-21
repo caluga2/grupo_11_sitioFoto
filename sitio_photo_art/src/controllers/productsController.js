@@ -1,12 +1,11 @@
 const fs = require("fs");
 const path = require("path");
-
+const { validationResult } = require("express-validator");
 const usersFilePath = path.join(__dirname, "../data/users.json");
 const users = JSON.parse(fs.readFileSync(usersFilePath, "utf-8"));
 const productsFilePath = path.join(__dirname, "../data/productsDataBase.json");
 const products = JSON.parse(fs.readFileSync(productsFilePath, "utf-8"));
 const db = require("../database/models");
-const { validationResult } = require("express-validator");
 
 const toThousand = (n) => n.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ".");
 
@@ -106,27 +105,37 @@ const controller = {
 
   // Update - Form to edit
   edit: (req, res) => {
-    db.productos.findByPk(req.params.productoID).then(function (productos) {
-      res.render("product-edit-form"), { productos: productos };
+    db.productos.findByPk(req.params.productoID).then(function (data) {
+      console.log(data.dataValues);
+      res.render("product-edit-form"), { productos: data.dataValues };
     });
   },
 
   // Update - Method to update
   update: (req, res) => {
-    db.productos.update(
-      {
-        nombre: req.body.nombre,
-        descripcion: req.body.descripcion,
-        tipoDeProductoID: req.body.tipoDeProducto,
-        tamanoDeProductoID: req.body.tamanoDeProducto,
-        precio: req.body.precio,
-        fotoProducto,
-      },
-      {
-        where: { productoID: req.params.productoID },
-      }
-    );
-    res.redirect("../views/product-edit-form.ejs" + req.params.productoID);
+    let errores = validationResult(req);
+    if (errores.isEmpty()) {
+      db.productos.update(
+        {
+          nombre: req.body.nombre,
+          descripcion: req.body.descripcion,
+          tipoDeProductoID: req.body.tipoDeProducto,
+          tamanoDeProductoID: req.body.tamanoDeProducto,
+          precio: req.body.precio,
+          fotoProducto,
+        },
+        {
+          where: { productoID: req.params.productoID },
+        }
+      );
+      res.redirect("../views/product-edit-form.ejs" + req.params.productoID);
+    } else {
+      res.render("product-edit-form", {
+        errores: errores.array(),
+        productos: productos,
+        user: req.session.userLogged,
+      });
+    }
   },
 
   // Delete - Delete one product from DB
