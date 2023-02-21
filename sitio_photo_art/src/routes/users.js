@@ -29,20 +29,25 @@ const validacionesRegistro = [
     .withMessage("Debe introducir una contraseña más larga"),
 
   body("imagen").custom((value, { req }) => {
-    if (value !== undefined) {
-      if (
-        req.file.mimetype !== "application/jpg" &&
-        req.file.mimetype !== "application/jpeg" &&
-        req.file.mimetype !== "application/gif" &&
-        req.file.mimetype !== "application/png"
-      ) {
+    if (value != undefined) {
+      if (!/\.(jpg|png)$/i.test(file.name)) {
+        {
+          msg: "Este email ya está registrado";
+        }
+      }
+    }
+  }),
+
+  /*body("imagen").custom((value, { req }) => {
+    if (value != undefined) {
+      if (req.file.mimetype != ".jpg") {
         throw new Error(
           "Este no es un tipo archivo válido, solo se aceptan jpg, jpeg, png y gif"
         );
       }
     }
     return true;
-  }),
+  }),*/
 ];
 
 const validacionesLogin = [

@@ -131,7 +131,6 @@ const controller = {
           .catch((error) => console.log(error));
       }
     } else {
-      console.log(errores);
       res.render("register", {
         errores: errores.array(),
         user: req.session.userLogged,

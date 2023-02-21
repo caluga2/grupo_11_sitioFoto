@@ -32,18 +32,12 @@ const validacionesRegistro = [
     .withMessage("Debe introducir tipo del producto"),
   body("imagen").custom((value, { req }) => {
     if (value != undefined) {
-      if (
-        req.file.mimetype !== "application/jpg" &&
-        req.file.mimetype !== "application/jpeg" &&
-        req.file.mimetype !== "application/gif" &&
-        req.file.mimetype !== "application/png"
-      ) {
-        throw new Error(
-          "Este no es un tipo archivo válido, solo se aceptan jpg, jpeg, png y gif"
-        );
+      if (!/\.(jpg|png)$/i.test(file.name)) {
+        {
+          msg: "Este email ya está registrado";
+        }
       }
     }
-    return true;
   }),
 ];
 
