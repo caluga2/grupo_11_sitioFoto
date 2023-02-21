@@ -11,8 +11,14 @@
         <p class="erroresRegister"><%= unError.msg %></p>
         <%}) %> <%}%>
 
+
+        <% for(let i =0; i < products.length; i++) { %>
+          <% if (products[i].productoID == req.params.productoID){ %>
+            let productoAeditar = products[i]
+            <% } %>
+          <%}%>
         <form
-          action="/products/edit/<%= productos.productoID %>"
+          action="/products/edit/<%= productoAeditar.productoID %>"
           class="main_form_productAdd"
           enctype="multipart/form-data"
           method="POST"
@@ -28,7 +34,7 @@
                   accept=".jpg"
                   multiple
                   id="InputBoton_subirFoto_productAdd"
-                  value="<%= products.fotoProducto %>"
+                  value="<%= productoAeditar.fotoProducto %>"
                 /><br />
               </div>
             </div>
@@ -42,7 +48,7 @@
             name="nombre"
             placeholder="Ingresá el nombre del producto"
             required
-            value="<%=productos.nombre%>"
+            value="<%=productoAeditar.nombre%>"
           />
           <br />
 
@@ -57,7 +63,7 @@
             rows="6"
             placeholder="Ingresá la descripcion del producto"
             required
-            value="<%=productos.descripcion%>"
+            value="<%=productoAeditar.descripcion%>"
           ></textarea>
           <br />
 
@@ -69,7 +75,7 @@
                 ><input
                   type="radio"
                   name="tipoDeProducto"
-                  value="<%=productos.tipoDeProducto%>"
+                  value="<%=productoAeditar.tipoDeProducto%>"
                 />Prints</label
               >
               <br />
@@ -78,7 +84,7 @@
                 ><input
                   type="radio"
                   name="tipoDeProducto"
-                  value="<%=productos.tipoDeProducto%>"
+                  value="<%=productoAeditar.tipoDeProducto%>"
                 />Enmarcados</label
               >
               <br />
@@ -86,7 +92,7 @@
                 ><input
                   type="radio"
                   name="tipoDeProducto"
-                  value="<%=productos.tipoDeProducto%>"
+                  value="<%=productoAeditar.tipoDeProducto%>"
                 />Servicios Fotográficos</label
               >
             </section>
@@ -97,29 +103,25 @@
                 ><input
                   type="radio"
                   name="tamanoDeProducto"
-                  value="<%=productos.tamanoDeProducto%>"
+                  value="<%=productoAeditar.tamanoDeProducto%>"
                 />Pequeño A5</label
               >
               <br />
 
-              <label <<<<<<< HEAD
-                ><input type="radio" name="tamanoDeProducto"
-                value="<%=products.tamanoDeProducto%>" ======= <<<<<<< HEAD
-                ><input type="radio" name="tamanoDeProducto"
-                value="<%=productos.tamanoDeProducto%>" ======= ><input
-                  type="radio"
+              <label >
+                <input 
+                  type="radio" 
                   name="tamanoDeProducto"
-                  value="<%=productos.tamanoDeProducto%>"
-                />>>>>>> c6474978ef3c646eeea3cb27bc499b2fc6226a4e >>>>>>>
-                0a5158c821cd1dae90f6504ed6a03abe12a4db93 />Medio 20x30</label
-              >
+                  value="<%=productoAeditar.tamanoDeProducto%>"
+                />Medio 20x30
+              </label>
               <br />
 
               <label
                 ><input
                   type="radio"
                   name="tamanoDeProducto"
-                  value="<%=productos.tamanoDeProducto%>"
+                  value="<%=productoAeditar.tamanoDeProducto%>"
                 />Grande 30x45</label
               >
               <br />
@@ -128,7 +130,7 @@
                 ><input
                   type="radio"
                   name="tamanoDeProducto"
-                  value="<%=productos.tamanoDeProducto%>"
+                  value="<%=productoAeditar.tamanoDeProducto%>"
                 />Master 50x70</label
               >
             </section>
@@ -140,9 +142,7 @@
               class="precio_text_productAdd"
               type="number"
               name="precio"
-              placeholder="Ingresá el precio del producto"
-              required
-              value="<%=productos.precio%>"
+              value="<%=productoAeditar.precio%>"
             />
 
             <hr class="magen_top_productAdd" />
