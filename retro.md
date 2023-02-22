@@ -64,7 +64,7 @@ Creemos que el punto el cual perjudico la ejecución de este sprint fueron los t
 -CONCLUSIONES
 Nos sorprendió la complejidad del sprint y tambien lo complicado de implementar algunos puntos ya que tuvimos que realizar grandes modificaciones, para el siguinte sprint debemos buscar mas alternativas para la solución de los diferentes casos que se nos presentan en la ejecución de sprint  para poder incorporarnos todos y así lograr un buen desarrollo del mismo.
 
-Sprint 6
+Sprint 7
 
 -¿Que hicimos bien?
 
