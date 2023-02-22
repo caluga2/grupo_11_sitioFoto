@@ -27,27 +27,21 @@ const validacionesRegistro = [
     .notEmpty()
     .isLength({ min: 8 })
     .withMessage("Debe introducir una contraseña más larga"),
-
-  body("imagen").custom((value, { req }) => {
-    if (value != undefined) {
-      if (!/\.(jpg|png)$/i.test(file.name)) {
-        {
-          msg: "Este email ya está registrado";
-        }
+    body('fotoUsuario').custom(async (value, {req}) => {
+      let file = fileLocal;
+      let acceptedExtensions = ['.jpg', '.png', '.gif'];
+     
+      if (!file) {
+       throw new Error('Tienes que subir una imagen');
+      } else {
+       let fileExtension = path.extname(file.originalname);
+       if (!acceptedExtensions.includes(fileExtension)) {
+        throw new Error(`Las extensiones de archivo permitidas son ${acceptedExtensions.join(', ')}`);
+       }
       }
-    }
-  }),
-
-  /*body("imagen").custom((value, { req }) => {
-    if (value != undefined) {
-      if (req.file.mimetype != ".jpg") {
-        throw new Error(
-          "Este no es un tipo archivo válido, solo se aceptan jpg, jpeg, png y gif"
-        );
-      }
-    }
-    return true;
-  }),*/
+     
+      return true;
+      })
 ];
 
 const validacionesLogin = [
@@ -60,7 +54,16 @@ const validacionesLogin = [
     .isLength({ min: 8 })
     .withMessage("Debe introducir una contraseña más larga"),
 ];
-const upload = multer({ storage: storage });
+
+const upload = multer ({storage,fileFilter: (req, file, cb) => {
+  fileLocal = file
+    if (file.mimetype == "image/png" || file.mimetype == "image/jpg" || file.mimetype == "image/jpeg") {
+     cb(null, true);
+    } else {
+    cb(null, false);
+    }
+   }});
+
 router.get("/login", userController.login);
 router.post("/login", validacionesLogin, userController.procesLogin);
 //Actualizar para lo nuestro
