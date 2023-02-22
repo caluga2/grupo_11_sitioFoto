@@ -30,18 +30,31 @@ const validacionesRegistro = [
   body("tipoDeProducto")
     .notEmpty()
     .withMessage("Debe introducir tipo del producto"),
-  body("imagen").custom((value, { req }) => {
-    if (value != undefined) {
-      if (!/\.(jpg|png)$/i.test(file.name)) {
-        {
-          msg: "Este email ya está registrado";
-        }
+    body('fotoProducto').custom(async (value, {req}) => {
+      let file = fileLocal;
+      let acceptedExtensions = ['.jpg', '.png', '.gif'];
+     
+      if (!file) {
+       throw new Error('Tienes que subir una imagen');
+      } else {
+       let fileExtension = path.extname(file.originalname);
+       if (!acceptedExtensions.includes(fileExtension)) {
+        throw new Error(`Las extensiones de archivo permitidas son ${acceptedExtensions.join(', ')}`);
+       }
       }
-    }
-  }),
+     
+      return true;
+      })
 ];
 
-const upload = multer({ storage: storage });
+const upload = multer ({storage,fileFilter: (req, file, cb) => {
+  fileLocal = file
+    if (file.mimetype == "image/png" || file.mimetype == "image/jpg" || file.mimetype == "image/jpeg") {
+     cb(null, true);
+    } else {
+    cb(null, false);
+    }
+   }});
 
 /* GET ALL PRODUCTS */
 router.get("/", productsController.index);

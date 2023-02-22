@@ -107,7 +107,8 @@ const controller = {
   edit: (req, res) => {
     db.productos.findByPk(req.params.productoID).then(function (data) {
       console.log(data.dataValues);
-      res.render("product-edit-form"), { productos: data.dataValues };
+      let productos = data.dataValues;
+      res.render("product-edit-form", {productos});
     });
   },
 
