@@ -86,7 +86,7 @@ router.get("/detail/:productoID", productsController.detail);
 
 /* EDIT ONE PRODUCT */
 router.get("/edit/:productoID", productsController.edit);
-router.post(
+router.put(
   "/edit/:productoID",
   validacionesRegistro,
   productsController.update

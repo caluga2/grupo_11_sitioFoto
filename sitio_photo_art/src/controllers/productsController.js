@@ -106,7 +106,6 @@ const controller = {
   // Update - Form to edit
   edit: (req, res) => {
     db.productos.findByPk(req.params.productoID).then(function (data) {
-      console.log(data.dataValues);
       let productos = data.dataValues;
       res.render("product-edit-form", { productos });
     });
@@ -116,6 +115,19 @@ const controller = {
   update: (req, res) => {
     let errores = validationResult(req);
     if (errores.isEmpty()) {
+      for (let i = 0; i < products.length; i++) {
+        if (products[i].productoID == req.params.productoID) {
+          products[i].nombre = req.body.nombre;
+          products[i].descripcion = req.body.descripcion;
+          products[i].tipoDeProductoID = req.body.tipoDeProducto;
+          products[i].tamanoDeProductoID = req.body.tamanoDeProducto;
+          products[i].precio = req.body.precio;
+          products[i].fotoProducto = req.file.filename;
+        }
+      }
+
+      fs.writeFileSync(productsFilePath, JSON.stringify(products, null, " "));
+
       db.productos.update(
         {
           nombre: req.body.nombre,
@@ -129,11 +141,11 @@ const controller = {
           where: { productoID: req.params.productoID },
         }
       );
-      res.redirect("../views/product-edit-form.ejs" + req.params.productoID);
+      res.redirect("/");
     } else {
       res.render("product-edit-form", {
         errores: errores.array(),
-        productos: productos,
+        productos: req.body,
         user: req.session.userLogged,
       });
     }
