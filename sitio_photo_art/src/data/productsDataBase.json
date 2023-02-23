@@ -10,8 +10,8 @@
  },
  {
   "productoID": 2,
-  "nombre": "Fotogrfía a productos",
-  "descripcion": "Fotogrfía a productos para impulsar sus ventas.",
+  "nombre": "Fotografía a productos",
+  "descripcion": "Fotografía a productos para impulsar sus ventas.",
   "tipoDeProductoID": "3",
   "tamanoDeProductoID": "1",
   "precio": "2000",
@@ -20,7 +20,7 @@
  {
   "productoID": 3,
   "nombre": "Fotografía en eventos",
-  "descripcion": "Fotografía de eventos en Argentina y Brazil.",
+  "descripcion": "Fotografía de eventos en Argentina y Brasil.",
   "tipoDeProductoID": "3",
   "tamanoDeProductoID": "1",
   "precio": "3000",

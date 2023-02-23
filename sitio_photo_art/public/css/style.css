@@ -874,20 +874,38 @@ input#InputBoton_subirFoto_productAdd {
   width: 90%;
   margin: auto;
 }
+
 .mainCatalogo h2 {
-  font-size: 24px;
-  margin-top: 100px;
-  margin-bottom: 50px;
+  font-size: 1.5rem;
+  margin-top: 30%;
+  text-align: center;
+  margin-bottom: 10%;
 }
 .mainCatalogo section {
   display: flex;
   justify-content: space-between;
+  flex-direction: column;
 }
 
 .producto {
-  margin: 10px;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10%;
   width: 100%;
   transition: all 0, 5s;
+}
+
+.producto p {
+  font-size: 1.1rem;
+  margin-top: 2%;
+  margin-bottom: 2%;
+}
+
+.producto h3 {
+  font-size: 1.3rem;
+  margin-top: 4%;
+  margin-bottom: 2%;
+  text-align: left;
 }
 
 .catalogo {
@@ -904,7 +922,7 @@ input#InputBoton_subirFoto_productAdd {
   display: block;
   font-size: 16px;
   padding: 5px;
-
+  margin-top: 2%;
   width: 30px;
   height: 30px;
   border: 1px solid green;
@@ -949,6 +967,38 @@ input#InputBoton_subirFoto_productAdd {
   display: block;
 }
 
+/*Tablet*/
+
+@media (min-width: 650px) {
+  .Carousel figure {
+    width: 100%;
+  }
+  .img1Home {
+    display: flex;
+  }
+
+  .img1HomeMobile {
+    display: none;
+  }
+  /*----------------------------------catalogo inicia CESAR ---------------------------------*/
+  .articulos {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  /* .producto {
+    flex-basis: 45%;
+    margin: 5px;
+  } */
+
+  .mainCatalogo h2 {
+    margin-top: 20%;
+  }
+
+  /*----------------------------------catalogo termina CESAR ---------------------------------*/
+}
+
 /*----------------------------------catalogo termina CESAR ---------------------------------*/
 /*Desktop*/
 
@@ -978,6 +1028,26 @@ input#InputBoton_subirFoto_productAdd {
     display: none;
   }
 
+  .mainCatalogo h2 {
+    font-size: 1.6rem;
+    text-align: left;
+    margin-top: 10%;
+    margin-bottom: 2%;
+    margin-left: 1%;
+  }
+  .mainCatalogo section {
+    flex-direction: row;
+    width: 100%;
+  }
+  
+  .producto {
+    display: flex;
+    flex-direction: column;
+    margin: 1%;
+    width: 100%;
+    transition: all 0, 5s;
+  }
+
   /****FOOTER PARA DESKTOP ********/
 
   .main-footer {
@@ -1004,27 +1074,4 @@ input#InputBoton_subirFoto_productAdd {
   }
 }
 
-@media (min-width: 650px) {
-  .Carousel figure {
-    width: 100%;
-  }
-  .img1Home {
-    display: flex;
-  }
 
-  .img1HomeMobile {
-    display: none;
-  }
-  /*----------------------------------catalogo inicia CESAR ---------------------------------*/
-  .articulos {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-  }
-  .producto {
-    flex-basis: 45%;
-    margin: 5px;
-  }
-  /*----------------------------------catalogo termina CESAR ---------------------------------*/
-}

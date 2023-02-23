@@ -11,8 +11,8 @@
       <section>
         <% for(let i =0; i < products.length; i++) { %>
         <article class="producto">
-          <img src="/images/imgP/<%= products[i].fotoProducto %>" alt="" />
-          <p><%= products[i].nombre %></p>
+          <img src="/images/imgP/<%= products[i].fotoProducto %>" alt="Imagen figurativa del producto" />
+          <h3 ><%= products[i].nombre %></h3>
           <p><%= products[i].descripcion %></p>
           <p>$ <%= products[i].precio %></p>
           <div class="carritoProductos">
@@ -24,6 +24,6 @@
       </section>
     </main>
 
-    <%- include ('./partials/footer') %>
+    <!-- <%- include ('./partials/footer') %> -->
   </body>
 </html>
