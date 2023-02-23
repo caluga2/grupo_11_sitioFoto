@@ -263,6 +263,13 @@ body {
   padding-top: 15%;
   margin-bottom: 10%;
 }
+.LoginTitulo{
+  width: 100%;
+  text-align: center;
+  margin-top: 10%;
+  margin-bottom: 10%;
+}
+
 .LoginFormulario {
   width: 100%;
 }
@@ -349,16 +356,17 @@ body {
   border-radius: 10px;
 }
 .RegisterMain img {
-  width: 100%;
-  padding: 5%;
-  padding-top: 15%;
+  width: 30%;
+  margin-top: 10%;
+  margin-left: 35%;
 }
 
 .RegisterMain h2 {
-  margin-left: 5%;
   width: 100%;
-  text-align: left;
+  text-align: center;
+  margin-top: 10%;
 }
+
 .RegisterFormulario a {
   text-align: center;
   color: #2049eb;
