@@ -21,6 +21,14 @@ body {
   font-size: 17px;
   color: var(--color-negro);
   background-color: var(--color-blanco);
+  min-height: 100vh; 
+  margin: 0; 
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+}
+
+footer{ 
+  min-height:50px; 
 }
 
 /*-----------------------------------INICIA MENU-------------------------------------*/
@@ -242,6 +250,7 @@ body {
   margin-top: 80px;
   display: flex;
   justify-content: center;
+  margin-bottom: 10%;
 }
 .LoginMain {
   display: flex;
@@ -251,6 +260,7 @@ body {
   text-align: center;
   background-color: #f7f7f7;
   margin-top: 10%;
+  margin-bottom: 20%;
   border-style: solid;
   border-color: #f7f7f7;
   border-radius: 10px;
@@ -592,6 +602,8 @@ body {
 .caja_productAdd {
   /*background-color:#bb0101;*/
   margin: auto;
+  margin-bottom: 5%;
+  padding: 2%;
   width: 300px;
   background-color: #f7f7f7;
   margin-top: 5%;
@@ -731,6 +743,8 @@ input#InputBoton_subirFoto_productAdd {
 
 .iconosFooter {
   text-align: center;
+  margin-top: 2%;
+  margin-bottom: 2%;
 }
 
 .iconosFooter i {
@@ -745,6 +759,7 @@ input#InputBoton_subirFoto_productAdd {
   color: white;
   justify-content: center;
   font-size: 16px;
+  margin-bottom: 3%;
 }
 /*----------------------------------TERMINA INICIO CESAR---------------------------------*/
 
@@ -885,6 +900,7 @@ input#InputBoton_subirFoto_productAdd {
   display: flex;
   justify-content: space-between;
   flex-direction: column;
+  margin-bottom: 10%;
 }
 
 .producto {
@@ -997,9 +1013,9 @@ input#InputBoton_subirFoto_productAdd {
   }
 
   /*----------------------------------catalogo termina CESAR ---------------------------------*/
+
 }
 
-/*----------------------------------catalogo termina CESAR ---------------------------------*/
 /*Desktop*/
 
 @media (min-width: 852px) {
@@ -1060,7 +1076,7 @@ input#InputBoton_subirFoto_productAdd {
 
   .iconosFooter i {
     justify-content: center;
-    margin: 10px;
+    margin-right: 15px;
     font-size: 25px;
     color: white;
   }
@@ -1071,6 +1087,7 @@ input#InputBoton_subirFoto_productAdd {
 
   .main-footer p {
     font-size: 15px;
+    margin-bottom: 0;
   }
 }
 
