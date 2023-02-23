@@ -27,21 +27,27 @@ const validacionesRegistro = [
     .notEmpty()
     .isLength({ min: 8 })
     .withMessage("Debe introducir una contraseña más larga"),
-    body('fotoUsuario').custom(async (value, {req}) => {
-      let file = fileLocal;
-      let acceptedExtensions = ['.jpg', '.png', '.gif'];
-     
-      if (!file) {
-       throw new Error('Tienes que subir una imagen');
-      } else {
-       let fileExtension = path.extname(file.originalname);
-       if (!acceptedExtensions.includes(fileExtension)) {
-        throw new Error(`Las extensiones de archivo permitidas son ${acceptedExtensions.join(', ')}`);
-       }
+  body("fotoUsuario").custom(async (value, { req }) => {
+    let file = req.file;
+    let acceptedExtensions = [".jpg", ".png", ".jpeg"];
+
+    if (!file) {
+      throw new Error(
+        "Tienes que subir una imagen en alguno de estos formatos jpg-png-jpeg"
+      );
+    } else {
+      let fileExtension = path.extname(file.originalname);
+      if (!acceptedExtensions.includes(fileExtension)) {
+        throw new Error(
+          `Las extensiones de archivo permitidas son ${acceptedExtensions.join(
+            ", "
+          )}`
+        );
       }
-     
-      return true;
-      })
+    }
+
+    return true;
+  }),
 ];
 
 const validacionesLogin = [
@@ -55,14 +61,21 @@ const validacionesLogin = [
     .withMessage("Debe introducir una contraseña más larga"),
 ];
 
-const upload = multer ({storage,fileFilter: (req, file, cb) => {
-  fileLocal = file
-    if (file.mimetype == "image/png" || file.mimetype == "image/jpg" || file.mimetype == "image/jpeg") {
-     cb(null, true);
+const upload = multer({
+  storage,
+  fileFilter: (req, file, cb) => {
+    fileLocal = file;
+    if (
+      file.mimetype == "image/png" ||
+      file.mimetype == "image/jpg" ||
+      file.mimetype == "image/jpeg"
+    ) {
+      cb(null, true);
     } else {
-    cb(null, false);
+      cb(null, false);
     }
-   }});
+  },
+});
 
 router.get("/login", userController.login);
 router.post("/login", validacionesLogin, userController.procesLogin);

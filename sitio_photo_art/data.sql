@@ -12,7 +12,7 @@ INSERT INTO `tamanos` (`tamanoDeProductoID`, `tamanoDeProducto`) VALUES
 
 INSERT INTO `productos` (`productoID`, `nombre`, `descripcion`, `precio`, `tipoDeProductoID`, `tamanoDeProductoID`, `fotoProducto`) VALUES
 (1, 'Fotografía a paisajes', 'Fotografía a paisajes en toda la argentina y brasil.', '1500.00', 3, 1, '1676787707325.jpg'),
-(2, 'Fotogrfía a productos', 'Fotogrfía a productos para impulsar sus ventas.', '2000.00', 3, 1, '1676787783743.jpg'),
+(2, 'Fotografía a productos', 'Fotogrfía a productos para impulsar sus ventas.', '2000.00', 3, 1, '1676787783743.jpg'),
 (3, 'Fotografía en eventos', 'Fotografía de eventos en Argentina y Brazil.', '3000.00', 3, 1, '1676787859854.jpg'),
 (4, 'Fotografía en deporte', 'Fotografía en desarrollo de diferentes disiplinas deportivas', '5000.00', 3, 3, '1676787913343.jpg');
 
