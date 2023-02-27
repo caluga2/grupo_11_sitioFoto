@@ -7,11 +7,14 @@
     <%- include ('./partials/header') %> 
  
     <main class="mainCatalogo">
+
+      <h2><%=productos.nombre%></h2>
+
       <section>
        
         <article class="producto">
           <img src="/images/imgP/<%= productos.fotoProducto %>" alt="Imagen figurativa del producto" />
-          <h3 ><%=productos.nombre%></h3>
+          
           <p><%=productos.descripcion%></p>
           <p><%=productos.precio%></p>
           <div class="carritoProductos">

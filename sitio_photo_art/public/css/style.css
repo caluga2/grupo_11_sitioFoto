@@ -908,6 +908,7 @@ input#InputBoton_subirFoto_productAdd {
   flex-direction: column;
   margin-bottom: 10%;
   width: 100%;
+  max-width: 700px;
   transition: all 0, 5s;
 }
 
