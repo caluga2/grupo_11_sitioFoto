@@ -39,12 +39,12 @@ const controller = {
 
   enmarcados: (req, res) => {
     let VARRUTA = "./ ENMARCADOS";
-    res.render("enconstruccion", { user: req.session.userLogged, VARRUTA });
+    res.render("enmarcados", { user: req.session.userLogged, VARRUTA });
   },
 
   prints: (req, res) => {
     let VARRUTA = "./ PRINTS";
-    res.render("enconstruccion", { user: req.session.userLogged, VARRUTA });
+    res.render("prints", { user: req.session.userLogged, VARRUTA });
   },
 
   buscar: (req, res) => {

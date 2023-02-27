@@ -3,8 +3,23 @@
   <%- include ('./partials/head') %>
 
   <body>
-    <%- include ('./partials/header') %>
-    <main></main>
+ 
+    <main>
+      <section>
+       
+        <article class="producto">
+          <img src="/images/imgP/<%= productos.fotoProducto %>" alt="Imagen figurativa del producto" />
+          <h3 ><%=productos.nombre%></h3>
+          <p><%=productos.descripcion%></p>
+          <p><%=productos.precio%></p>
+          <div class="carritoProductos">
+            <a href="/Carrito"><i class="fas fa-shopping-cart"></i></a>
+          </div>
+        </article>
+
+      </section>
+
+    </main>
 
     <%- include ('./partials/footer') %>
   </body>

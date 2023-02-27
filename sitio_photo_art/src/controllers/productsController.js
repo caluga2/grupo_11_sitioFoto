@@ -22,15 +22,12 @@ const controller = {
 
   // Detail - Detail from one product
   detail: (req, res) => {
-    let productoID = req.params.productoID;
-    let product = products.find((product) => product.productoID == productoID);
-    res.render("detail", {
-      product,
-      user: req.session.userLogged,
-
-      toThousand,
+    db.productos.findByPk(req.params.productoID).then(function (data) {
+      let productos = data.dataValues;
+      res.render("productDetail", { productos });
     });
   },
+
   list: function (req, res) {
     res.render("productsList", {
       products: products,
