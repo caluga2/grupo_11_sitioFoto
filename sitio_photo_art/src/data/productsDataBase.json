@@ -2,11 +2,9 @@
  {
   "productoID": 1,
   "nombre": "Fotografía a paisajes",
-  "descripcion": "Fotografía a paisajes en toda la argentina y brasil.",
-  "tipoDeProductoID": "3",
-  "tamanoDeProductoID": "1",
-  "precio": "1500",
-  "fotoProducto": "1676787707325.jpg"
+  "descripcion": "Fotografía a paisajes en toda la Argentina y Brasil.",
+  "precio": "7500.00",
+  "fotoProducto": "1677534038520.jpg"
  },
  {
   "productoID": 2,

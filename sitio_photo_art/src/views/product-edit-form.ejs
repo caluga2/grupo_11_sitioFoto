@@ -3,6 +3,9 @@
   <%- include ('./partials/head') %>
 
   <body>
+
+    <%- include ('./partials/header') %> 
+
     <main class="main_productAdd">
       <div class="caja_productAdd">
         <h3>EDITAR PRODUCTO</h3>
@@ -18,7 +21,7 @@
           method="POST"
         >
           <div class="cont_subirArchivo_productAdd">
-            <img class="img_productAdd" src="/images/file-svgrepo-com.svg" />
+            <img class="img_productAdd" src="/images/imgP/<%= productos.fotoProducto %>" />
             <div id="div_file_productAdd">
               <div>
                 <p id="texto_boton_subir_productAdd">Subir Archivo</p>
@@ -68,7 +71,7 @@
                 ><input
                   type="radio"
                   name="tipoDeProducto"
-                  value="<%=productos.tipoDeProducto%>"
+                  value="1"
                 />Prints</label
               >
               <br />
@@ -77,7 +80,7 @@
                 ><input
                   type="radio"
                   name="tipoDeProducto"
-                  value="<%=productos.tipoDeProducto%>"
+                  value="2"
                 />Enmarcados</label
               >
               <br />
@@ -85,7 +88,7 @@
                 ><input
                   type="radio"
                   name="tipoDeProducto"
-                  value="<%=productos.tipoDeProducto%>"
+                  value="3"
                 />Servicios Fotográficos</label
               >
             </section>
@@ -96,7 +99,7 @@
                 ><input
                   type="radio"
                   name="tamanoDeProducto"
-                  value="<%=productos.tamanoDeProducto%>"
+                  value="1"
                 />Pequeño A5</label
               >
               <br />
@@ -105,7 +108,7 @@
                 <input 
                   type="radio" 
                   name="tamanoDeProducto"
-                  value="<%=productos.tamanoDeProducto%>"
+                  value="2"
                 />Medio 20x30
               </label>
               <br />
@@ -114,7 +117,7 @@
                 ><input
                   type="radio"
                   name="tamanoDeProducto"
-                  value="<%=productos.tamanoDeProducto%>"
+                  value="3"
                 />Grande 30x45</label
               >
               <br />
@@ -123,7 +126,7 @@
                 ><input
                   type="radio"
                   name="tamanoDeProducto"
-                  value="<%=productos.tamanoDeProducto%>"
+                  value="4"
                 />Master 50x70</label
               >
             </section>
@@ -135,7 +138,7 @@
               class="precio_text_productAdd"
               type="number"
               name="precio"
-              value="<%=productos.precio%>"
+              value="<%=productos.precio%>" 
             />
 
             <hr class="magen_top_productAdd" />

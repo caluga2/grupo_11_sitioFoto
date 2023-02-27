@@ -24,9 +24,6 @@ const validacionesRegistro = [
     .isLength({ min: 20 })
     .withMessage("Debe introducir descripción de al menos 20 caracteres"),
   body("precio").notEmpty().withMessage("Debe introducir precio"),
-  body("tamanoDeProducto")
-    .notEmpty()
-    .withMessage("Debe introducir tamaño del producto"),
   body("tipoDeProducto")
     .notEmpty()
     .withMessage("Debe introducir tipo del producto"),
@@ -68,7 +65,7 @@ const upload = multer({
     }
   },
 });
-
+ 
 /* GET ALL PRODUCTS */
 router.get("/", productsController.index);
 
@@ -88,6 +85,7 @@ router.get("/detail/:productoID", productsController.detail);
 router.get("/edit/:productoID", productsController.edit);
 router.put(
   "/edit/:productoID",
+  upload.single("imagen"),
   validacionesRegistro,
   productsController.update
 );

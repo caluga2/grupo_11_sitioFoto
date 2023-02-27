@@ -24,7 +24,7 @@ const controller = {
   detail: (req, res) => {
     db.productos.findByPk(req.params.productoID).then(function (data) {
       let productos = data.dataValues;
-      res.render("productDetail", { productos });
+      res.render("productDetail", { productos,  user: req.session.userLogged });
     });
   },
 
@@ -104,20 +104,27 @@ const controller = {
   edit: (req, res) => {
     db.productos.findByPk(req.params.productoID).then(function (data) {
       let productos = data.dataValues;
-      res.render("product-edit-form", { productos });
+      res.render("product-edit-form", { productos, user: req.session.userLogged });
     });
   },
 
   // Update - Method to update
   update: (req, res) => {
     let errores = validationResult(req);
+    console.log(req.body.nombre)
     if (errores.isEmpty()) {
+      let fotoProducto;
+      if (req.file != undefined) {
+        fotoProducto = req.file.filename;
+      } else {
+        fotoProducto = "default.png";
+      }
       for (let i = 0; i < products.length; i++) {
         if (products[i].productoID == req.params.productoID) {
           products[i].nombre = req.body.nombre;
           products[i].descripcion = req.body.descripcion;
-          products[i].tipoDeProductoID = req.body.tipoDeProducto;
-          products[i].tamanoDeProductoID = req.body.tamanoDeProducto;
+          products[i].tipoDeProductoID = req.body.tipoDeProductoID;
+          products[i].tamanoDeProductoID = req.body.tamanoDeProductoID;
           products[i].precio = req.body.precio;
           products[i].fotoProducto = req.file.filename;
         }
@@ -129,8 +136,8 @@ const controller = {
         {
           nombre: req.body.nombre,
           descripcion: req.body.descripcion,
-          tipoDeProductoID: req.body.tipoDeProducto,
-          tamanoDeProductoID: req.body.tamanoDeProducto,
+          tipoDeProductoID: req.body.tipoDeProductoID,
+          tamanoDeProductoID: req.body.tamanoDeProductoID,
           precio: req.body.precio,
           fotoProducto,
         },
@@ -140,9 +147,10 @@ const controller = {
       );
       res.redirect("/");
     } else {
+      console.log(errores)
       res.render("product-edit-form", {
         errores: errores.array(),
-        productos: req.body,
+        productos: req.body, 
         user: req.session.userLogged,
       });
     }
