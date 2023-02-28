@@ -1,11 +1,13 @@
 module.exports = function (sequelize, dataTypes) {
-  let alias = "carritosProductos";
+  let alias = "carritoProductos";
   let config = {
-    tableName: "carritosProductos",
+    tableName: "carritoProductos",
     timestamps: false,
   };
   let colums = {
     carritoProductoID: {
+      primaryKey: true,
+      autoIncrement: true,
       type: dataTypes.INTEGER,
     },
     productoID: {
@@ -18,11 +20,11 @@ module.exports = function (sequelize, dataTypes) {
 
   const carritoProducto = sequelize.define(alias, colums, config);
 
-  carritoProducto.associate = function (models) {
-    carritoProducto.hasMany(models.usuarios, {
-    as: "usuarios",
-    foreignKey: "carritoID",
-  });};
+  // carritoProducto.associate = function (models) {
+  //   carritoProducto.hasMany(models.usuarios, {
+  //   as: "usuarios",
+  //   foreignKey: "carritoID",
+  // });};
   
 
   return carritoProducto;

@@ -24,7 +24,7 @@ const controller = {
   },
 
   detail: (req, res) => {
-    db.usuarios.findByPk(req.params.usuarioID).then(function (data) {
+    db.usuarios.findByPk(req.params.usuarioID, {include: [{association: "carritoProducto"}]}).then(function (data) {
       let users = data.dataValues;
       res.render("usersDetail", { users, user: req.session.userLogged });
     });

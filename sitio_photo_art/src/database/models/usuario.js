@@ -1,4 +1,4 @@
-const carritosProductos = require("./carritoProducto.js");
+const carritoProductos = require("./carritoProducto.js");
 
 module.exports = function (sequelize, dataTypes) {
   let alias = "usuarios";
@@ -36,9 +36,9 @@ module.exports = function (sequelize, dataTypes) {
   const usuario = sequelize.define(alias, colums, config);
 
   usuario.associate = function (models) {
-    usuario.belongsTo(models.carritosProductos, {
-      as: "carritos",
-      foreignKey: "carritoID",
+    usuario.belongsTo(models.carritoProductos, {
+      as: "carritoProducto",
+      foreignKey: "carritoProductoID",
     });
   };
 

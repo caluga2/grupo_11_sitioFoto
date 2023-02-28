@@ -34,7 +34,7 @@ CREATE TABLE IF NOT EXISTS `sitioFotodb`.`CarritoProductos` (
   `productoID` INT ,
   `carritoID` INT ,
   PRIMARY KEY (`carritoProductoID`),
-  INDEX `carritoID_idx` (`carritoID` ASC),
+  INDEX `Carritos_idx` (`carritoID` ASC),
   CONSTRAINT `carritoID`
     FOREIGN KEY (`carritoID`)
     REFERENCES `sitioFotodb`.`Carritos` (`carritoID`)
