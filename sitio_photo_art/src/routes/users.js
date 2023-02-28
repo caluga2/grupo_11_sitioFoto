@@ -78,6 +78,7 @@ const upload = multer({
 });
 
 router.get("/login", userController.login);
+router.get("/detail/:usuarioID", userController.detail);
 router.post("/login", validacionesLogin, userController.procesLogin);
 //Actualizar para lo nuestro
 router.get("/", userController.index);

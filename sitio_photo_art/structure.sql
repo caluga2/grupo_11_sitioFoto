@@ -21,7 +21,7 @@ USE `sitioFotodb` ;
 -- Table `sitioFotodb`.`Carritos`
 -- -----------------------------------------------------
 CREATE TABLE IF NOT EXISTS `sitioFotodb`.`Carritos` (
-  `carritoID` INT NOT NULL,
+  `carritoID` INT ,
   PRIMARY KEY (`carritoID`))
 ENGINE = InnoDB;
 
@@ -30,9 +30,9 @@ ENGINE = InnoDB;
 -- Table `sitioFotodb`.`CarritoProductos`
 -- -----------------------------------------------------
 CREATE TABLE IF NOT EXISTS `sitioFotodb`.`CarritoProductos` (
-  `carritoProductoID` INT NOT NULL,
-  `productoID` INT NOT NULL,
-  `carritoID` INT NOT NULL,
+  `carritoProductoID` INT ,
+  `productoID` INT ,
+  `carritoID` INT ,
   PRIMARY KEY (`carritoProductoID`),
   INDEX `carritoID_idx` (`carritoID` ASC),
   CONSTRAINT `carritoID`

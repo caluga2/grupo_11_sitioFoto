@@ -22,6 +22,14 @@ const controller = {
       user: req.session.userLogged,
     });
   },
+
+  detail: (req, res) => {
+    db.usuarios.findByPk(req.params.usuarioID).then(function (data) {
+      let users = data.dataValues;
+      res.render("usersDetail", { users, user: req.session.userLogged });
+    });
+  },
+
   logout: (req, res) => {
     req.session.destroy();
     return res.redirect("/");
