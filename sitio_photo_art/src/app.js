@@ -7,12 +7,6 @@ const path = require("path");
 const methodOverride = require("method-override");
 let session = require("express-session");
 
-app.use(express.static("../public"));
-
-app.set("view engine", "ejs");
-
-app.set("views", path.join(__dirname, "/views")); // Define la ubicación de la carpeta de las Vistas
-
 // **** Middlewares  ****
 app.use(express.static(path.join(__dirname, "../public"))); // Necesario para los archivos estáticos en el folder /public
 app.use(express.urlencoded({ extended: false }));
@@ -34,10 +28,14 @@ app.set("views", path.join(__dirname, "/views")); // Define la ubicación de la 
 const mainRouter = require("./routes/main"); // Rutas main
 const productsRouter = require("./routes/products"); // Rutas /products
 const usersRouter = require("./routes/users"); //Rutas users
+const apiUserRouter = require("./routes/routesApi/usersApi"); 
+const apiProductRouter = require("./routes/routesApi/productsApi"); 
 
 app.use("/", mainRouter);
 app.use("/products", productsRouter);
 app.use("/users", usersRouter);
+app.use("/apiProduct", apiProductRouter);
+app.use("/apiUser", apiUserRouter);
 
 const PUERTO = process.env.PORT || 3001;
 

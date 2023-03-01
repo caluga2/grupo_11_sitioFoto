@@ -1,8 +1,20 @@
-const db = require("../database/models");
+const db = require("../../database/models");
 const Op = db.Sequelize.Op;
 
 module.exports = {
-  list: function (req, res) {
-    res.render("userList", { users: users, user: req.session.userLogged });
+  list:  (req, res) => {
+    db.usuarios
+    .findAll()
+    .then(usuarios => {
+      return res.json(usuarios)
+    })
+  },
+
+  detail: (req, res) => {
+    db.usuarios.findByPk(req.params.usuarioID)
+    .then(function (data) {
+      let usuario = data.dataValues;
+      return res.json(usuario)
+    });
   },
 };
