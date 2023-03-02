@@ -4,10 +4,16 @@ const app = express();
 
 const path = require("path");
 
+const cookieParser = require('cookie-parser')
+
 const methodOverride = require("method-override");
-let session = require("express-session");
+
+const session = require("express-session");
+
+const recuerdameMiddleware = require("./middlewares/recuerdameMiddleware")
 
 // **** Middlewares  ****
+app.use(cookieParser());
 app.use(express.static(path.join(__dirname, "../public"))); // Necesario para los archivos estáticos en el folder /public
 app.use(express.urlencoded({ extended: false }));
 app.use(express.json());
@@ -19,6 +25,7 @@ app.use(
     saveUninitialized: false,
   })
 );
+app.use(recuerdameMiddleware);
 
 // **** Template Engine - (don't touch) ****
 app.set("view engine", "ejs");

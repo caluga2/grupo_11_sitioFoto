@@ -51,6 +51,9 @@ const controller = {
         return res.render("errorLogin", { user: req.session.userLogged });
       } else {
         req.session.userLogged = usuarioALogearse;
+        if (req.body.recuerdame != undefined){
+          res.cookie('recuerdame', usuarioALogearse.emailLogin, {maxAge: 60000})
+        };
         return res.render("home", {
           user: req.session.userLogged,
         });
