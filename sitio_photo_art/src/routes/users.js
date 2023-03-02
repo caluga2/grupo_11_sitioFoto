@@ -8,7 +8,7 @@ const { body } = require("express-validator");
 const userController = require("../controllers/userController");
 const storage = multer.diskStorage({
   destination: function (req, file, cb) {
-    cb(null, "../public/images/imgU");
+    cb(null, "../sitio_photo_art/public/images/imgU");
   },
   filename: function (req, file, cb) {
     cb(null, Date.now() + path.extname(file.originalname));
@@ -19,7 +19,7 @@ const validacionesRegistro = [
     .notEmpty()
     .isLength({ min: 2 })
     .withMessage("Debe introducir su nombre"),
-  body("email") // **** Agregar validacion que el mail no puede ser repetido con una que ya esta registrado ****
+  body("email") 
     .notEmpty()
     .isEmail()
     .withMessage("Debe introducir un mail válido (ejemplo@email.com)"),

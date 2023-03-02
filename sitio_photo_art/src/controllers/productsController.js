@@ -15,7 +15,6 @@ const controller = {
     res.render("Producto", {
       products,
       user: req.session.userLogged,
-
       toThousand,
     });
   },
@@ -70,7 +69,7 @@ const controller = {
         db.productos
           .create(newProduct)
           .then((storedProduct) => {
-            return res.redirect("/");
+            return res.redirect("/products/productsList");
           })
           .catch((error) => console.log(error));
       } else {
@@ -145,7 +144,7 @@ const controller = {
           where: { productoID: req.params.productoID },
         }
       );
-      res.redirect("/");
+      res.redirect("/products/productsList");
     } else {
       console.log(errores)
       res.render("product-edit-form", {
@@ -167,7 +166,7 @@ const controller = {
       (product) => product.productoID != productoID
     );
     fs.writeFileSync(productsFilePath, JSON.stringify(finalProducts, null, 2));
-    res.redirect("../");
+    res.redirect("../productsList");
   },
 };
 

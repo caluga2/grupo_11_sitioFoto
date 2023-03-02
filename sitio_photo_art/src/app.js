@@ -28,14 +28,14 @@ app.set("views", path.join(__dirname, "/views")); // Define la ubicación de la 
 const mainRouter = require("./routes/main"); // Rutas main
 const productsRouter = require("./routes/products"); // Rutas /products
 const usersRouter = require("./routes/users"); //Rutas users
-const apiUserRouter = require("./routes/routesApi/usersApi"); 
-const apiProductRouter = require("./routes/routesApi/productsApi"); 
+// const apiUserRouter = require("./routes/routesApi/usersApi"); 
+// const apiProductRouter = require("./routes/routesApi/productsApi"); 
 
 app.use("/", mainRouter);
 app.use("/products", productsRouter);
 app.use("/users", usersRouter);
-app.use("/apiProduct", apiProductRouter);
-app.use("/apiUser", apiUserRouter);
+// app.use("/apiProduct", apiProductRouter);
+// app.use("/apiUser", apiUserRouter);
 
 const PUERTO = process.env.PORT || 3001;
 
