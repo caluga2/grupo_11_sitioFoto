@@ -36,11 +36,11 @@ function Users() {
             return (
               <div key={i} className="card">
                 <br />
-                <h2>ID de Usuario: {user.id}</h2>
-                <h3>Nombre de Usuario: {user.name}</h3>
-                <h3>Apellido de Usuario: {user.lastName}</h3>
+                <h2>ID de Usuario: {user.usuarioID}</h2>
+                <h3>Nombre de Usuario: {user.nombre}</h3>
+
                 <h4>Email: {user.email}</h4>
-                <a className="App-link" href={`/users/ ${user.id}`}>
+                <a className="App-link" href={`/users/ ${user.usuarioID}`}>
                   Ver Usuario
                 </a>
                 <br />

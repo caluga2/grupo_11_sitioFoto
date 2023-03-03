@@ -9,8 +9,8 @@ import NotFound from "./components/NotFound";
 import Users from "./components/Users";
 import Products from "./components/Products";
 import MainBody from "./components/MainBody";
-//import UserById from "./components/UserById";
-//import ProductById from "./components/ProductById";
+import UserById from "./components/UserById";
+import ProductById from "./components/ProductByld";
 import TopBar from "./components/TopBar";
 
 const router = createBrowserRouter([
@@ -27,14 +27,14 @@ const router = createBrowserRouter([
     path: "/products",
     element: <Products />,
   },
-  /*{
+  {
     path: "/users/:usuarioID",
     element: <UserById />,
   },
   {
     path: "product/:productoID",
     element: <ProductById />,
-  },*/
+  },
 ]);
 
 ReactDOM.createRoot(document.getElementById("root")).render(

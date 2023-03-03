@@ -26,18 +26,13 @@ function ProductById() {
 
   return (
     <Card style={{ width: "18rem" }}>
-      <Card.Img
-        variant="top"
-        src={`http://localhost:3001/images/imgP/${productData.fotoProducto}`}
-        width="100%"
-      />
       <Card.Body>
         <Card.Title>{productData.Nombre}</Card.Title>
         <Card.Text>{productData.Descripcion}</Card.Text>
       </Card.Body>
       <ListGroup className="list-group-flush">
         <ListGroup.Item>Id Producto: {productData.productoID}</ListGroup.Item>
-        <ListGroup.Item>Modelo: {} </ListGroup.Item>
+        <ListGroup.Item>Precio: {productData.Precio} </ListGroup.Item>
       </ListGroup>
       <Card.Body>
         <Card.Link href="/products">Productos</Card.Link>

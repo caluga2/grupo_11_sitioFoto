@@ -6,11 +6,11 @@ function Products() {
   const [products, setProducts] = useState([]);
 
   useEffect(() => {
-    console.log("se monto el componente users");
+    //console.log("se monto el componente users");
     fetch("http://localhost:3001/apiProduct/apiList")
       .then((response) => response.json())
       .then((data) => {
-        console.log(data.data.products);
+        //console.log(data.data.products);
         setProducts(data.data.products);
         //console.log(data.data.products);
       })
@@ -34,7 +34,7 @@ function Products() {
           return (
             <div key={i} className="card">
               <br />
-              <h2>productoID Producto: {producto.productoID}</h2>
+              <h2>productoID: {producto.productoID}</h2>
               <h3>Nombre Producto:</h3>
               <h3>{producto.nombre}</h3>
               <h3>Descripción:</h3>
