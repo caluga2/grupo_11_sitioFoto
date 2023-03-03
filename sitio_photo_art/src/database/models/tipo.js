@@ -8,6 +8,7 @@ module.exports = function (sequelize, dataTypes) {
   };
   let colums = {
     tipoDeProductoID: {
+      primaryKey: true,
       type: dataTypes.INTEGER,
       allowNull: false,
     },
