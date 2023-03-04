@@ -81,6 +81,16 @@ Seguir mejorando en la organización de los tiempos y lograr una planificación 
 
 -CONCLUSIONES
 
-El sprint en general fue realizado con suceso, tuvimos algunas cuestiones que luego se resolvieron. El equipo logró llegar al resultado deseado en tiempo y forma.
+El sprint en general fue realizado con suceso, tuvimos algunas cuestiones que luego se resolvieron. El equipo logró llegar al resultado deseado en tiempo y forma
+Sprint 8
+¿Que hicimos bien? 
 
+ logramos el objetivo que el mismo pedía, pudimos notar que fue uno de los complejos que trabajamos. Logramos mejorar un punto faltante del sprint anterior mejorado la aplicación en este sprint final. 
 
+¿Que hicimos mal? 
+
+No dejar todo para último momento para evitar estar afanados por fechas de entrega como sucedió en sprint anteriores adicionalmente no subestimar la complejidad del sprint. 
+
+¿Que deberíamos empezar a hacer? 
+
+Realizar más proyectos React ya que es un tema que se va a trabajar en el ámbito laborar y son temas muy interesantes, por eso seguiremos trabajando en dominar el tema, continuar estudiando. 
