@@ -12,7 +12,7 @@ function Users() {
       .then((response) => response.json())
       .then((data) => {
         // console.log(data);
-        setUsers(data.data.usersApi);
+        setUsers(data.data.users);
         //console.log(data.data.usersApi)
       })
       .catch((error) => console.log(error));

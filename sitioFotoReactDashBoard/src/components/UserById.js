@@ -26,6 +26,7 @@ function UserById() {
       <h2 className="title">Detalle de Usuario</h2>
 
       <nav className="card">
+        <img src={userData.Imagen} width="100%" alt="fotoDeUsuario" />
         <h2>Id de Usuario:</h2>
         <h2>{userData.usuarioID}</h2>
         <h3>Nombre de Usuario:</h3>

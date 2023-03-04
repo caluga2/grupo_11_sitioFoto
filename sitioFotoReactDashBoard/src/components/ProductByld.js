@@ -26,6 +26,7 @@ function ProductById() {
 
   return (
     <Card style={{ width: "18rem" }}>
+      <Card.Img variant="top" src={`${productData.Imagen}`} width="100%" />
       <Card.Body>
         <Card.Title>{productData.Nombre}</Card.Title>
         <Card.Text>{productData.Descripcion}</Card.Text>
@@ -40,6 +41,12 @@ function ProductById() {
         <Card.Link href="/">Home</Card.Link>
       </Card.Body>
     </Card>
+  );
+  return (
+    <img
+      src={`http://localhost:3001/images/imgP/${productData.Imagen}`}
+      alt="imagen"
+    />
   );
 }
 

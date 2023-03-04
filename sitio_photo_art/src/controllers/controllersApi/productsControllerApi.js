@@ -10,7 +10,7 @@ const productsControllerApi = {
   list: async (req, res) => {
     try {
       let productsApi = await productos.findAll({
-        //include: ["tipoDeProducto", "tamanoDeProducto"],
+        include: ["tipoDeProducto", "tamanoDeProducto"],
         attributes: [
           "nombre",
           "descripcion",
@@ -19,13 +19,14 @@ const productsControllerApi = {
           "fotoProducto",
         ],
       });
-      let products = productsApi.map((product) => {
+      var products = productsApi.map((product) => {
         return {
           ...product.dataValues,
           urlDetail: `http://localhost:3001/apiProduct/apiList/${product.productoID}`,
-          image: `http://localhost:3001/images/products/${product.fotoProducto}`,
+          image: `http://localhost:3001/images/imgP/${product.fotoProducto}`,
         };
       });
+
       res.json({
         meta: {
           status: 200,
@@ -71,8 +72,7 @@ const productsControllerApi = {
               Tipo: product.dataValues.tipoDeProducto,
               Precio: product.dataValues.precio,
               Tamano: product.dataValues.tamanoDeProducto,
-              Imagen: product.dataValues.fotoProducto,
-              Url: `localhost:3001/apiProduct/${product.dataValues.productoID}`,
+              Imagen: `http://localhost:3001/images/imgP/${product.dataValues.fotoProducto}`,
             },
           };
           return res.json(respuesta);

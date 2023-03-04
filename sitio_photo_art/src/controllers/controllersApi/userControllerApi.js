@@ -8,13 +8,13 @@ const userControllerApi = {
   list: async (req, res) => {
     try {
       let usersApi = await usuarios.findAll({
-        attributes: ["nombre", "email", "usuarioID"],
+        attributes: ["nombre", "email", "usuarioID", "fotoUsuario"],
       });
       let users = usersApi.map((user) => {
         return {
           ...user.dataValues,
           urlDetail: `http://localhost:3001/apiUser/apiList/${user.usuarioID}`,
-          //image: `http://localhost:3001/images/users/${product.fotoProducto}`,
+          image: `http://localhost:3001/images/imgU/${user.fotoUsuario}`,
         };
       });
       res.json({
@@ -23,7 +23,7 @@ const userControllerApi = {
           count: users.length,
         },
         data: {
-          usersApi,
+          users,
         },
       });
     } catch (err) {
@@ -51,8 +51,7 @@ const userControllerApi = {
             usuarioID: user.dataValues.usuarioID,
             Nombre: user.dataValues.nombre,
             Email: user.dataValues.email,
-            Imagen: user.dataValues.fotoUsuario,
-            Url: `localhost:3001/apiUser/${user.dataValues.usuarioID}`,
+            Imagen: `http://localhost:3001/images/imgU/${user.dataValues.fotoUsuario}`,
           },
         };
         return res.json(respuesta);
